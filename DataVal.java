@@ -25,7 +25,7 @@ public class DataVal {
     public int selectFromRange(String message, int min, int max) {
         int inputInt;
         while(true){
-            System.out.print(message);
+            System.out.println(message);
             String input = scanner.nextLine();
             input = input.trim();
             try{
