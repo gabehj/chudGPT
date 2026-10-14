@@ -7,7 +7,7 @@ public class DataVal {
  
     public String selectFromOptions(String message, String[] options) {
         while(true){
-            System.out.println("Pick from these options: ");
+            System.out.println(message);
             for(int i = 0; i < options.length; i++){
                 System.out.println(options[i]);
             }
@@ -25,7 +25,7 @@ public class DataVal {
     public int selectFromRange(String message, int min, int max) {
         int inputInt;
         while(true){
-            System.out.printf("Pick from an number from range %d to %d.\n", min, max);
+            System.out.print(message);
             String input = scanner.nextLine();
             input = input.trim();
             try{
