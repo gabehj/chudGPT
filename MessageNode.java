@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-public class MessageNode {
-    
-=======
 import java.util.ArrayList;
 
 public class MessageNode {
@@ -23,5 +19,4 @@ public class MessageNode {
 
     public void setLogit(double logit) {
     }
->>>>>>> 2d3792c9ca75f82f408666d2f2bfd84a1075cd62
 }
