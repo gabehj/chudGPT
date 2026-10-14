@@ -67,10 +67,32 @@ public class Response {
         }
     }
 
-    public String sampleBotMessage() {
+    private static Double getGumble() {
+        return 1.0;
+    }
+
+    public String sampleBotMessage(String message) {        
+        readUserMessage(message);
         
-        
-        return null;
+        double max_logit = Integer.MIN_VALUE;
+        String max_message = "ERROR: Message not sampled";
+
+        for (MessageNode node : theMasterList.values()) {
+            double logit = node.getLogit();
+            
+            for (String keyword : node.getThemes()) {
+                if (isUserKeyword.get(keyword) != null) logit ++;
+            }
+
+            logit += getGumble();
+
+            if (logit > max_logit) {
+                max_logit = logit;
+                max_message = node.getMessage();
+            }
+        }
+
+        return max_message;
     }
 
     public void learn(HashMap<String, Float> history, Float score) {
