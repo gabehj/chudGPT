@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class User {
     private String name;
-    LinkedChain<String> interests;
-    Boolean hasPremium = false;
-    DataVal input;
-    String[] interestList;
+    private LinkedChain<String> interests;
+    private Boolean hasPremium = false;
+    private DataVal input;
+    private String[] interestList; //could be other data type just has to be a list of all topics user can choose from
     public User(String[] interestList) {
         interests = new LinkedChain<String>();
         input = new DataVal();
