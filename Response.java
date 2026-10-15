@@ -62,11 +62,9 @@ public class Response {
                 }
                 word = "";
             }
-            
             else {
                 word += letter;
             }
-            
             i ++;
         }
         return isUserKeyword;
@@ -74,6 +72,10 @@ public class Response {
 
     private static Double getGumble() {
         return 1.0;
+    }
+
+    private static int wordCount(String message) {
+        return message.split(" ").length;
     }
 
     public String sampleBotMessage(String message) {        
@@ -100,7 +102,7 @@ public class Response {
         return max_message;
     }
 
-    public void learn(HashMap<String, Float> history, Float score) {
+    public void learn(ArrayList<String> history, Float score) {
         
         MessageNode node = null;
         double logit = 0;
@@ -109,18 +111,29 @@ public class Response {
         double B = -5.5;
 
         int message_count = 0;
+        String message;
         
+        // https://www.typeblast.com/blog/typing-speed-vs-reading-speed/
+        // According to the site above, mean reading speed for fiction is 260 wpm;
+        // mean typing speed is 50 wpm.
+        // We will use these metrics as proxies for the time that a user invests in our program.
+        int READING_SPEED = 260;
+        int TYPING_SPEED = 50;
+        double LR = 0.1;
+        double LR_DECAY = 0.8;
 
-        for (String m : history.keySet()) {
-            if (theMasterList.get(m) == null) newVocab(m);
+        for (int i = history.size()-1; i >= 0; i--) {
+            message = history.get(i);
+            if (theMasterList.get(message) == null) newVocab(message);
 
-            node = theMasterList.get(m);
+            node = theMasterList.get(message);
             logit = node.getLogit();
             
             // Update logit based on score
             logit += A * score + B;
 
 
+            logit
 
         }
     }
@@ -138,7 +151,8 @@ public class Response {
     }
 
     private void distill(int num) {
-        
+        // Not necessary until we handle big data
+        return;
     }
 
     boolean isAlphanumeric(final int codePoint) {
