@@ -102,12 +102,26 @@ public class Response {
 
     public void learn(HashMap<String, Float> history, Float score) {
         
+        MessageNode node = null;
+        double logit = 0;
+        
+        double A = 1;
+        double B = -5.5;
+
+        int message_count = 0;
+        
 
         for (String m : history.keySet()) {
-            if (theMasterList.get(m) == null) {
-                
-                
-            }
+            if (theMasterList.get(m) == null) newVocab(m);
+
+            node = theMasterList.get(m);
+            logit = node.getLogit();
+            
+            // Update logit based on score
+            logit += A * score + B;
+
+
+
         }
     }
 
@@ -133,3 +147,26 @@ public class Response {
             (codePoint >= 48 && codePoint <= 57);
     }
 }
+
+/*
+Time Complexity Justification (TCJ) for Response.java
+
+Private Method readUserMessage(String message)
+    O(# of words in message) → O(N) 
+    // TCJ each word is traversed and then fixed ops are performed on it
+
+Method sampleBotMessage()
+    O(len(theMasterList)) → O(N)  
+    // TCJ each masterList item is traversed, and its values are modified in O(1)
+
+Method learn(HashMap<String message, Float Score> History, Float score)
+    O(len(userMessage) * len(History))  → O(N^2) 
+    // TCJ if History is N, then each element of N is traversed, which is O(N). 
+    // Also, for each of the user messages, each word is iterated over, which is 
+    // O(N/2) = O(N) for the messages * O(len(message)) for the words traversed.
+
+Private Method distill(int num)
+    O(N^2)  
+    // TCJ Each value of theMasterList is traversed and the 
+    // least likely message is removed. This happens num times
+*/
