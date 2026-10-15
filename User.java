@@ -35,4 +35,9 @@ public class User {
             }
         }
     }
+
+    
+     public int postSurvey() {
+         return input.selectFromRange("How do you rate this conversation on a scale 1 to 10", 1, 10);
+    }
 }
