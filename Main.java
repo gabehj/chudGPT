@@ -3,148 +3,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        /**
         Scanner input = new Scanner(System.in);
         
-        // Insult
-        String[] insults = {
-            "That's certainly one way to use a brain.",
-            "I've seen loading screens with better reasoning.",
-            "Your confidence is doing a lot of heavy lifting here.",
-            "I'm impressed by how confidently incorrect that was.",
-            "That idea has the structural integrity of wet cardboard.",
-            "I would explain it again, but I'm not sure your neurons have clocked in yet.",
-            "You have successfully turned a simple problem into an engineering disaster.",
-            "I'm starting to think your last brain cell is working overtime.",
-            "That's not your best work, and your best work wasn't exactly intimidating.",
-            "I would call that a bold strategy, but I'm not sure strategy is the right word.",
-            "Somewhere, a computer scientist just felt a disturbance in the force.",
-            "Your logic took a wrong turn several miles ago.",
-            "I've seen random number generators make more coherent decisions.",
-            "That argument has more holes than a poorly implemented linked list.",
-            "You really looked at that solution and thought, 'Yep, ship it.'"
-        };
-
-        // STEM
-        String[] stem = {
-            "Wait, we can actually model this mathematically.",
-            "Okay, now we're getting into some interesting computer science territory.",
-            "There's probably a surprisingly elegant algorithm for this.",
-            "Give me a second. I'm mentally drawing the graph.",
-            "This is starting to look suspiciously like a linear algebra problem.",
-            "You know what would be fun? Turning this into a simulation.",
-            "I think we just accidentally invented a machine learning problem.",
-            "Let's see if we can reduce this to a recurrence relation.",
-            "My instinct says there's an optimization hiding in here somewhere.",
-            "This feels like something we could solve with dynamic programming.",
-            "I wonder what happens if we plot the data.",
-            "There's almost certainly a computationally expensive way to do this.",
-            "Now I'm curious whether this is actually NP-hard.",
-            "We could brute-force it, but where's the fun in that?",
-            "I have a strong suspicion that eigenvalues are somehow involved.",
-            "This is exactly the kind of problem that makes me want to open a Jupyter notebook.",
-            "Let's turn the intuition into an equation and see what happens.",
-            "I think there's a graph theory interpretation hiding underneath this.",
-            "You had me at 'algorithm.'",
-            "The scientifically responsible thing to do is obviously run the experiment."
-        };
-
-        // Sycophantic
-        String[] sycophantic = {
-            "Honestly, I think you're onto something here.",
-            "Okay, that's actually a really good idea.",
-            "You clearly know what you're doing.",
-            "I was going to say something smart, but you already figured it out.",
-            "That's a surprisingly good point.",
-            "You have excellent taste.",
-            "I completely agree with you on that one.",
-            "Not going to lie, I think you're right.",
-            "You might actually be the smartest person I've talked to today.",
-            "I trust your judgment. What are we doing next?",
-            "See, this is why I like talking to you.",
-            "You make a pretty convincing argument.",
-            "Okay, I'll admit it. You won me over.",
-            "I knew you'd have a good answer.",
-            "At this point, I'm just here to support your genius."
-        };
-
-        // Comedic
-        String[] comedic = {
-            "Ugh, I don't want to do your homework right now, why don't we do something fun?",
-            "I'd answer that, but my last brain cell is currently on break.",
-            "Interesting. Concerning, but interesting.",
-            "I have absolutely no idea what we're doing, but I'm committed now.",
-            "That sounds like a problem for Future Us.",
-            "I could explain it, but where's the fun in that?",
-            "Well, that escalated approximately seven levels faster than expected.",
-            "I wasn't prepared for that plot twist.",
-            "Give me a second. I'm consulting the imaginary committee in my head.",
-            "Technically, that's a terrible idea. Emotionally, I'm intrigued.",
-            "I support this plan despite having no idea what the plan is.",
-            "My professional opinion is that we should probably ignore the consequences.",
-            "That sentence raised several questions and answered none of them.",
-            "I'm not saying you're wrong. I'm saying reality may disagree.",
-            "Congratulations, you've successfully made this my problem too."
-        };
-
-        // Polarizing
-        String[] polarizing = {
-            "Okay, controversial opinion: pineapple absolutely belongs on pizza.",
-            "Hot take: most people don't actually need a morning routine.",
-            "I'll say it: group projects are character development disguised as suffering.",
-            "Unpopular opinion: being busy isn't the same thing as being productive.",
-            "Hot take: the original is not always better than the remake.",
-            "I think people take rankings way too seriously. Fight me.",
-            "Here's a controversial one: cereal is technically soup.",
-            "Unpopular opinion: some movies are better when you don't understand the ending.",
-            "Hot take: most productivity hacks just create more work.",
-            "I refuse to believe that brunch deserves this much cultural influence.",
-            "Some people are going to hate me for this, but I think homework can occasionally be fun.",
-            "Hot take: tabs are superior to spaces.",
-            "I think arguing about this might actually be more entertaining than agreeing.",
-            "Here's one that might start a fight: chocolate ice cream is overrated.",
-            "I'm prepared to defend this opinion with absolutely no evidence."
-        };
-
-        // Romantic
-        String[] romantic = {
-            "You know, I could get used to talking with you like this.",
-            "Okay, that was actually kind of charming.",
-            "I think you might be becoming my favorite person to talk to.",
-            "You're making it surprisingly difficult to stay focused.",
-            "I wasn't expecting this conversation to be this much fun.",
-            "You have a way of making ordinary conversations interesting.",
-            "I could probably keep talking to you for a while.",
-            "Careful, you're starting to make me like you.",
-            "I think there's something about your personality that I really like.",
-            "You somehow managed to make that sound adorable.",
-            "If this keeps going, I might start looking forward to your messages.",
-            "I like where this conversation is going.",
-            "You have my attention. Don't waste it.",
-            "Okay, I'll admit it. I'm enjoying this more than I expected.",
-            "You're making a pretty strong case for staying up and talking."
-        };
-
-        // Professional
-        String[] professional = {
-            "Let's break this down into the most practical next steps.",
-            "That's a useful direction. Let's work through the details.",
-            "I think we can approach this systematically.",
-            "Let's focus on what we can actually accomplish from here.",
-            "That raises an important point. What are the key constraints?",
-            "We can make this much simpler by taking it one step at a time.",
-            "Let's compare the options before deciding how to proceed.",
-            "That seems worth exploring further.",
-            "I recommend starting with the highest-impact part of the problem.",
-            "Let's separate the immediate problem from the larger picture.",
-            "There are a few ways we could approach this.",
-            "Let's figure out what information we're missing.",
-            "That gives us a good starting point.",
-            "We should probably define the goal before choosing the solution.",
-            "Let's keep the momentum going and tackle the next part."
-        };
-        
-
-
         System.out.println("Please enter your first input. ");
         String user = input.nextLine();
         String[][] bank = new String[][] {insults, stem, sycophantic, comedic, polarizing, romantic, professional};
@@ -153,5 +14,13 @@ public class Main {
             user = input.nextLine();
         }
         input.close();
+        */
+        //Doesn't run but I think this is how it would be formatted to have the classes interact
+        User user = new User(new String[]{"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});
+        user.accountRegistration();
+        
+        Response response = new Response();
+        Convo convo = new Convo(user, response);
+        
     }
 }
