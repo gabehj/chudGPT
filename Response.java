@@ -22,10 +22,13 @@ HashMap<String message, Boolean inUserMessage> isMasterKeyword
 HashMap<String keyword, Boolean inBotMessage> isUserKeyword
 */
 
+import java.util.ArrayList;
+
 public class Response {
+    
     HashMap<String, MessageNode> theMasterList = new HashMap<>();
-    HashMap<String, Boolean> isMasterKeyword = new HashMap<>(); 
-    HashMap<String, Boolean> isUserKeyword = new HashMap<>(); 
+    HashMap<String, Boolean> isMasterKeyword = new HashMap<>();
+
 
 
     public Response() {
@@ -37,8 +40,9 @@ public class Response {
     }
 
 
-    private void readUserMessage(String message) {
-        isUserKeyword = new HashMap<>();
+    private HashMap<String, Boolean> readUserMessage(String message) {
+        
+        HashMap<String, Boolean> isUserKeyword = new HashMap<>();
         
         int i = 0;
         String letter = "";
@@ -65,6 +69,7 @@ public class Response {
             
             i ++;
         }
+        return isUserKeyword;
     }
 
     private static Double getGumble() {
@@ -72,7 +77,7 @@ public class Response {
     }
 
     public String sampleBotMessage(String message) {        
-        readUserMessage(message);
+        HashMap<String, Boolean> isUserKeyword = readUserMessage(message);
         
         double max_logit = Integer.MIN_VALUE;
         String max_message = "ERROR: Message not sampled";
@@ -96,9 +101,30 @@ public class Response {
     }
 
     public void learn(HashMap<String, Float> history, Float score) {
+        
+
+        for (String m : history.keySet()) {
+            if (theMasterList.get(m) == null) {
+                
+                
+            }
+        }
+    }
+
+    public void newVocab (String message) {
+        HashMap<String, Boolean> isUserKeyword = readUserMessage(message);
+        
+        ArrayList<String> themes = new ArrayList<>();
+        for (String keyword : isUserKeyword.keySet()) {
+            themes.add(keyword);
+        }        
+
+        MessageNode new_node = new MessageNode(message, themes, 0.0);
+        theMasterList.put(message, new_node);
     }
 
     private void distill(int num) {
+        
     }
 
     boolean isAlphanumeric(final int codePoint) {
