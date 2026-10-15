@@ -1,11 +1,12 @@
 public class Convo {
-
-    public Convo(User user) {
+    private User user;
+    private Response botMessages;
+    
+    public Convo(User user, Response botMessages) {
+        this.user = user;
+        this.botMessages = botmessages;
     }
-
-    public void postsurvey() {
-    }
-
+    
     public HashMap<String, Float> ScoreMessages(HashMap<String, Float> history) {
         return null;
     }
