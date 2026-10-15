@@ -20,3 +20,203 @@ public interface HashMap<K, V> {
 
     public ArrayList<V> values();
 }
+
+
+
+package cs2321;
+
+import net.datastructures.*;
+
+public class HashMap<K, V> extends AbstractMap<K,V> {
+	
+	/* Use Array of DoublylinkedList<K,V> for the Underlying storage for the map of entries.
+	 * 
+	 */
+	private DoublyLinkedList<Entry<K,V>>[]  table;
+	int 	size;  // number of mappings(entries) 
+	int 	capacity; // The size of the hash table. 
+	int     DefaultCapacity = 17; //The default hash table size
+	
+	/* Maintain the load factor <= 0.75.
+	 * If the load factor is greater than 0.75, 
+	 * then double the table, rehash the entries, and put then into new places. 
+	 */
+	double  loadfactor= 0.75;  
+	
+	/**
+	 * Constructor that takes a hash size
+	 * @param hashtable size: the number of buckets to initialize 
+	 */
+	@SuppressWarnings("unchecked")
+	public HashMap(int hashtablesize) {
+		// TODO Add necessary initialization
+		capacity = hashtablesize; // Set capacity to inputed value
+		
+		size = 0; // no elements
+		table = (DoublyLinkedList<Entry<K,V>>[]) new DoublyLinkedList[capacity]; // Construct table of given size
+	
+		for (int i = 0; i < capacity; i++) table[i] = new DoublyLinkedList<>(); // Construct empty lists for each table index
+	}
+	
+	/**
+	 * Constructor that takes no argument
+	 * Initialize the hash table with default hash table size: 17
+	 */
+	@SuppressWarnings("unchecked")
+	public HashMap() {
+		// TODO Add necessary initialization
+		capacity = DefaultCapacity; // Initialize capacity with default 17
+				
+		size = 0; // no elements
+		table = (DoublyLinkedList<Entry<K,V>>[]) new DoublyLinkedList[capacity]; // Construct table of default size
+		
+		for (int i = 0; i < capacity; i++) table[i] = new DoublyLinkedList<>(); // Construct empty lists for each table index
+
+	}
+	
+	/* This method should be called by map an integer to the index range of the hash table 
+	 */
+	private int hashValue(K key) {
+		return Math.abs(key.hashCode()) % capacity;
+	}
+	
+	/*
+	 * The purpose of this method is for testing if the table was doubled when rehashing is needed. 
+	 * Return the the size of the hash table. 
+	 * It should be 17 initially, after the load factor is more than 0.75, it should be doubled.
+	 */
+	public int tableSize() {
+		return capacity; // Return maximum capacity of table
+	}
+	
+	
+	@Override
+	public int size() {
+		return size; // Return variable for number of elements
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return size==0; // True if no elements else false
+	}
+
+	@Override
+	@TimeComplexity(" O(n) ") //This is for worst case time complexities.
+	@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
+	public V get(K key) {
+		/* TCJ:
+		 * Value is indexed in trivial time. 
+		 * If there is one or zero values in linked list at given index, then O(1) amortized time
+		 * Value is referenced immediately without traversal
+		 * 
+		 * Otherwise, the linked list is crowded and it costs O(n) to traverse values
+		 */
+		int index = hashValue(key); // Hash key to get table index
+		
+		for (Entry<K, V> entry: table[index]) { // Iterate through list at table index
+			if (entry.getKey().equals(key)) { // See if any entries with matching indices have matching keys
+				return entry.getValue(); // Return value for entry with inputed key
+			}
+		}
+		return null; // Nothing to get
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	@TimeComplexity(" O(n) ") //This is for worst case time complexities.
+	@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
+	public V put(K key, V value) {
+		/* TCJ:
+		 * If linked list at calculated index for inputed key is relatively empty, that the 
+		 * new value can be appended in trivial time, making an amortized O(1)
+		 * 
+		 * However, more elements need to be traversed if the linked list is crowded. 
+		 * Also, the table may need to be rehashed after addition of element.
+		 * Thus, worst-case of O(n)
+		 */
+		int index = hashValue(key); // Hash key to get table index
+		
+		// Case 1: Key is already in table
+		for (Position<Entry<K, V>> pos: table[index].positions()) {// Iterate through each node in list for table index // O(n)
+			Entry<K,V> entry = pos.getElement(); // Extract element from node for simplicity
+			
+			if (entry.getKey().equals(key)) { // Check if entry key equals inputed key for each node of matching index
+				V old = entry.getValue(); // Store old entry value to get replaced
+				table[index].remove(pos); // Remove entry entirely from list O(1)
+				table[index].addLast(new mapEntry(key, value)); // Append new node with same key and index but new value O(1)
+				
+				return old; // Return old entry value
+			}
+		}
+		// Case 2: New element is added
+		Entry<K,V> newEntry = new mapEntry<>(key, value); // Create new entry object with inputed variables
+		
+		table[index].addLast(newEntry); // Append new entry to correct list
+		
+		size++; // Increment size
+		
+		if ((double) size/ (double) capacity > loadfactor) { // Determine if table is crowded and rehashing is needed
+			rehash(); // Call rehash method O(n)
+		}
+		return null; // No previous value
+	}
+	
+	
+	@SuppressWarnings("unchecked")
+	protected void rehash() { // O(n) Create larger table with smaller lists // O(n)
+	    DoublyLinkedList<Entry<K,V>>[] oldTable = table; // Reassign table to different variable
+
+		capacity *= 2; // Double capacity
+		table = (DoublyLinkedList<Entry<K,V>>[]) new DoublyLinkedList[capacity]; // Recreate table object of greater capacity
+		for (int i = 0; i < capacity; i++) table[i] = new DoublyLinkedList<>(); // Create empty lists objects in table
+		
+		size = 0; // Reset size to 0
+		
+		for (DoublyLinkedList<Entry<K,V>> list: oldTable) { // Iterate through each list in old table
+			for (Entry<K,V> entry: list) { // iterate through each entry in old list // O(n)
+				put(entry.getKey(),entry.getValue()); // Add entry to new, larger table // O(n)
+			}
+		}
+	}
+	
+
+	@Override
+	@TimeComplexity(" O(n) ") //This is for worst case time complexities.
+	@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
+	public V remove(K key) {
+			/* TCJ:
+			 * Value is indexed in trivial time. 
+			 * If there is one or zero values in linked list at given index, then O(1) amortized time
+			 * Value is referenced immediately without traversal
+			 * 
+			 * Otherwise, the linked list is crowded and it costs O(n) to traverse values before removal
+			 */
+		int index = hashValue(key); // Hash key to get table index
+		
+		for (Position<Entry<K, V>> pos: table[index].positions()) { // Iterate through each node in list for table index
+			Entry<K,V> entry = pos.getElement();  // Extract element from node for simplicity
+			
+			if (entry.getKey().equals(key)) { // Determine if key matches inputed key
+				V old = entry.getValue(); // Store old entry vale to variable
+				table[index].remove(pos); // remove entry from linked list
+				
+				size--; // Decrement size
+				return old; // Return old value
+			}
+		}
+		return null; // Nothing to remove
+	}
+
+	@Override
+	public Iterable<Entry<K, V>> entrySet() {
+		// Hint: call entrySet of each bucket map. 
+		ArrayList<Entry<K,V>> buffer = new ArrayList<>(); // Create empty new arraylist
+
+		for (int i=0; i<table.length; i++) { // Iterate through every list in table
+			for (Entry<K, V> node : table[i]) { // Iterate through every entry in list
+				buffer.addLast(node); // Add each entry to arraylist
+			}
+		}
+		return buffer; // Return arraylist
+	}
+}

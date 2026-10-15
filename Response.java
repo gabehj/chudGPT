@@ -30,7 +30,6 @@ public class Response {
     HashMap<String, Boolean> isMasterKeyword = new HashMap<>();
 
 
-
     public Response() {
         for (MessageNode node : theMasterList.values()) {
             for (String keyword : node.getThemes()) {
@@ -38,7 +37,6 @@ public class Response {
             }
         }
     }
-
 
     private HashMap<String, Boolean> readUserMessage(String message) {
         
