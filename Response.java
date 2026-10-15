@@ -75,7 +75,7 @@ public class Response {
     }
 
     private static int wordCount(String message) {
-        return message.split(" ").length;
+        return message.trim().split(" ").length;
     }
 
     public String sampleBotMessage(String message) {        
@@ -110,7 +110,8 @@ public class Response {
         double A = 1;
         double B = -5.5;
 
-        int message_count = 0;
+        double decayed_message_count = 0;
+        double decayed_word_count = 0;
         String message;
         
         // https://www.typeblast.com/blog/typing-speed-vs-reading-speed/
@@ -119,6 +120,7 @@ public class Response {
         // We will use these metrics as proxies for the time that a user invests in our program.
         int READING_SPEED = 260;
         int TYPING_SPEED = 50;
+        double MEDIOCRE_ENGAGEMENT = ??;
         double LR = 0.1;
         double LR_DECAY = 0.8;
 
@@ -132,9 +134,17 @@ public class Response {
             // Update logit based on score
             logit += A * score + B;
 
-
-            logit
-
+            decayed_message_count *= LR_DECAY;
+            decayed_word_count *= LR_DECAY;
+            
+            decayed_message_count ++;
+            if ((history.size()-1 - i) % 2 == 0) {
+                decayed_word_count += wordCount(message) / TYPING_SPEED;
+            }
+            else {
+                decayed_word_count += wordCount(message) / READING_SPEED;
+            }
+            logit += LR * (decayed_message_count + decayed_word_count - MEDIOCRE_ENGAGEMENT);
         }
     }
 
