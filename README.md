@@ -34,7 +34,8 @@ Luke
 - Helped integrate classes together to make the function.
 - Reviewed other classes to make sure code is up to par.
 Blake
-- placeholder
+- Reviewed specs doc, wrote the JUnit test cases class
+- 
 Hooriah 
 - Reviewed scope, spec, and code within DataVal, Response, and User
 - Helped monitor and document deviations from the spec
