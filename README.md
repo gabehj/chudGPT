@@ -1,4 +1,7 @@
 # chudGPT
+How to compile:
+Download all the files together and run the main class. 
+
 
 Reflection —
 describe what changed between your specification and what you actually built. Your reflection should address:
