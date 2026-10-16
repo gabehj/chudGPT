@@ -174,7 +174,7 @@ public class HashMap<K, V> {
 		ArrayList<V> buffer = new ArrayList<>(); // Create empty new arraylist
 
         ArrayList<Object> objectArray = new ArrayList<>(); // Create object array to store table values
-
+        /*
         for (int i=0; i<table.length; i++) { // Iterate through every list in table
             for (Object o : table[i].toArray()) {
                 objectArray.add(o);
@@ -185,13 +185,13 @@ public class HashMap<K, V> {
             Entry<K, V> node = (Entry<K, V>) obj; // Cast object to entry
             buffer.add(node.getValue()); // Add each entry to arraylist
         }
-        return buffer;/*
+        return buffer;*/
 		for (int i=0; i<table.length; i++) { // Iterate through every list in table
-			for (Entry<K, V> node : (Entry<K, V>[]) table[i].toArray()) { // Iterate through every entry in list
+			for (Entry<K, V> node : table[i].toArray()) { // Iterate through every entry in list
 				buffer.addLast(node.getValue()); // Add each entry to arraylist
 			}
 		}
-		return buffer; */// Return arraylist
+		return buffer; // Return arraylist
 	}
 
     public Iterable<K> keys() {

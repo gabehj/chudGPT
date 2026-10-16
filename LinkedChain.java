@@ -223,8 +223,8 @@ return numberOfEntries == 0;
 * @throws IllegalArgumentException if values is null or too small
 */
 
-public Object[] toArray() { /// Fixed Implementation bc the original one SUCKED. Needed a param
-    Object[] values = new Object[numberOfEntries];
+public T[] toArray() { /// Fixed Implementation bc the original one SUCKED. Needed a param
+    T[] values = (T[]) new Object[numberOfEntries];
     int index = 0;
     Node<T> current = firstNode;
     while (current != null) {
