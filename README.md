@@ -22,10 +22,16 @@ What is left to finish the MVP? The remaining features and fixes, in the order y
 Which stretch goals will you attempt? The ones from your scope you are committing to, and the ones you are dropping.
 What new tests will you need? The methods and bad-input cases the added work must cover.
 Who does what? Which team member owns each remaining item.
+- 
 
 Attribution — 
 a table with one row per class and test file listing who worked on it and how (wrote, revised, reviewed, tested, GenAI-assisted, …), plus a note on the way in which you used GenAI, if at all.
-|Gabe|              |
-|Luke|              |
-|Blake|             |
-|Hooriah| Reviewed scope, spec, and code within DataVal, Response, and User, helped monitor and document deviations from the spec|
+Gabe
+- 
+Luke
+- 
+Blake
+- 
+Hooriah 
+- Reviewed scope, spec, and code within DataVal, Response, and User
+- Helped monitor and document deviations from the spec
