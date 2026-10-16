@@ -2,8 +2,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         /**
-        
-        
         System.out.println("Please enter your first input. ");
         String user = input.nextLine();
         String[][] bank = new String[][] {insults, stem, sycophantic, comedic, polarizing, romantic, professional};
@@ -14,6 +12,7 @@ public class Main {
         input.close();
         */
         //Doesn't run but I think this is how it would be formatted to have the classes interact
+        
         Scanner input = new Scanner(System.in);
         
         User user = new User(new String[] {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});
