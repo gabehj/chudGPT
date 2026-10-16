@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import javax.swing.text.Position;
+
 public class HashMap<K, V> {
 	
 	/* Use Array of DoublylinkedList<K,V> for the Underlying storage for the map of entries.
@@ -61,17 +63,14 @@ public class HashMap<K, V> {
 	}
 	
 	
-	@Override
 	public int size() {
 		return size; // Return variable for number of elements
 	}
 
-	@Override
 	public boolean isEmpty() {
 		return size==0; // True if no elements else false
 	}
 
-	@Override
 	//@TimeComplexity(" O(n) ") //This is for worst case time complexities.
 	//@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
 	public V get(K key) {
@@ -92,8 +91,6 @@ public class HashMap<K, V> {
 		return null; // Nothing to get
 	}
 
-	@SuppressWarnings("unchecked")
-	@Override
 	//@TimeComplexity(" O(n) ") //This is for worst case time complexities.
 	//@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
 	public V put(K key, V value) {
@@ -151,7 +148,6 @@ public class HashMap<K, V> {
 	}
 	
 
-	@Override
 	//@TimeComplexity(" O(n) ") //This is for worst case time complexities.
 	//@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
 	public V remove(K key) {
@@ -178,14 +174,25 @@ public class HashMap<K, V> {
 		return null; // Nothing to remove
 	}
 
-	@Override
-	public Iterable<Entry<K, V>> entrySet() {
+	public Iterable<V> values() {
 		// Hint: call entrySet of each bucket map. 
-		ArrayList<Entry<K,V>> buffer = new ArrayList<>(); // Create empty new arraylist
+		ArrayList<V> buffer = new ArrayList<>(); // Create empty new arraylist
 
 		for (int i=0; i<table.length; i++) { // Iterate through every list in table
 			for (Entry<K, V> node : table[i]) { // Iterate through every entry in list
-				buffer.addLast(node); // Add each entry to arraylist
+				buffer.addLast(node.getValue()); // Add each entry to arraylist
+			}
+		}
+		return buffer; // Return arraylist
+	}
+
+    public Iterable<K> keys() {
+		// Hint: call entrySet of each bucket map. 
+		ArrayList<K> buffer = new ArrayList<>(); // Create empty new arraylist
+
+		for (int i=0; i<table.length; i++) { // Iterate through every list in table
+			for (Entry<K, V> node : table[i]) { // Iterate through every entry in list
+				buffer.addLast(node.getKey()); // Add each entry to arraylist
 			}
 		}
 		return buffer; // Return arraylist
