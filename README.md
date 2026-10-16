@@ -26,12 +26,13 @@ Who does what? Which team member owns each remaining item.
 
 Attribution — 
 a table with one row per class and test file listing who worked on it and how (wrote, revised, reviewed, tested, GenAI-assisted, …), plus a note on the way in which you used GenAI, if at all.
+
 Gabe
-- 
+- placeholder
 Luke
-- 
+- placeholder
 Blake
-- 
+- placeholder
 Hooriah 
 - Reviewed scope, spec, and code within DataVal, Response, and User
 - Helped monitor and document deviations from the spec
