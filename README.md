@@ -33,6 +33,7 @@ Luke
 - Wrote User, DataVal, MessageNode, and part of convo and main classes.
 - Helped integrate classes together to make the function.
 - Reviewed other classes to make sure code is up to par.
+
 Blake
 - Reviewed specs doc, wrote the JUnit test cases class
 - Contributed to the readme file
