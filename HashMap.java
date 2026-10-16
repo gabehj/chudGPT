@@ -1,41 +1,14 @@
-public interface HashMap<K, V> {
+import java.util.ArrayList;
 
-    public V put(K key, V value);
-
-    public V get(K key);
-
-    public V remove(K key);
-
-    public boolean containsKey(K key);
-
-    public boolean containsValue(V value);
-
-    public int size();
-
-    public boolean isEmpty();
-
-    public void clear();
-
-    public Set<K> keySet();
-
-    public ArrayList<V> values();
-}
-
-
-
-package cs2321;
-
-import net.datastructures.*;
-
-public class HashMap<K, V> extends AbstractMap<K,V> {
+public class HashMap<K, V> {
 	
 	/* Use Array of DoublylinkedList<K,V> for the Underlying storage for the map of entries.
 	 * 
 	 */
-	private DoublyLinkedList<Entry<K,V>>[]  table;
-	int 	size;  // number of mappings(entries) 
-	int 	capacity; // The size of the hash table. 
-	int     DefaultCapacity = 17; //The default hash table size
+	private LinkedChain<Entry<K,V>>[]  table;
+	int size;  // number of mappings(entries) 
+	int capacity; // The size of the hash table. 
+	int DefaultCapacity = 17; //The default hash table size
 	
 	/* Maintain the load factor <= 0.75.
 	 * If the load factor is greater than 0.75, 
@@ -53,9 +26,9 @@ public class HashMap<K, V> extends AbstractMap<K,V> {
 		capacity = hashtablesize; // Set capacity to inputed value
 		
 		size = 0; // no elements
-		table = (DoublyLinkedList<Entry<K,V>>[]) new DoublyLinkedList[capacity]; // Construct table of given size
+		table = (LinkedChain<Entry<K,V>>[]) new LinkedChain[capacity]; // Construct table of given size
 	
-		for (int i = 0; i < capacity; i++) table[i] = new DoublyLinkedList<>(); // Construct empty lists for each table index
+		for (int i = 0; i < capacity; i++) table[i] = new LinkedChain<>(); // Construct empty lists for each table index
 	}
 	
 	/**
@@ -68,9 +41,9 @@ public class HashMap<K, V> extends AbstractMap<K,V> {
 		capacity = DefaultCapacity; // Initialize capacity with default 17
 				
 		size = 0; // no elements
-		table = (DoublyLinkedList<Entry<K,V>>[]) new DoublyLinkedList[capacity]; // Construct table of default size
+		table = (LinkedChain<Entry<K,V>>[]) new LinkedChain[capacity]; // Construct table of default size
 		
-		for (int i = 0; i < capacity; i++) table[i] = new DoublyLinkedList<>(); // Construct empty lists for each table index
+		for (int i = 0; i < capacity; i++) table[i] = new LinkedChain<>(); // Construct empty lists for each table index
 
 	}
 	
@@ -164,15 +137,15 @@ public class HashMap<K, V> extends AbstractMap<K,V> {
 	
 	@SuppressWarnings("unchecked")
 	protected void rehash() { // O(n) Create larger table with smaller lists // O(n)
-	    DoublyLinkedList<Entry<K,V>>[] oldTable = table; // Reassign table to different variable
+	    LinkedChain<Entry<K,V>>[] oldTable = table; // Reassign table to different variable
 
 		capacity *= 2; // Double capacity
-		table = (DoublyLinkedList<Entry<K,V>>[]) new DoublyLinkedList[capacity]; // Recreate table object of greater capacity
-		for (int i = 0; i < capacity; i++) table[i] = new DoublyLinkedList<>(); // Create empty lists objects in table
+		table = (LinkedChain<Entry<K,V>>[]) new LinkedChain[capacity]; // Recreate table object of greater capacity
+		for (int i = 0; i < capacity; i++) table[i] = new LinkedChain<>(); // Create empty lists objects in table
 		
 		size = 0; // Reset size to 0
 		
-		for (DoublyLinkedList<Entry<K,V>> list: oldTable) { // Iterate through each list in old table
+		for (LinkedChain<Entry<K,V>> list: oldTable) { // Iterate through each list in old table
 			for (Entry<K,V> entry: list) { // iterate through each entry in old list // O(n)
 				put(entry.getKey(),entry.getValue()); // Add entry to new, larger table // O(n)
 			}

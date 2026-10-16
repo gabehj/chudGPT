@@ -1,12 +1,14 @@
 import java.util.Scanner;
 public class User {
     private String name;
-    LinkedChain<String> interests;
-    Boolean hasPremium = false;
-    DataVal input;
-    public User() {
+    private LinkedChain<String> interests;
+    private Boolean hasPremium = false;
+    private DataVal input;
+    private String[] interestList; //could be other data type just has to be a list of all topics user can choose from
+    public User(String[] interestList) {
         interests = new LinkedChain<String>();
         input = new DataVal();
+        this.interestList = interestList;
     }
 
     public void signAwayYourSoul() {
@@ -14,6 +16,7 @@ public class User {
     }
 
     public String toString() {
+        //Needs implementation still
         return null;
     }
 
@@ -21,11 +24,10 @@ public class User {
         System.out.print("what is your name? ");
         Scanner scannerUser = new Scanner(System.in);
         this.name = scannerUser.nextLine();
-        String[] options = {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"};
-        int count = input.selectFromRange("How many interests do you want to list? (1-" + options.length + ")", 1, options.length);
+        int count = input.selectFromRange("How many interests do you want to list? (1-" + interestList.length + ")", 1, interestList.length);
         int i = 0;
         while (i < count) {
-            String choice = input.selectFromOptions("Pick interest #" + (i + 1) + ":", options);
+            String choice = input.selectFromOptions("Pick interest #" + (i + 1) + ":", interestList);
             if (interests.contains(choice)) {
                 System.out.println("You already listed that one.");
             } else {
@@ -33,5 +35,10 @@ public class User {
                 i++;
             }
         }
+    }
+
+    
+     public int postSurvey() {
+         return input.selectFromRange("How do you rate this conversation on a scale 1 to 10", 1, 10);
     }
 }
