@@ -35,6 +35,7 @@ Luke
 - Reviewed other classes to make sure code is up to par.
 Blake
 - Reviewed specs doc, wrote the JUnit test cases class
+- Contributed to the readme file
 - 
 Hooriah 
 - Reviewed scope, spec, and code within DataVal, Response, and User
