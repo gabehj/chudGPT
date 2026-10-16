@@ -1,7 +1,4 @@
 import java.util.ArrayList;
-
-import javax.swing.text.Position;
-
 public class HashMap<K, V> {
 	
 	/* Use Array of DoublylinkedList<K,V> for the Underlying storage for the map of entries.
