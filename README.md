@@ -58,6 +58,7 @@ Luke
 Blake
 
 - Reviewed specs doc, wrote the JUnit test cases class
+- Went over code from main and LinkedChain classes
 
 Hooriah 
 - Reviewed scope, spec, and code within DataVal, Response, and User
