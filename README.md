@@ -30,7 +30,8 @@ a table with one row per class and test file listing who worked on it and how (w
 Gabe
 - placeholder
 Luke
-- placeholder
+- Wrote User, DataVal, MessageNode, and part of convo and main classes.
+- Helped integrate classes together to make the function.
 Blake
 - placeholder
 Hooriah 
