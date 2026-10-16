@@ -267,5 +267,5 @@ public void testLearnAcceptsNonemptyHistory() {
     response.learn(history, 8.0f);
 
     assertNotNull(response.theMasterList.get("Hello there"));
-}
+    }
 }
