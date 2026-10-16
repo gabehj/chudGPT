@@ -254,4 +254,18 @@ public class ChudGPTTests {
             0.0001
         );
     }
+
+    
+    // This test is a bug catching test and may or may not be necessary, or may need to be removed if updates are made
+    @Test
+public void testLearnAcceptsNonemptyHistory() {
+    Response response = new Response();
+
+    ArrayList<String> history = new ArrayList<>();
+    history.add("Hello there");
+
+    response.learn(history, 8.0f);
+
+    assertNotNull(response.theMasterList.get("Hello there"));
+}
 }
