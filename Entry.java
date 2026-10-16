@@ -8,10 +8,10 @@ public class Entry<K,V>  {
     }
 
     public K getKey() {
-        
+        return this.key;
     }
 
     public V getValue() {
-
+        return this.value;
     }
 }

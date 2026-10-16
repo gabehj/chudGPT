@@ -22,7 +22,6 @@ public class HashMap<K, V> {
 	 */
 	@SuppressWarnings("unchecked")
 	public HashMap(int hashtablesize) {
-		// TODO Add necessary initialization
 		capacity = hashtablesize; // Set capacity to inputed value
 		
 		size = 0; // no elements
@@ -37,7 +36,6 @@ public class HashMap<K, V> {
 	 */
 	@SuppressWarnings("unchecked")
 	public HashMap() {
-		// TODO Add necessary initialization
 		capacity = DefaultCapacity; // Initialize capacity with default 17
 				
 		size = 0; // no elements
@@ -74,8 +72,8 @@ public class HashMap<K, V> {
 	}
 
 	@Override
-	@TimeComplexity(" O(n) ") //This is for worst case time complexities.
-	@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
+	//@TimeComplexity(" O(n) ") //This is for worst case time complexities.
+	//@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
 	public V get(K key) {
 		/* TCJ:
 		 * Value is indexed in trivial time. 
@@ -96,8 +94,8 @@ public class HashMap<K, V> {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	@TimeComplexity(" O(n) ") //This is for worst case time complexities.
-	@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
+	//@TimeComplexity(" O(n) ") //This is for worst case time complexities.
+	//@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
 	public V put(K key, V value) {
 		/* TCJ:
 		 * If linked list at calculated index for inputed key is relatively empty, that the 
@@ -154,8 +152,8 @@ public class HashMap<K, V> {
 	
 
 	@Override
-	@TimeComplexity(" O(n) ") //This is for worst case time complexities.
-	@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
+	//@TimeComplexity(" O(n) ") //This is for worst case time complexities.
+	//@TimeComplexityExpected(" O(1) ") //This is for amortized time complexities.
 	public V remove(K key) {
 			/* TCJ:
 			 * Value is indexed in trivial time. 

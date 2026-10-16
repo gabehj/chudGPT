@@ -23,13 +23,14 @@ HashMap<String keyword, Boolean inBotMessage> isUserKeyword
 */
 
 import java.util.ArrayList;
-
+import java.util.Random;;
 public class Response {
     
     HashMap<String, MessageNode> theMasterList = new HashMap<>();
     HashMap<String, Boolean> isMasterKeyword = new HashMap<>();
 
     Double expected_TD_Engagement = null;
+    int TD_Count = 0;
 
     public Response() {
         for (MessageNode node : theMasterList.values()) {
@@ -70,7 +71,8 @@ public class Response {
     }
 
     private static Double getGumble() {
-        return 1.0;
+        // Not yet real Gumble, just a substitute random distro.
+        return 5 * Math.random();
     }
 
     private static int wordCount(String message) {
@@ -132,6 +134,7 @@ public class Response {
             // Update logit based on score
             logit += A * score + B;
 
+            // Exponential Rolling Average. Calcualates engagement but is contrived. Will perfect later.
             decayed_message_count *= MOMENTUM;
             decayed_word_count *= MOMENTUM;
             
@@ -142,11 +145,16 @@ public class Response {
             else {
                 decayed_word_count += wordCount(message) / READING_SPEED;
             }
+
+            // Learning based on previous convo only, or no learning if none. Change to real TD next week.
             if (expected_TD_Engagement != null) {
                 logit += LR * (decayed_message_count + decayed_word_count - expected_TD_Engagement);
+                expected_TD_Engagement = decayed_message_count + decayed_word_count;
             }
-            expected_TD_Engagement *= MOMENTUM;
-            expected_TD_Engagement = decayed_message_count + decayed_word_count;
+            else {
+                expected_TD_Engagement *= (1/TD_Count) * (TD_Count+1);
+            }
+            TD_Count ++;
         }
     }
 
@@ -166,14 +174,15 @@ public class Response {
         // Not necessary until we handle big data
         return;
     }
-
+}
+/* 
     boolean isAlphanumeric(final int codePoint) {
         return (codePoint >= 65 && codePoint <= 90) ||
             (codePoint >= 97 && codePoint <= 122) ||
             (codePoint >= 48 && codePoint <= 57);
     }
 }
-
+*/
 /*
 Time Complexity Justification (TCJ) for Response.java
 
