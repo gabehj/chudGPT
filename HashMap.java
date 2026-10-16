@@ -173,7 +173,7 @@ public class HashMap<K, V> {
 		// Hint: call entrySet of each bucket map. 
 		ArrayList<V> buffer = new ArrayList<>(); // Create empty new arraylist
 
-        ArrayList<Object> objectArray = new ArrayList<>(); // Create object array to store table values
+        //ArrayList<Object> objectArray = new ArrayList<>(); // Create object array to store table values
         /*
         for (int i=0; i<table.length; i++) { // Iterate through every list in table
             for (Object o : table[i].toArray()) {

@@ -222,7 +222,6 @@ return numberOfEntries == 0;
 * @return the array containing all entries in the chain
 * @throws IllegalArgumentException if values is null or too small
 */
-
 public T[] toArray() { /// Fixed Implementation bc the original one SUCKED. Needed a param
     T[] values = (T[]) new Object[numberOfEntries];
     int index = 0;
