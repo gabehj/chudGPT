@@ -15,7 +15,7 @@ What changed from your specification? Classes, method signatures, where validati
 
 What changed in the LinkedChain? Anything you added to or modified in the provided class and why your application needed it, or that you used it unchanged.
 
-- We used the LinkedChain unchanged
+- We fixed the toArray method of the LC, because the CS2114 version was not useful. Ours still does not typecast, which we will fix.
   What happened to your unknowns? Of the things you listed in your scope as not knowing how to do, which did you figure out, and which are still open?
 - We were able to implement an algorithm for RL through the learn() function
 - A time function was not necessary, and we still don't know how to have the chatbot generate its own messages rather than picking from a set list of responses
