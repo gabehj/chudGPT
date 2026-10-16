@@ -20,7 +20,6 @@ What changed in the LinkedChain? Anything you added to or modified in the provid
 - We were able to implement an algorithm for RL through the learn() function
 - A time function was not necessary, and we still don't know how to have the chatbot generate its own messages rather than picking from a set list of responses
   What doesn't work yet? MVP features, bad-input cases, or tests that are missing or failing in this prototype.
-- 
 
 What is left to finish the MVP? The remaining features and fixes, in the order you will do them.
 
