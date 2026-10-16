@@ -5,6 +5,7 @@ public class User {
     private Boolean hasPremium = false;
     private DataVal input;
     private String[] interestList; //could be other data type just has to be a list of all topics user can choose from
+    
     public User(String[] interestList) {
         interests = new LinkedChain<String>();
         input = new DataVal();
@@ -18,6 +19,10 @@ public class User {
     public String toString() {
         //Needs implementation still
         return null;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void accountRegistration() {
@@ -38,7 +43,7 @@ public class User {
     }
 
     
-     public int postSurvey() {
+    public int postSurvey() {
          return input.selectFromRange("How do you rate this conversation on a scale 1 to 10", 1, 10);
     }
 }

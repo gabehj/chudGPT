@@ -102,7 +102,7 @@ public class Response {
         return max_message;
     }
 
-    public void learn(ArrayList<String> history, Float score) {
+    public void learn(ArrayList<String> history, int score) {
         
         MessageNode node = null;
         double logit = 0;
