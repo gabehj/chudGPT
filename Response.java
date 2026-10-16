@@ -23,7 +23,6 @@ HashMap<String keyword, Boolean inBotMessage> isUserKeyword
 */
 
 import java.util.ArrayList;
-import java.util.Random;;
 public class Response {
     
     HashMap<String, MessageNode> theMasterList = new HashMap<>();
@@ -162,7 +161,7 @@ public class Response {
         HashMap<String, Boolean> isUserKeyword = readUserMessage(message);
         
         ArrayList<String> themes = new ArrayList<>();
-        for (String keyword : isUserKeyword.keySet()) {
+        for (String keyword : isUserKeyword.keys()) {
             themes.add(keyword);
         }        
 

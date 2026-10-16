@@ -83,7 +83,7 @@ public class HashMap<K, V> {
 		 */
 		int index = hashValue(key); // Hash key to get table index
 		
-		for (Entry<K, V> entry: table[index]) { // Iterate through list at table index
+		for (Entry<K, V> entry: table[index].toArray()) { // Iterate through list at table index
 			if (entry.getKey().equals(key)) { // See if any entries with matching indices have matching keys
 				return entry.getValue(); // Return value for entry with inputed key
 			}
@@ -105,25 +105,24 @@ public class HashMap<K, V> {
 		int index = hashValue(key); // Hash key to get table index
 		
 		// Case 1: Key is already in table
-		for (Position<Entry<K, V>> pos: table[index].positions()) {// Iterate through each node in list for table index // O(n)
-			Entry<K,V> entry = pos.getElement(); // Extract element from node for simplicity
+		for (Entry<K, V> entry: table[index].toArray()) {// Iterate through each node in list for table index // O(n)
 			
 			if (entry.getKey().equals(key)) { // Check if entry key equals inputed key for each node of matching index
 				V old = entry.getValue(); // Store old entry value to get replaced
-				table[index].remove(pos); // Remove entry entirely from list O(1)
-				table[index].addLast(new mapEntry(key, value)); // Append new node with same key and index but new value O(1)
+				entry.setValue(value); // Replace value of entry O(1)
 				
 				return old; // Return old entry value
 			}
 		}
 		// Case 2: New element is added
-		Entry<K,V> newEntry = new mapEntry<>(key, value); // Create new entry object with inputed variables
+		Entry<K,V> newEntry = new Entry<>(key, value); // Create new entry object with inputed variables
 		
-		table[index].addLast(newEntry); // Append new entry to correct list
-		
+		LinkedChain<Entry<K,V>> list = table[index];
+		list.add(newEntry); // Append new entry to correct list O(1)
+        
 		size++; // Increment size
 		
-		if ((double) size/ (double) capacity > loadfactor) { // Determine if table is crowded and rehashing is needed
+		if ((double) size / (double) capacity > loadfactor) { // Determine if table is crowded and rehashing is needed
 			rehash(); // Call rehash method O(n)
 		}
 		return null; // No previous value
@@ -141,7 +140,7 @@ public class HashMap<K, V> {
 		size = 0; // Reset size to 0
 		
 		for (LinkedChain<Entry<K,V>> list: oldTable) { // Iterate through each list in old table
-			for (Entry<K,V> entry: list) { // iterate through each entry in old list // O(n)
+			for (Entry<K,V> entry: list.toArray()) { // iterate through each entry in old list // O(n)
 				put(entry.getKey(),entry.getValue()); // Add entry to new, larger table // O(n)
 			}
 		}
@@ -160,12 +159,11 @@ public class HashMap<K, V> {
 			 */
 		int index = hashValue(key); // Hash key to get table index
 		
-		for (Position<Entry<K, V>> pos: table[index].positions()) { // Iterate through each node in list for table index
-			Entry<K,V> entry = pos.getElement();  // Extract element from node for simplicity
+		for (Entry<K, V> entry: table[index].toArray()) { // Iterate through each node in list for table index
 			
 			if (entry.getKey().equals(key)) { // Determine if key matches inputed key
 				V old = entry.getValue(); // Store old entry vale to variable
-				table[index].remove(pos); // remove entry from linked list
+				table[index].remove(entry); // remove entry from linked list
 				
 				size--; // Decrement size
 				return old; // Return old value
@@ -179,7 +177,7 @@ public class HashMap<K, V> {
 		ArrayList<V> buffer = new ArrayList<>(); // Create empty new arraylist
 
 		for (int i=0; i<table.length; i++) { // Iterate through every list in table
-			for (Entry<K, V> node : table[i]) { // Iterate through every entry in list
+			for (Entry<K, V> node : table[i].toArray()) { // Iterate through every entry in list
 				buffer.addLast(node.getValue()); // Add each entry to arraylist
 			}
 		}
@@ -191,7 +189,7 @@ public class HashMap<K, V> {
 		ArrayList<K> buffer = new ArrayList<>(); // Create empty new arraylist
 
 		for (int i=0; i<table.length; i++) { // Iterate through every list in table
-			for (Entry<K, V> node : table[i]) { // Iterate through every entry in list
+			for (Entry<K, V> node : table[i].toArray()) { // Iterate through every entry in list
 				buffer.addLast(node.getKey()); // Add each entry to arraylist
 			}
 		}

@@ -222,27 +222,16 @@ return numberOfEntries == 0;
 * @return the array containing all entries in the chain
 * @throws IllegalArgumentException if values is null or too small
 */
-public T[] toArray(T[] values)
-{
-if (values == null)
-{
-throw new IllegalArgumentException("Array must not be null");
-}
-if (values.length < numberOfEntries)
-{
-throw new IllegalArgumentException(
-"Array of length " + values.length
-+ " is too small for " + numberOfEntries + " entries");
-}
-int index = 0;
-Node<T> current = firstNode;
-while (current != null)
-{
-values[index] = current.data;
-index++;
-current = current.next;
-}
-return values;
+public T[] toArray() { /// Fixed Implementation bc the original one SUCKED. Needed a param
+    T[] values = (T[]) new Object[numberOfEntries];
+    int index = 0;
+    Node<T> current = firstNode;
+    while (current != null) {
+        values[index] = current.data;
+        index++;
+        current = current.next;
+    }
+    return values;
 }
 /**
 * Returns a readable listing of the chain, first entry first,
