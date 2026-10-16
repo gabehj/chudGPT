@@ -29,6 +29,7 @@ public class Response {
     HashMap<String, MessageNode> theMasterList = new HashMap<>();
     HashMap<String, Boolean> isMasterKeyword = new HashMap<>();
 
+    Double expected_TD_Engagement = null;
 
     public Response() {
         for (MessageNode node : theMasterList.values()) {
@@ -118,9 +119,8 @@ public class Response {
         // We will use these metrics as proxies for the time that a user invests in our program.
         int READING_SPEED = 260;
         int TYPING_SPEED = 50;
-        double MEDIOCRE_ENGAGEMENT = ??;
         double LR = 0.1;
-        double LR_DECAY = 0.8;
+        double MOMENTUM = 0.8;
 
         for (int i = history.size()-1; i >= 0; i--) {
             message = history.get(i);
@@ -132,8 +132,8 @@ public class Response {
             // Update logit based on score
             logit += A * score + B;
 
-            decayed_message_count *= LR_DECAY;
-            decayed_word_count *= LR_DECAY;
+            decayed_message_count *= MOMENTUM;
+            decayed_word_count *= MOMENTUM;
             
             decayed_message_count ++;
             if ((history.size()-1 - i) % 2 == 0) {
@@ -142,7 +142,11 @@ public class Response {
             else {
                 decayed_word_count += wordCount(message) / READING_SPEED;
             }
-            logit += LR * (decayed_message_count + decayed_word_count - MEDIOCRE_ENGAGEMENT);
+            if (expected_TD_Engagement != null) {
+                logit += LR * (decayed_message_count + decayed_word_count - expected_TD_Engagement);
+            }
+            expected_TD_Engagement *= MOMENTUM;
+            expected_TD_Engagement = decayed_message_count + decayed_word_count;
         }
     }
 

@@ -4,6 +4,7 @@ public class MessageNode {
     private String message;
     private ArrayList<String> themes;
     private double logit;
+    
     public MessageNode(String message, ArrayList<String> themes, double logit) {
         this.message = message;
         this.themes = themes;
