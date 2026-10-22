@@ -11,8 +11,7 @@ public class Main {
         }
         input.close();
         */
-        //Doesn't run but I think this is how it would be formatted to have the classes interact
-        
+        //Doesn't run but I think this is how it would be formatted to have the classes interact        
 
         Scanner input = new Scanner(System.in);
         

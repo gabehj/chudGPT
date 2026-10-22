@@ -1,0 +1,5 @@
+One of the things that we would do if we had more time would make the bot's messages relationally adaptive.
+Instead of incrementing logits by a hyperparam every time, we could Instead have each word correspond to its 
+own logit incrementor. Doing so, the bot could also become relationally adaptive, where after poor conversations,
+it can disassociate certain messages with certain key words. Additionally, keywords could move between messages overtime 
+if a message is successful when surrounded by others of a certain keyword.

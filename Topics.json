@@ -1,6 +1,6 @@
 {
-    "I think we just accidentally invented a machine learning problem.": {"message": "I think we just accidentally invented a machine learning problem.", "keywords": ["machine learning", "problem", "accidentally", "invented"], "logit": 0.0},
-    "Personally, I completely disagree with the claim that the AI bubble is going to burst.": {"message": "Personally, I completely disagree with the claim that the AI bubble is going to burst.", "keywords": ["ai", "economy", "machine learning", "disagree"], "logit": 0.0}
+    "I think we just accidentally invented a machine learning problem.": {"message": "I think we just accidentally invented a machine learning problem.", "keywords": ["machine learning", "problem", "accidentally", "invented", "stem"], "logit": 0.0},
+    "Personally, I completely disagree with the claim that the AI bubble is going to burst.": {"message": "Personally, I completely disagree with the claim that the AI bubble is going to burst.", "keywords": ["ai", "economy", "machine learning", "disagree", "stem", "polarizing"], "logit": 0.0}
 }
 The actual .json form we should be using is right above
 

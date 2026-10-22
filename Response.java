@@ -24,10 +24,11 @@ HashMap<String keyword, Boolean inBotMessage> isUserKeyword
 
 import java.util.ArrayList;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import java.io.File;
-import java.io.IOException;
+/**
+ * Response class takes the user profile and message bank. 
+ * Then, it can decide which message to respond with for any given user message.
+ * Finally, it can update message likelihoods based on conversation engagement.
+ */
 public class Response {
     
     User user = null;
@@ -45,18 +46,19 @@ public class Response {
     Double expected_TD_Engagement = null;
     int TD_Count = 0; // Total conversations
 
-    public Response(User user) {
+    /**
+     *    RESPONSE CONSTRUCTOR
+     * @param user user object that bot is conversing with
+     */
+    public Response(User user, HashMap<String, MessageNode> theMasterList) {
 
         this.user = user; // Store user info in user object
+        this.theMasterList = theMasterList;
 
         // Iterate through user interests and add each keyword to isUserProfileKeyword
         for (String profileKeyword: user.getInterests().toArray()) {
             isUserProfileKeyword.put(profileKeyword, true);
         }
-
-        // Hashmap containing all of the words that will be searched for in user message
-            // words in getThemes could be in user listed interests or specific to the given bot messages
-            // the user listed interests are actually a *subset* of the total keywords
 
         // Iterate through each keyword in the botmessages and add to isMasterKeyword
         for (MessageNode node : theMasterList.values()) {
@@ -64,8 +66,13 @@ public class Response {
                 isMasterKeyword.put(keyword, true);
             }
         }
-    }
+    } 
 
+    /**
+     *    Scan user message for keywords listed in isMasterKeyword from the botmessages.
+     * @param message the message from the user
+     * @return HashMap containng all of the keyworks in the user message that are also in isMasterKeyword
+     */
     private HashMap<String, Boolean> readUserMessage(String message) {
         
         HashMap<String, Boolean> isUserKeyword = new HashMap<>();
@@ -96,11 +103,21 @@ public class Response {
         return isUserKeyword;
     }
 
+    /**
+     *  Get a random number from a Gumbel distribution to sample from the logits with an
+     * aproximation of softmax.
+     * @return double
+     */
     private static Double getGumble() {
         // Not yet real Gumble, just a substitute random distro.
         return 5 * Math.random();
     }
 
+    /**
+     *    Count the number of words in a message.
+     * @param message the message to count words in
+     * @return the number of words in the message
+     */
     private static int wordCount(String message) {
         return message.trim().split(" ").length;
     }
@@ -155,7 +172,7 @@ public class Response {
         int READING_SPEED = 260;
         int TYPING_SPEED = 50;
 
-
+        
         for (int i = history.size()-1; i >= 0; i--) {
             message = history.get(i);
             if (theMasterList.get(message) == null) newVocab(message);
