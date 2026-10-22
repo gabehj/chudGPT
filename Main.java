@@ -1,5 +1,12 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.File;
+import java.util.HashMap;
 import java.util.Scanner;
 public class Main {
+    
+    Scanner input = new Scanner(System.in);
+    private static final ObjectMapper mapper = new ObjectMapper();
+    
     public static void main(String[] args) {
         /**
         System.out.println("Please enter your first input. ");
@@ -12,14 +19,16 @@ public class Main {
         input.close();
         */
         //Doesn't run but I think this is how it would be formatted to have the classes interact        
+        
+
 
         HashMap<String,MessageNode> messageBank = new HashMap<>();
 
-
         // Read .json
+        HashMap<String, Object> rawData = mapper.readValue("message_bank.json", HashMap.class);
+        
+        System.out.println("Raw data: " + rawData.keySet());
 
-
-        Scanner input = new Scanner(System.in);
         
         User user = new User(new String[] {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});
         user.accountRegistration();

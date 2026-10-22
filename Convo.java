@@ -7,14 +7,15 @@ public class Convo {
     
     public Convo(User user, Response botMessages) {
         this.user = user;
-        this.botMessages = new Response();
+        this.botMessages = botMessages;
         this.conversationHistory = new ArrayList<>();
     }
 
     public void startConversation() {
-        String botMessage = "Hello, " + user.getName() + "! What would you like to talk about?";
-
         Scanner input = new Scanner(System.in);
+        
+        String botMessage = "Greetings, " + user.getName() + ". What shall we discuss? ";
+
         System.out.println(botMessage);
         String message = input.nextLine();
 
