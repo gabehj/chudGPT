@@ -23,7 +23,6 @@ HashMap<String keyword, Boolean inBotMessage> isUserKeyword
 */
 
 import java.util.ArrayList;
-
 /**
  * Response class takes the user profile and message bank. 
  * Then, it can decide which message to respond with for any given user message.
@@ -122,6 +121,12 @@ public class Response {
         return message.trim().split(" ").length;
     }
 
+    /**
+     *   Uses gumble softmax, with logits adjusted for keywords shared by the user message and the bot message,
+     *  and the user profile and the bot message
+     * @param message
+     * @return
+     */
     public String sampleBotMessage(String message) {        
         HashMap<String, Boolean> isUserKeyword = readUserMessage(message);
         
@@ -151,20 +156,23 @@ public class Response {
     }
 
     /**
-     * 
-     * @param history
-     * @param score
+     *   Iterates through each message in the history and updates logits based on user survey. 
+     * Then, updates logits using the count of words and messages compared to past conversations. 
+     * Finally, adds user messages to theMasterList if they are not already present, and adds the user profile keywords to the message node.
+     * @param history Arraylist containing each string message used by user and bot in convo, chronologically ordered
+     * @param score integer 1-10 inputed by user rating the convo.
      */
     public void learn(ArrayList<String> history, int score) {
         
         MessageNode node = null;
         double logit = 0;
 
-        double decayed_message_count = 0;
-        double decayed_word_count = 0;
+        double decayed_message_count = 0; // Counts number of messages starting from the last, but with 
+        // Beta decay for later messages so that the length of convo attributed to a given message is more accurate
+        double decayed_word_count = 0; // Counts total number of words in convo, with Beta decay for each later message
         String message;
         
-        // HYPERPARAMETERS
+    // HYPERPARAMETERS
         
         double SCORE_WEIGHT = 1; // How much logits are updated for a given score
         double SCORE_BIAS = -5.5; // Baseline Score: Anything greater results in logit increase.
@@ -178,7 +186,7 @@ public class Response {
         int READING_SPEED = 260; // According to the site above, mean reading speed for fiction is 260 wpm;
         int TYPING_SPEED = 50; // mean typing speed is 50 wpm.
         
-        //
+    //
         
         // Iterate through every message recorded in the conversation
         for (int i = history.size()-1; i >= 0; i--) {
@@ -208,15 +216,18 @@ public class Response {
 
             // Learning based on previous convo only, or no learning if none. Change to real TD next week.
             
-            if (expected_TD_Engagement != null) {
+            if (expected_TD_Engagement != null) { // If bot has expectation, it can be surprised by convo and learn accordingly
                 logit += LR * (decayed_message_count + decayed_word_count - expected_TD_Engagement);
-                expected_TD_Engagement *= (1/TD_Count) * (TD_Count+1);
+                // Increase logit by learning rate * (the difference between the expected engagement and the actual engagement)
+
+                expected_TD_Engagement *= (1/TD_Count) * (TD_Count+1); 
+                // Factors in the most recent engagement score into the average for future expectation
             }
             else {
                 expected_TD_Engagement = decayed_message_count + decayed_word_count;
                 // Sets first expected engagement score to the first conversation, because bot has nothing else to predict from
             }
-            TD_Count ++;
+            TD_Count ++; // Increment total conversation count for future expected engagement calculations
         }
     }
 
@@ -242,11 +253,15 @@ public class Response {
 
         // Instantiate new messagenode object
         MessageNode new_node = new MessageNode(message, themes, 0.0);
-
+        
         // Add the new message to theMasterList. The bot's vocab increases with every user message.
         theMasterList.put(message, new_node);
     }
-
+     
+    /**
+     *  Iterates through theMasterList and removes the entry with the lowest logit num times to reduce N for furture compute
+     * @param num number of messages to remove from theMasterList
+     */
     private void distill(int num) {
         // Not necessary until we handle big data
         return;

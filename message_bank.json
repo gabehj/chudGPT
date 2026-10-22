@@ -21,12 +21,12 @@
         "keywords": ["success", "life", "happiness", "career", "achievement", "purpose", "personal growth", "inspiration"],
         "logit": 0.0
     },
+
     "I still think about that conversation sometimes, mostly because I wish I had been brave enough to tell you how I really felt.": {
         "message": "I still think about that conversation sometimes, mostly because I wish I had been brave enough to tell you how I really felt.",
         "keywords": ["conversation", "feelings", "regret", "confession", "love", "relationship", "vulnerability", "romantic"],
         "logit": 0.0
     },
-
 
     "I think we just accidentally invented a machine learning problem.": {
         "message": "I think we just accidentally invented a machine learning problem.", 
