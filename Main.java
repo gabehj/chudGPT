@@ -19,7 +19,7 @@ public class Main {
         User user = new User(new String[] {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});
         user.accountRegistration();
         
-        Response response = new Response();
+        Response response = new Response(user);
         Convo convo = new Convo(user, response);
         
         String haveConvo = "";

@@ -30,27 +30,35 @@ import java.io.File;
 import java.io.IOException;
 public class Response {
     
-    
+    User user = null;
 
+    // Stores the words of the user profile
+    HashMap<String, Boolean> isUserProfileKeyword = new HashMap<>();
 
+    // Stores each bot message and all the metadata about it
     HashMap<String, MessageNode> theMasterList = new HashMap<>();
-    
-    //TEST
-    MessageNode add = new MessageNode("Please consider upgrading to premium for more features.", new ArrayList<String>(), 0.0);
-    //
 
+    // Stores each word that at least one botmessage is scanning the message and user profile for
     HashMap<String, Boolean> isMasterKeyword = new HashMap<>();
 
+    // Average time of all conversations so far.
     Double expected_TD_Engagement = null;
-    int TD_Count = 0;
+    int TD_Count = 0; // Total conversations
 
-    public Response() {
+    public Response(User user) {
 
-        //TEST
-        add.addTheme("premium");
-        theMasterList.put(add.getMessage(),add);
-        //
+        this.user = user; // Store user info in user object
 
+        // Iterate through user interests and add each keyword to isUserProfileKeyword
+        for (String profileKeyword: user.getInterests().toArray()) {
+            isUserProfileKeyword.put(profileKeyword, true);
+        }
+
+        // Hashmap containing all of the words that will be searched for in user message
+            // words in getThemes could be in user listed interests or specific to the given bot messages
+            // the user listed interests are actually a *subset* of the total keywords
+
+        // Iterate through each keyword in the botmessages and add to isMasterKeyword
         for (MessageNode node : theMasterList.values()) {
             for (String keyword : node.getThemes()) {
                 isMasterKeyword.put(keyword, true);
@@ -103,14 +111,18 @@ public class Response {
         double max_logit = Integer.MIN_VALUE;
         String max_message = "ERROR: Message not sampled";
 
+        // Iterate through every botmessage
         for (MessageNode node : theMasterList.values()) {
             double logit = node.getLogit();
             
+            // IMPORTANT: Iterate through each keyword in a botmessage and increment
+            //  its logit for every match in the user message and user profile
             for (String keyword : node.getThemes()) {
-                if (isUserKeyword.get(keyword) != null) logit ++;
+                if (isUserKeyword.get(keyword) != null) logit ++; // Scan message to increase probability
+                if (isUserProfileKeyword.get(keyword) != null) logit ++; // Scan Profile to increase prob
             }
 
-            logit += getGumble();
+            logit += getGumble(); // Add randomness to logits to sample as a softmax
 
             if (logit > max_logit) {
                 max_logit = logit;
@@ -133,14 +145,16 @@ public class Response {
         double decayed_word_count = 0;
         String message;
         
+        // HYPERPARAMETERS
+        double LR = 0.1;
+        double MOMENTUM = 0.8;
         // https://www.typeblast.com/blog/typing-speed-vs-reading-speed/
         // According to the site above, mean reading speed for fiction is 260 wpm;
         // mean typing speed is 50 wpm.
         // We will use these metrics as proxies for the time that a user invests in our program.
         int READING_SPEED = 260;
         int TYPING_SPEED = 50;
-        double LR = 0.1;
-        double MOMENTUM = 0.8;
+
 
         for (int i = history.size()-1; i >= 0; i--) {
             message = history.get(i);
