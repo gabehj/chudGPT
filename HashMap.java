@@ -188,7 +188,7 @@ public class HashMap<K, V> {
         return buffer;*/
 		for (int i=0; i<table.length; i++) { // Iterate through every list in table
 			for (Entry<K, V> node : table[i].toArray()) { // Iterate through every entry in list
-				buffer.addLast(node.getValue()); // Add each entry to arraylist
+				buffer.add(node.getValue()); // Add each entry to arraylist
 			}
 		}
 		return buffer; // Return arraylist
@@ -200,7 +200,7 @@ public class HashMap<K, V> {
 
 		for (int i=0; i<table.length; i++) { // Iterate through every list in table
 			for (Entry<K, V> node : table[i].toArray()) { // Iterate through every entry in list
-				buffer.addLast(node.getKey()); // Add each entry to arraylist
+				buffer.add(node.getKey()); // Add each entry to arraylist
 			}
 		}
 		return buffer; // Return arraylist
