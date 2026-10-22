@@ -27,7 +27,10 @@ public class Convo {
 
             input.nextLine();
         }
-        input.close();
+        // closing the scanner here, closes scanner for all classes. Causes errors in postSurvey() and other classes as well
+        // could close input after postSurvey() is called, or just remove the line entirely.
+        // fix throughout program: create one scanner object and pass it to any class that needs a scanner
+        // input.close();
 
         int score = user.postSurvey();
         botMessages.learn(conversationHistory, score);
