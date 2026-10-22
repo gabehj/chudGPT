@@ -56,24 +56,9 @@ Luke
 Blake
 
 - Reviewed specs doc, wrote the JUnit test cases class
-  <<<<<<< HEAD
 
 Hooriah
-
-=======
-
-- Contributed to the readme file
-- 
-
-Hooriah
-
->>>>>>> e0df5c825b68b00ab17851b994e2737fa2bc49e7
->>>>>>>
->>>>>>
->>>>>
->>>>
->>>
->>
 
 - Reviewed scope, spec, and code within DataVal, Response, and User
 - Helped monitor and document deviations from the spec
+- Contributed to the readme file
