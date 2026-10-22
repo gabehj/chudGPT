@@ -207,15 +207,30 @@ public class Response {
         }
     }
 
+    /**
+     * Reads user message and finds all pertinent keywords, and adds them to message node class. 
+     * Also adds the user profile words to the node class. Adds the new message to theMasterList
+     * @param message takes in message string that was inputed by user
+     */
     public void newVocab (String message) {
+        // Read user message to isolate important words
         HashMap<String, Boolean> isUserKeyword = readUserMessage(message);
         
+        // Add impotant words to the message's node class
         ArrayList<String> themes = new ArrayList<>();
         for (String keyword : isUserKeyword.keys()) {
             themes.add(keyword);
-        }        
+        }
 
+        // Also add the user interests as keywords
+        for (String profileKeyword: isUserProfileKeyword.keys()) {
+            themes.add(profileKeyword);
+        }
+
+        // Instantiate new messagenode object
         MessageNode new_node = new MessageNode(message, themes, 0.0);
+
+        // Add the new message to theMasterList. The bot's vocab increases with every user message.
         theMasterList.put(message, new_node);
     }
 
