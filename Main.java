@@ -14,7 +14,12 @@ public class Main {
         //Doesn't run but I think this is how it would be formatted to have the classes interact        
 
         HashMap<String,MessageNode> messageBank = new HashMap<>();
-        
+
+
+        // Read .json
+
+
+
         Scanner input = new Scanner(System.in);
         
         User user = new User(new String[] {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});
@@ -37,5 +42,8 @@ public class Main {
                 break;
             }
         }     
+
+
+        // Write .json
     }
 }

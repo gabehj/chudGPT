@@ -150,58 +150,71 @@ public class Response {
         return max_message;
     }
 
+    /**
+     * 
+     * @param history
+     * @param score
+     */
     public void learn(ArrayList<String> history, int score) {
         
         MessageNode node = null;
         double logit = 0;
-        
-        double A = 1;
-        double B = -5.5;
 
         double decayed_message_count = 0;
         double decayed_word_count = 0;
         String message;
         
         // HYPERPARAMETERS
-        double LR = 0.1;
-        double MOMENTUM = 0.8;
-        // https://www.typeblast.com/blog/typing-speed-vs-reading-speed/
-        // According to the site above, mean reading speed for fiction is 260 wpm;
-        // mean typing speed is 50 wpm.
-        // We will use these metrics as proxies for the time that a user invests in our program.
-        int READING_SPEED = 260;
-        int TYPING_SPEED = 50;
-
         
+        double SCORE_WEIGHT = 1; // How much logits are updated for a given score
+        double SCORE_BIAS = -5.5; // Baseline Score: Anything greater results in logit increase.
+        //  Lower scored decrease logits
+        
+        double LR = 0.1; // How much logits are changed based on words and messages.
+        double MOMENTUM = 0.8; //  De
+        
+        // https://www.typeblast.com/blog/typing-speed-vs-reading-speed/
+        // We will use these metrics as proxies for the time that a user invests in our program.
+        int READING_SPEED = 260; // According to the site above, mean reading speed for fiction is 260 wpm;
+        int TYPING_SPEED = 50; // mean typing speed is 50 wpm.
+        
+        //
+        
+        // Iterate through every message recorded in the conversation
         for (int i = history.size()-1; i >= 0; i--) {
-            message = history.get(i);
-            if (theMasterList.get(message) == null) newVocab(message);
+            message = history.get(i); // Get each message string from the history
+            // Create new message entry in theMasterList if nonexistent
+            if (theMasterList.get(message) == null) newVocab(message); 
 
-            node = theMasterList.get(message);
-            logit = node.getLogit();
+            node = theMasterList.get(message); // Get messageNode for the message
+            logit = node.getLogit(); // Get message logit
             
             // Update logit based on score
-            logit += A * score + B;
+            logit += SCORE_WEIGHT * score + SCORE_BIAS;
 
             // Exponential Rolling Average. Calcualates engagement but is contrived. Will perfect later.
             decayed_message_count *= MOMENTUM;
             decayed_word_count *= MOMENTUM;
             
-            decayed_message_count ++;
-            if ((history.size()-1 - i) % 2 == 0) {
-                decayed_word_count += wordCount(message) / TYPING_SPEED;
+            decayed_message_count ++; // Increment message count
+
+            // Message was written by user if its location is an even index from the beginning, else read.
+            if ((history.size()-1 - i) % 2 == 0) { // The first message recorded is from the user
+                decayed_word_count += wordCount(message) / TYPING_SPEED; // Time spent is # words / typing wpm
             }
             else {
-                decayed_word_count += wordCount(message) / READING_SPEED;
+                decayed_word_count += wordCount(message) / READING_SPEED; // Time spent is # words / reading wpm
             }
 
             // Learning based on previous convo only, or no learning if none. Change to real TD next week.
+            
             if (expected_TD_Engagement != null) {
                 logit += LR * (decayed_message_count + decayed_word_count - expected_TD_Engagement);
-                expected_TD_Engagement = decayed_message_count + decayed_word_count;
+                expected_TD_Engagement *= (1/TD_Count) * (TD_Count+1);
             }
             else {
-                expected_TD_Engagement *= (1/TD_Count) * (TD_Count+1);
+                expected_TD_Engagement = decayed_message_count + decayed_word_count;
+                // Sets first expected engagement score to the first conversation, because bot has nothing else to predict from
             }
             TD_Count ++;
         }
