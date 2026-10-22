@@ -170,7 +170,6 @@ public class HashMap<K, V> {
 	}
 
 	public Iterable<V> values() {
-		// Hint: call entrySet of each bucket map. 
 		ArrayList<V> buffer = new ArrayList<>(); // Create empty new arraylist
 
         //ArrayList<Object> objectArray = new ArrayList<>(); // Create object array to store table values
@@ -195,7 +194,6 @@ public class HashMap<K, V> {
 	}
 
     public Iterable<K> keys() {
-		// Hint: call entrySet of each bucket map. 
 		ArrayList<K> buffer = new ArrayList<>(); // Create empty new arraylist
 
 		for (int i=0; i<table.length; i++) { // Iterate through every list in table

@@ -19,7 +19,6 @@ public class Main {
         // Read .json
 
 
-
         Scanner input = new Scanner(System.in);
         
         User user = new User(new String[] {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});
