@@ -246,11 +246,11 @@ public class ChudGPTTests {
     @Test
     public void testNewVocabInitializesLogitToZero() {
         Response response = new Response();
-        response.newVocab("A new message");
+        response.newVocab("User message");
 
         assertEquals(
             0.0,
-            response.theMasterList.get("A new message").getLogit(),
+            response.theMasterList.get("User message").getLogit(),
             0.0001
         );
     }
@@ -262,10 +262,10 @@ public void testLearnAcceptsNonemptyHistory() {
     Response response = new Response();
 
     ArrayList<String> history = new ArrayList<>();
-    history.add("Hello there");
+    history.add("Hello");
 
     response.learn(history, 8.0f);
 
-    assertNotNull(response.theMasterList.get("Hello there"));
-}
+    assertNotNull(response.theMasterList.get("Hello"));
+    }
 }
