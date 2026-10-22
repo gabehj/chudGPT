@@ -1,4 +1,10 @@
 {
+    "I think we just accidentally invented a machine learning problem.": {"message": "I think we just accidentally invented a machine learning problem.", "keywords": ["machine learning", "problem", "accidentally", "invented"], "logit": 0.0},
+    "Personally, I completely disagree with the claim that the AI bubble is going to burst.": {"message": "Personally, I completely disagree with the claim that the AI bubble is going to burst.", "keywords": ["ai", "economy", "machine learning", "disagree"], "logit": 0.0}
+}
+The actual .json form we should be using is right above
+
+{
     "insults": ["That's certainly one way to use a brain.",
         "I've seen loading screens with better reasoning.",
         "Your confidence is doing a lot of heavy lifting here.",
@@ -20,7 +26,6 @@
         "Give me a second. I'm mentally drawing the graph.",
         "This is starting to look suspiciously like a linear algebra problem.",
         "You know what would be fun? Turning this into a simulation.",
-        "I think we just accidentally invented a machine learning problem.",
         "Let's see if we can reduce this to a recurrence relation.",
         "My instinct says there's an optimization hiding in here somewhere.",
         "This feels like something we could solve with dynamic programming.",

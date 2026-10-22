@@ -26,4 +26,8 @@ public class MessageNode {
     public void setLogit(double logit) {
         this.logit = logit;
     }
+
+    public void addTheme(String theme) {
+        this.themes.add(theme);
+    }
 }

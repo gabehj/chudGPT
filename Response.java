@@ -23,15 +23,34 @@ HashMap<String keyword, Boolean inBotMessage> isUserKeyword
 */
 
 import java.util.ArrayList;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import java.io.File;
+import java.io.IOException;
 public class Response {
     
+    
+
+
     HashMap<String, MessageNode> theMasterList = new HashMap<>();
+    
+    //TEST
+    MessageNode add = new MessageNode("Please consider upgrading to premium for more features.", new ArrayList<String>(), 0.0);
+    //
+
     HashMap<String, Boolean> isMasterKeyword = new HashMap<>();
 
     Double expected_TD_Engagement = null;
     int TD_Count = 0;
 
     public Response() {
+
+        //TEST
+        add.addTheme("premium");
+        theMasterList.put(add.getMessage(),add);
+        //
+
         for (MessageNode node : theMasterList.values()) {
             for (String keyword : node.getThemes()) {
                 isMasterKeyword.put(keyword, true);
