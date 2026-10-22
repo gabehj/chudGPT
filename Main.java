@@ -14,12 +14,7 @@ public class Main {
         //Doesn't run but I think this is how it would be formatted to have the classes interact
         
 
-        
-
-
         Scanner input = new Scanner(System.in);
-
-
         
         User user = new User(new String[] {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});
         user.accountRegistration();

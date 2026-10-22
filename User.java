@@ -16,6 +16,10 @@ public class User {
         input.selectFromOptions("Please sign this contract(Only options are below):", new String[]{"Yes", "Y", "yep"});
     }
 
+    public LinkedChain<String> getInterests() {
+        return this.interests; // Returns interest for message sampling in the response class
+    }
+
     public String toString() {
         //Needs implementation still
         return null;
