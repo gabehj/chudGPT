@@ -7,7 +7,7 @@ public class Convo {
     
     public Convo(User user, Response botMessages) {
         this.user = user;
-        this.botMessages = new Response();
+        this.botMessages = botMessages;
         this.conversationHistory = new ArrayList<>();
     }
 
