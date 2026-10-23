@@ -69,9 +69,9 @@ public class Response {
             }*/
             if (!Character.isLetterOrDigit(message.charAt(i))) {
                 word = word.toLowerCase();
-                System.out.print(word);
+                //System.out.print(word);
                 if (isMasterKeyword.get(word) != null) {
-                    System.out.print("Success"+word);
+                    //System.out.print("Success"+word);
                     isUserKeyword.put(word, true);
                 }
                 //System.out.print(word);
@@ -140,13 +140,13 @@ public class Response {
         }
 
         // Display Stats
-        System.out.println("Max logit: " + max_logit);
+        System.out.println("Max logit: " + (int)(max_logit*100)/100.0);
         for (String keyword : theMasterList.get(max_message).getThemes()) {
             if (isUserKeyword.get(keyword) != null) {
-                System.out.println("Message Trigger " + keyword);
+                System.out.println("Message Trigger: " + keyword);
             }
             if (isUserProfileKeyword.get(keyword) != null) {
-                System.out.println("Profile Trigger" + keyword);
+                System.out.println("Profile Trigger: " + keyword);
             }
         }
         
@@ -176,7 +176,7 @@ public class Response {
         double SCORE_BIAS = -5.5; // Baseline Score: Anything greater results in logit increase.
         //  Lower scored decrease logits
         
-        double LR = 0.1; // How much logits are changed based on words and messages.
+        double LR = 1.0; // How much logits are changed based on words and messages.
         double MOMENTUM = 0.8; //  De
         
         // https://www.typeblast.com/blog/typing-speed-vs-reading-speed/
@@ -186,8 +186,11 @@ public class Response {
         
     //
         
+        int vocab_size = theMasterList.size();    
+
         // Iterate through every message recorded in the conversation
         for (int i = history.size()-1; i >= 0; i--) {
+            
             message = history.get(i); // Get each message string from the history
             // Create new message entry in theMasterList if nonexistent
             if (theMasterList.get(message) == null) newVocab(message); 
@@ -195,8 +198,11 @@ public class Response {
             node = theMasterList.get(message); // Get messageNode for the message
             logit = node.getLogit(); // Get message logit
             
+            System.out.println("\n--------------\nMessage "+i+": "+message);
+            Double oldLogit = logit + 0;
             // Update logit based on score
             logit += SCORE_WEIGHT * score + SCORE_BIAS;
+            System.out.print("Old Logit: "+((int)((oldLogit)*100)/100.0) + " | Survey Learning: "+ (int)((logit-oldLogit)*100)/100.0);
 
             // Exponential Rolling Average. Calcualates engagement but is contrived. Will perfect later.
             decayed_message_count *= MOMENTUM;
@@ -215,18 +221,38 @@ public class Response {
             // Learning based on previous convo only, or no learning if none. Change to real TD next week.
             
             if (expected_TD_Engagement != null) { // If bot has expectation, it can be surprised by convo and learn accordingly
+                oldLogit = logit + 0;
+
                 logit += LR * (decayed_message_count + decayed_word_count - expected_TD_Engagement);
                 // Increase logit by learning rate * (the difference between the expected engagement and the actual engagement)
+                System.out.println(" | Engagement Learning: "+ (int)((logit-oldLogit)*100)/100.0);
 
-                expected_TD_Engagement *= (1/TD_Count) * (TD_Count+1); 
+                System.out.print("Engagement Score: "+(int)((logit-oldLogit)/LR*100)/100.0);
+
+                System.out.print("| Engagement Expectation: "+(int)(expected_TD_Engagement*100)/100.0);
+
+                expected_TD_Engagement *= TD_Count;
+                expected_TD_Engagement += decayed_message_count + decayed_word_count;
+                expected_TD_Engagement /= TD_Count+1;
                 // Factors in the most recent engagement score into the average for future expectation
+
+                System.out.println("| New Expectation: "+(int)(expected_TD_Engagement*100)/100.0);
             }
             else {
                 expected_TD_Engagement = decayed_message_count + decayed_word_count;
                 // Sets first expected engagement score to the first conversation, because bot has nothing else to predict from
+                
+                System.out.println(" | Engagement Update: "+ 0);
             }
             TD_Count ++; // Increment total conversation count for future expected engagement calculations
+
+            System.out.println("New logit: "+(int)(logit*100)/100.0);
         }
+        
+        System.out.println("\n==============");
+        System.out.println("Total Messages: "+TD_Count);
+        System.out.println("Old Vocab Size: "+vocab_size+" | New Size: "+theMasterList.size() + " | Words Leaned: +"+(theMasterList.size()-vocab_size));
+
     }
 
     /**
