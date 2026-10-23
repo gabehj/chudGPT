@@ -26,7 +26,7 @@ public class Convo {
             System.out.println(botMessage);
             conversationHistory.add(botMessage);
 
-            input.nextLine();
+            message = input.nextLine();
         }
         //this line below causes all input streams to close forever VVV
         //input.close();

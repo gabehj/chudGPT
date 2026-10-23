@@ -143,7 +143,7 @@ public class Response {
         System.out.println("Max logit: " + max_logit);
         for (String keyword : theMasterList.get(max_message).getThemes()) {
             if (isUserKeyword.get(keyword) != null) {
-                System.out.println("Message Trigger" + keyword);
+                System.out.println("Message Trigger " + keyword);
             }
             if (isUserProfileKeyword.get(keyword) != null) {
                 System.out.println("Profile Trigger" + keyword);
