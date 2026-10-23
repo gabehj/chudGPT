@@ -56,16 +56,14 @@ public class Response {
         HashMap<String, Boolean> isUserKeyword = new HashMap<>();
         
         int i = 0;
-        String letter = "";
         String word = "";
 
         while (i < message.length()) {
-            letter = message.substring(i,i+1);
             /*
             if (!isAlphanumeric(letter)) {
                 letter = " ";
             }*/
-            if (letter.equals(" ")) {
+            if (!Character.isLetterOrDigit(message.charAt(i))) {
                 word = word.toLowerCase();
                 
                 if (isMasterKeyword.get(word) != null) {
@@ -74,7 +72,7 @@ public class Response {
                 word = "";
             }
             else {
-                word += letter;
+                word += message.charAt(i);
             }
             i ++;
         }
