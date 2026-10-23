@@ -33,7 +33,7 @@ public class User {
         System.out.print("what is your name? ");
         Scanner scannerUser = new Scanner(System.in);
         this.name = scannerUser.nextLine();
-        int count = input.selectFromRange("How many interests do you want to list? (1-" + interestList.length + ")", 1, interestList.length);
+        int count = input.selectFromRange("How many interests do you want to list? (0-" + interestList.length + ")", 0, interestList.length);
         int i = 0;
         while (i < count) {
             String choice = input.selectFromOptions("Pick interest #" + (i + 1) + ":", interestList);

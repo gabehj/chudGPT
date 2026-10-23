@@ -15202,11 +15202,6 @@
     "keywords": ["government", "rent", "housing", "shortages", "policy"],
     "logit": 0.0
   },
-  "Should wealthy countries accept more refugees?": {
-    "message": "Should wealthy countries accept more refugees?",
-    "keywords": ["wealthy countries", "refugees", "immigration", "housing", "politics"],
-    "logit": 0.0
-  },
   "Do you think the news is biased?": {
     "message": "Do you think the news is biased?",
     "keywords": ["news", "biased", "media", "facts", "politics"],

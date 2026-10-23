@@ -49,16 +49,14 @@ public class Main {
         
         DataVal startConvo = new DataVal();
         String haveConvo = "start";
-        while (!(haveConvo.equals("yes")) && (!haveConvo.equals("no"))) {
-            haveConvo = startConvo.selectFromOptions("Would you like to chat?", new String[] {"yes", "no"});
-            if (haveConvo.equals("yes")) {
-                convo.startConversation();
-            } else if (haveConvo.equals("no")) {
-                System.out.println("Have a nice day!");
-                break;
-            } 
+        haveConvo = startConvo.selectFromOptions("Would you like to chat?", new String[] {"yes", "no"});
+        if (haveConvo.equals("yes")) {
+            convo.startConversation();
             haveConvo = "new";
-        }
+        } else if (haveConvo.equals("no")) {
+            System.out.println("Have a nice day!");
+        } 
+            
  
 
 
