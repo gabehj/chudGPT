@@ -13405,5 +13405,1465 @@
             "frustration"
         ],
         "logit": 0.0
+    },
+    "I had a good morning, mostly because I got out the door before the traffic got bad.": {
+        "message": "I had a good morning, mostly because I got out the door before the traffic got bad.",
+        "keywords": ["morning", "routine", "commute", "traffic", "day", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I am not sure what I want for dinner, and that is probably the most honest answer I can give you right now.": {
+        "message": "I am not sure what I want for dinner, and that is probably the most honest answer I can give you right now.",
+        "keywords": ["dinner", "food", "decision", "hunger", "evening", "comedic", "honesty"],
+        "logit": 0.0
+    },
+    "The coffee helped more than I expected, especially the second cup.": {
+        "message": "The coffee helped more than I expected, especially the second cup.",
+        "keywords": ["coffee", "energy", "morning", "habit", "caffeine", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think I will take a walk after lunch, just to get some air and clear my head.": {
+        "message": "I think I will take a walk after lunch, just to get some air and clear my head.",
+        "keywords": ["walking", "exercise", "outdoors", "break", "mindfulness", "health", "personal"],
+        "logit": 0.0
+    },
+    "Monday still feels like the hardest day, even after years of telling myself it gets easier.": {
+        "message": "Monday still feels like the hardest day, even after years of telling myself it gets easier.",
+        "keywords": ["monday", "work week", "routine", "fatigue", "motivation", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I cleaned the kitchen tonight and it actually felt like a small win, which is more than I expected.": {
+        "message": "I cleaned the kitchen tonight and it actually felt like a small win, which is more than I expected.",
+        "keywords": ["cleaning", "chores", "kitchen", "satisfaction", "routine", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I keep meaning to call my mom back, and then the week just disappears.": {
+        "message": "I keep meaning to call my mom back, and then the week just disappears.",
+        "keywords": ["family", "phone call", "guilt", "time", "relationships", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The rain today made the whole afternoon feel slower, which was actually nice.": {
+        "message": "The rain today made the whole afternoon feel slower, which was actually nice.",
+        "keywords": ["rain", "weather", "afternoon", "pace", "mood", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I am tired in a way that sleep will not fix, which is its own kind of problem.": {
+        "message": "I am tired in a way that sleep will not fix, which is its own kind of problem.",
+        "keywords": ["tiredness", "fatigue", "burnout", "rest", "energy", "personal", "honesty"],
+        "logit": 0.0
+    },
+    "I found an old photo on my phone and spent ten minutes just remembering where we were.": {
+        "message": "I found an old photo on my phone and spent ten minutes just remembering where we were.",
+        "keywords": ["nostalgia", "memory", "photo", "phone", "past", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I do not know why, but I am in a good mood today and I am not going to overthink it.": {
+        "message": "I do not know why, but I am in a good mood today and I am not going to overthink it.",
+        "keywords": ["mood", "happiness", "gratitude", "mindset", "day", "personal", "positive"],
+        "logit": 0.0
+    },
+    "The gym was empty this morning, which is either a blessing or a sign I am still too early.": {
+        "message": "The gym was empty this morning, which is either a blessing or a sign I am still too early.",
+        "keywords": ["gym", "exercise", "morning", "fitness", "routine", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I said thank you to a stranger today and it made both of us slightly uncomfortable, but also better.": {
+        "message": "I said thank you to a stranger today and it made both of us slightly uncomfortable, but also better.",
+        "keywords": ["kindness", "stranger", "gratitude", "interaction", "social", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think the best part of the weekend is the first quiet morning when nothing is expected of me.": {
+        "message": "I think the best part of the weekend is the first quiet morning when nothing is expected of me.",
+        "keywords": ["weekend", "rest", "quiet", "morning", "relaxation", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I am trying to learn a new recipe and so far the only thing I have mastered is making a mess.": {
+        "message": "I am trying to learn a new recipe and so far the only thing I have mastered is making a mess.",
+        "keywords": ["cooking", "recipe", "kitchen", "learning", "failure", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "The drive home was quiet and I think that is exactly what I needed.": {
+        "message": "The drive home was quiet and I think that is exactly what I needed.",
+        "keywords": ["driving", "commute", "quiet", "reflection", "evening", "personal", "calm"],
+        "logit": 0.0
+    },
+    "I read two pages of a book before bed and felt guilty for not reading more, which is absurd.": {
+        "message": "I read two pages of a book before bed and felt guilty for not reading more, which is absurd.",
+        "keywords": ["reading", "book", "night", "guilt", "habits", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I am grateful for small things today: the coffee, the walk, the fact that nothing broke.": {
+        "message": "I am grateful for small things today: the coffee, the walk, the fact that nothing broke.",
+        "keywords": ["gratitude", "small wins", "appreciation", "mindset", "day", "personal", "positive"],
+        "logit": 0.0
+    },
+    "I overcommitted to too many things this week and I am paying for it in small, quiet ways.": {
+        "message": "I overcommitted to too many things this week and I am paying for it in small, quiet ways.",
+        "keywords": ["overwhelm", "commitments", "stress", "time", "balance", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think I miss the version of me that used to get excited about almost everything.": {
+        "message": "I think I miss the version of me that used to get excited about almost everything.",
+        "keywords": ["nostalgia", "youth", "excitement", "change", "self", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The store was out of the one thing I actually needed, which is a classic.": {
+        "message": "The store was out of the one thing I actually needed, which is a classic.",
+        "keywords": ["shopping", "store", "inconvenience", "frustration", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think saying no is a skill I am still learning, and I keep forgetting it at the worst times.": {
+        "message": "I think saying no is a skill I am still learning, and I keep forgetting it at the worst times.",
+        "keywords": ["boundaries", "saying no", "social", "self-care", "relationships", "personal", "growth"],
+        "logit": 0.0
+    },
+    "The temperature dropped suddenly and I am still in short sleeves, so I am committed to being cold.": {
+        "message": "The temperature dropped suddenly and I am still in short sleeves, so I am committed to being cold.",
+        "keywords": ["weather", "cold", "clothing", "surprise", "day", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best conversations are the ones where neither person is trying to win.": {
+        "message": "I think the best conversations are the ones where neither person is trying to win.",
+        "keywords": ["conversation", "listening", "connection", "communication", "relationships", "professional", "insight"],
+        "logit": 0.0
+    },
+    "I put my phone in another room for an hour and the silence was louder than I expected.": {
+        "message": "I put my phone in another room for an hour and the silence was louder than I expected.",
+        "keywords": ["phone", "screen time", "silence", "digital detox", "attention", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I am proud of myself for finishing the thing I kept putting off, even though it was not that impressive.": {
+        "message": "I am proud of myself for finishing the thing I kept putting off, even though it was not that impressive.",
+        "keywords": ["procrastination", "completion", "pride", "small wins", "productivity", "personal", "positive"],
+        "logit": 0.0
+    },
+    "The neighbor's dog barked for twenty minutes and I did not even notice until it stopped.": {
+        "message": "The neighbor's dog barked for twenty minutes and I did not even notice until it stopped.",
+        "keywords": ["neighbor", "dog", "noise", "attention", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of being busy is that you forget what you were actually doing until it is over.": {
+        "message": "I think the hardest part of being busy is that you forget what you were actually doing until it is over.",
+        "keywords": ["busyness", "time", "focus", "memory", "work", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I made a mistake at work today and handled it better than I thought I would.": {
+        "message": "I made a mistake at work today and handled it better than I thought I would.",
+        "keywords": ["work", "mistake", "resilience", "growth", "professionalism", "personal", "positive"],
+        "logit": 0.0
+    },
+    "I think I need to stop treating every free minute like a problem to solve.": {
+        "message": "I think I need to stop treating every free minute like a problem to solve.",
+        "keywords": ["free time", "relaxation", "mindset", "productivity", "rest", "personal", "advice"],
+        "logit": 0.0
+    },
+    "The sunset was not dramatic, but it was there, and I think that is enough.": {
+        "message": "The sunset was not dramatic, but it was there, and I think that is enough.",
+        "keywords": ["sunset", "evening", "nature", "appreciation", "calm", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I am learning to be okay with not having an answer to everything, and it is going slower than I want.": {
+        "message": "I am learning to be okay with not having an answer to everything, and it is going slower than I want.",
+        "keywords": ["uncertainty", "patience", "acceptance", "growth", "mindset", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think the best compliment I can give is to say that someone makes a space feel easier to be in.": {
+        "message": "I think the best compliment I can give is to say that someone makes a space feel easier to be in.",
+        "keywords": ["compliment", "presence", "kindness", "relationships", "connection", "personal", "insight"],
+        "logit": 0.0
+    },
+    "I walked past a bakery and the smell was so specific to that one street that I almost stopped.": {
+        "message": "I walked past a bakery and the smell was so specific to that one street that I almost stopped.",
+        "keywords": ["bakery", "smell", "walking", "memory", "sensory", "personal", "nostalgia"],
+        "logit": 0.0
+    },
+    "I think I am finally at the point where I do not need every day to be productive to feel okay.": {
+        "message": "I think I am finally at the point where I do not need every day to be productive to feel okay.",
+        "keywords": ["productivity", "self-acceptance", "rest", "mindset", "balance", "personal", "growth"],
+        "logit": 0.0
+    },
+    "The elevator was slow again and I used the extra thirty seconds to just stand still and breathe.": {
+        "message": "The elevator was slow again and I used the extra thirty seconds to just stand still and breathe.",
+        "keywords": ["elevator", "pause", "breathing", "micro-break", "daily life", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think the reason I keep going back to the same playlist is that it matches the pace of my week.": {
+        "message": "I think the reason I keep going back to the same playlist is that it matches the pace of my week.",
+        "keywords": ["music", "playlist", "routine", "mood", "listening", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I apologized for something small and the other person let it go, which was the whole point.": {
+        "message": "I apologized for something small and the other person let it go, which was the whole point.",
+        "keywords": ["apology", "conflict", "resolution", "relationships", "humility", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I think the quietest form of confidence is doing the thing without announcing it first.": {
+        "message": "I think the quietest form of confidence is doing the thing without announcing it first.",
+        "keywords": ["confidence", "action", "humility", "self", "mindset", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The bus was late again, but I ended up listening to a podcast I would have skipped otherwise.": {
+        "message": "The bus was late again, but I ended up listening to a podcast I would have skipped otherwise.",
+        "keywords": ["bus", "transit", "delay", "podcast", "serendipity", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think I am done pretending that I have it all figured out, and that is a relief.": {
+        "message": "I think I am done pretending that I have it all figured out, and that is a relief.",
+        "keywords": ["honesty", "vulnerability", "self-acceptance", "relief", "growth", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I made a sandwich that was technically edible, which I am choosing to count as a win.": {
+        "message": "I made a sandwich that was technically edible, which I am choosing to count as a win.",
+        "keywords": ["cooking", "sandwich", "lunch", "self-cooking", "small wins", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I sat in my car for five minutes before going inside, and I do not feel bad about that anymore.": {
+        "message": "I sat in my car for five minutes before going inside, and I do not feel bad about that anymore.",
+        "keywords": ["car", "transition", "pause", "mental health", "boundary", "personal", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long weekend is the second day, when the obligation to be productive finally lifts.": {
+        "message": "I think the best part of a long weekend is the second day, when the obligation to be productive finally lifts.",
+        "keywords": ["weekend", "rest", "relaxation", "time off", "recovery", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I texted a friend a random thought at 11 pm and they responded in four minutes, which means they were also awake.": {
+        "message": "I texted a friend a random thought at 11 pm and they responded in four minutes, which means they were also awake.",
+        "keywords": ["friendship", "texting", "night", "connection", "shared experience", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think I have been holding a grudge over something so small that I cannot even remember what it was.": {
+        "message": "I think I have been holding a grudge over something so small that I cannot even remember what it was.",
+        "keywords": ["grudge", "forgiveness", "memory", "self-awareness", "emotions", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The water was exactly the right temperature today, which is the kind of thing I should appreciate more.": {
+        "message": "The water was exactly the right temperature today, which is the kind of thing I should appreciate more.",
+        "keywords": ["shower", "comfort", "small details", "gratitude", "morning", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I reorganized my desk for the fourth time this month and I am not sure if it helped or if I just moved the clutter.": {
+        "message": "I reorganized my desk for the fourth time this month and I am not sure if it helped or if I just moved the clutter.",
+        "keywords": ["organizing", "desk", "clutter", "productivity", "workspace", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think the hardest part of being an adult is that the boring tasks never stop, but you still have to do them.": {
+        "message": "I think the hardest part of being an adult is that the boring tasks never stop, but you still have to do them.",
+        "keywords": ["adulthood", "chores", "responsibility", "routine", "boredom", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I laughed at something on my phone and a coworker asked what was funny, and I could not explain it.": {
+        "message": "I laughed at something on my phone and a coworker asked what was funny, and I could not explain it.",
+        "keywords": ["laughter", "phone", "work", "social", "mystery", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I would describe my current mood as 'functioning but not excited about anything in particular.'": {
+        "message": "I think I would describe my current mood as 'functioning but not excited about anything in particular.'",
+        "keywords": ["mood", "apathy", "contentment", "self-awareness", "emotions", "personal", "honesty"],
+        "logit": 0.0
+    },
+    "I finally watched the show everyone kept recommending, and I think I understand the appeal now.": {
+        "message": "I finally watched the show everyone kept recommending, and I think I understand the appeal now.",
+        "keywords": ["tv", "show", "recommendation", "catching up", "entertainment", "personal", "social"],
+        "logit": 0.0
+    },
+    "The printer jammed again, and I am now in a relationship with that machine that is purely adversarial.": {
+        "message": "The printer jammed again, and I am now in a relationship with that machine that is purely adversarial.",
+        "keywords": ["printer", "work", "frustration", "technology", "office", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best compliment I received this week was 'you seem like you have your life together,' which is generous.": {
+        "message": "I think the best compliment I received this week was 'you seem like you have your life together,' which is generous.",
+        "keywords": ["compliment", "perception", "imposter syndrome", "social", "self", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I poured the last of the milk into my coffee and realized the carton was lighter than I expected, which felt like a small betrayal.": {
+        "message": "I poured the last of the milk into my coffee and realized the carton was lighter than I expected, which felt like a small betrayal.",
+        "keywords": ["milk", "coffee", "morning", "surprise", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I need to stop scheduling 'me time' like it is a meeting, because I should not have to block it out.": {
+        "message": "I think I need to stop scheduling 'me time' like it is a meeting, because I should not have to block it out.",
+        "keywords": ["self-care", "time management", "rest", "guilt", "balance", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The meeting could have been an email, and I think we all agreed on that silently.": {
+        "message": "The meeting could have been an email, and I think we all agreed on that silently.",
+        "keywords": ["meeting", "work", "email", "productivity", "office", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about having a dog is that they do not care about your productivity.": {
+        "message": "I think the best thing about having a dog is that they do not care about your productivity.",
+        "keywords": ["dog", "pets", "unconditional love", "stress relief", "companionship", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I bought one piece of fruit at the store and felt like I was making a statement about my values.": {
+        "message": "I bought one piece of fruit at the store and felt like I was making a statement about my values.",
+        "keywords": ["shopping", "groceries", "fruit", "health", "self-awareness", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the quietest victory of the day was not checking my phone during a conversation.": {
+        "message": "I think the quietest victory of the day was not checking my phone during a conversation.",
+        "keywords": ["phone", "attention", "presence", "conversation", "self-discipline", "personal", "growth"],
+        "logit": 0.0
+    },
+    "The song on the radio was one I had not heard in years, and for a moment I was completely somewhere else.": {
+        "message": "The song on the radio was one I had not heard in years, and for a moment I was completely somewhere else.",
+        "keywords": ["music", "radio", "memory", "nostalgia", "driving", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think I am at the stage where I would rather have a quiet evening than a full social calendar, and that is fine.": {
+        "message": "I think I am at the stage where I would rather have a quiet evening than a full social calendar, and that is fine.",
+        "keywords": ["introversion", "evening", "rest", "social", "preference", "personal", "self-acceptance"],
+        "logit": 0.0
+    },
+    "I held the door for someone and they did not even look up from their phone, which is the most normal thing in the world.": {
+        "message": "I held the door for someone and they did not even look up from their phone, which is the most normal thing in the world.",
+        "keywords": ["politeness", "stranger", "phone", "social", "observation", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing I ate today was a plain cracker, and I am not going to apologize for that.": {
+        "message": "I think the best thing I ate today was a plain cracker, and I am not going to apologize for that.",
+        "keywords": ["food", "snack", "simplicity", "contentment", "hunger", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I walked to the mailbox and back and it took four minutes, which is technically a walk if you stretch the definition.": {
+        "message": "I walked to the mailbox and back and it took four minutes, which is technically a walk if you stretch the definition.",
+        "keywords": ["walking", "exercise", "mailbox", "daily life", "self-deception", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good conversation is knowing when to stop talking and just listen.": {
+        "message": "I think the hardest part of a good conversation is knowing when to stop talking and just listen.",
+        "keywords": ["conversation", "listening", "communication", "empathy", "relationships", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The Wi-Fi went out for ten minutes and I realized I did not know what to do with my hands.": {
+        "message": "The Wi-Fi went out for ten minutes and I realized I did not know what to do with my hands.",
+        "keywords": ["wifi", "internet", "boredom", "dependency", "technology", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am slowly learning that 'no' is a complete sentence and does not require a three-paragraph explanation.": {
+        "message": "I think I am slowly learning that 'no' is a complete sentence and does not require a three-paragraph explanation.",
+        "keywords": ["boundaries", "saying no", "communication", "self-respect", "relationships", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I put on a clean shirt today and it made the whole day feel slightly more intentional.": {
+        "message": "I put on a clean shirt today and it made the whole day feel slightly more intentional.",
+        "keywords": ["clothing", "morning", "routine", "intention", "self-care", "personal", "small wins"],
+        "logit": 0.0
+    },
+    "I think the best thing about a Friday is not the weekend itself, but the feeling that the weekend is allowed.": {
+        "message": "I think the best thing about a Friday is not the weekend itself, but the feeling that the weekend is allowed.",
+        "keywords": ["friday", "weekend", "anticipation", "relief", "work week", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I accidentally replied to the wrong person in a group chat and now I am choosing not to think about it.": {
+        "message": "I accidentally replied to the wrong person in a group chat and now I am choosing not to think about it.",
+        "keywords": ["group chat", "mistake", "social", "embarrassment", "texting", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I have been treating my energy like it is a fixed budget, when really it is more like a battery that charges unevenly.": {
+        "message": "I think I have been treating my energy like it is a fixed budget, when really it is more like a battery that charges unevenly.",
+        "keywords": ["energy", "fatigue", "self-awareness", "pacing", "wellbeing", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The store played a song I used to love and I stood in the cereal aisle for a full minute just listening.": {
+        "message": "The store played a song I used to love and I stood in the cereal aisle for a full minute just listening.",
+        "keywords": ["music", "store", "nostalgia", "cereal", "memory", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think the kindest thing you can do for someone on a bad day is not to try to fix it, just sit with them in it.": {
+        "message": "I think the kindest thing you can do for someone on a bad day is not to try to fix it, just sit with them in it.",
+        "keywords": ["kindness", "empathy", "friendship", "support", "presence", "relationships", "insight"],
+        "logit": 0.0
+    },
+    "I made a list of things to do and crossed off three of them before noon, which feels like a small rebellion against the week.": {
+        "message": "I made a list of things to do and crossed off three of them before noon, which feels like a small rebellion against the week.",
+        "keywords": ["to-do list", "productivity", "morning", "accomplishment", "small wins", "personal", "positive"],
+        "logit": 0.0
+    },
+    "I think I miss the days when 'I will text you later' actually meant I would text you later.": {
+        "message": "I think I miss the days when 'I will text you later' actually meant I would text you later.",
+        "keywords": ["texting", "friendship", "communication", "nostalgia", "reliability", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The coffee shop was so quiet I could hear the espresso machine breathing, and it was almost meditative.": {
+        "message": "The coffee shop was so quiet I could hear the espresso machine breathing, and it was almost meditative.",
+        "keywords": ["coffee shop", "quiet", "atmosphere", "sensory", "calm", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I think I am done with the idea that I should always be the one to make the first move in a friendship.": {
+        "message": "I think I am done with the idea that I should always be the one to make the first move in a friendship.",
+        "keywords": ["friendship", "reciprocity", "boundaries", "effort", "relationships", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I put my shoes on the wrong feet for a solid ten seconds before I caught it, and I am not proud.": {
+        "message": "I put my shoes on the wrong feet for a solid ten seconds before I caught it, and I am not proud.",
+        "keywords": ["shoes", "morning", "mistake", "rushing", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best version of a workday is the one where you leave at the right time and do not feel guilty about it.": {
+        "message": "I think the best version of a workday is the one where you leave at the right time and do not feel guilty about it.",
+        "keywords": ["work", "balance", "leaving on time", "guilt", "boundaries", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I held a grudge for a week over a parking spot, and I am now embarrassed by my own timeline.": {
+        "message": "I held a grudge for a week over a parking spot, and I am now embarrassed by my own timeline.",
+        "keywords": ["parking", "grudge", "perspective", "self-awareness", "proportion", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the most underrated skill is knowing when a conversation has ended and leaving gracefully.": {
+        "message": "I think the most underrated skill is knowing when a conversation has ended and leaving gracefully.",
+        "keywords": ["conversation", "social", "timing", "awareness", "etiquette", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The laundry was done and I actually put it away instead of letting it sit in the basket, which is a personal record.": {
+        "message": "The laundry was done and I actually put it away instead of letting it sit in the basket, which is a personal record.",
+        "keywords": ["laundry", "chores", "organization", "small wins", "routine", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think I am learning that 'I will think about it' is a valid answer and does not owe anyone an immediate yes.": {
+        "message": "I think I am learning that 'I will think about it' is a valid answer and does not owe anyone an immediate yes.",
+        "keywords": ["decision", "boundaries", "pressure", "autonomy", "relationships", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I walked outside and the air smelled like rain that had not arrived yet, and it was enough to make me smile.": {
+        "message": "I walked outside and the air smelled like rain that had not arrived yet, and it was enough to make me smile.",
+        "keywords": ["rain", "smell", "outdoors", "sensory", "mood", "personal", "appreciation"],
+        "logit": 0.0
+    },{
+    "I opened the fridge three times in ten minutes and came out with nothing each time, which is a strategy I do not understand.": {
+        "message": "I opened the fridge three times in ten minutes and came out with nothing each time, which is a strategy I do not understand.",
+        "keywords": ["fridge", "hunger", "decision", "kitchen", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a workday is the moment you realize you have thirty more minutes left and you are not sure what to do with them.": {
+        "message": "I think the best part of a workday is the moment you realize you have thirty more minutes left and you are not sure what to do with them.",
+        "keywords": ["work", "boredom", "time", "afternoon", "anticipation", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I finally answered the email I had been sitting on for two days, and the world did not end.": {
+        "message": "I finally answered the email I had been sitting on for two days, and the world did not end.",
+        "keywords": ["email", "procrastination", "work", "relief", "small wins", "personal", "positive"],
+        "logit": 0.0
+    },
+    "I think I would trade a full night of sleep for one more hour of the weekend, and I am not even joking.": {
+        "message": "I think I would trade a full night of sleep for one more hour of the weekend, and I am not even joking.",
+        "keywords": ["sleep", "weekend", "trade-off", "time", "fatigue", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "The grocery bag tore on the way home and I am now carrying three bags like a person in a very bad movie.": {
+        "message": "The grocery bag tore on the way home and I am now carrying three bags like a person in a very bad movie.",
+        "keywords": ["groceries", "shopping", "bags", "inconvenience", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the most honest thing about motivation is that it is not a constant, it is a weather system.": {
+        "message": "I think the most honest thing about motivation is that it is not a constant, it is a weather system.",
+        "keywords": ["motivation", "consistency", "self-awareness", "habits", "mindset", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I said 'let me get back to you' and then I did not get back to them, and now it has been a week.": {
+        "message": "I said 'let me get back to you' and then I did not get back to them, and now it has been a week.",
+        "keywords": ["communication", "follow-up", "guilt", "social", "procrastination", "personal", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a long drive is that it forces you to be in your own head without a screen.": {
+        "message": "I think the best thing about a long drive is that it forces you to be in your own head without a screen.",
+        "keywords": ["driving", "road trip", "reflection", "mindfulness", "car", "personal", "calm"],
+        "logit": 0.0
+    },
+    "I made a pot of tea and drank it standing up because I could not be bothered to sit down, which says something.": {
+        "message": "I made a pot of tea and drank it standing up because I could not be bothered to sit down, which says something.",
+        "keywords": ["tea", "tiredness", "evening", "routine", "energy", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I would rather have one good conversation than five small ones.": {
+        "message": "I think I am at the point where I would rather have one good conversation than five small ones.",
+        "keywords": ["conversation", "quality over quantity", "social", "connection", "preference", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The alarm went off and I hit snooze so many times that I lost track of whether it was morning or I was having a dream.": {
+        "message": "The alarm went off and I hit snooze so many times that I lost track of whether it was morning or I was having a dream.",
+        "keywords": ["alarm", "snooze", "morning", "sleep", "confusion", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best compliment a coworker can give is 'you did not make it worse,' and I am choosing to accept that.": {
+        "message": "I think the best compliment a coworker can give is 'you did not make it worse,' and I am choosing to accept that.",
+        "keywords": ["work", "coworker", "compliment", "self-deprecation", "honesty", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I watered the plants and one of them is clearly doing better than the others, which feels like a small personal failure.": {
+        "message": "I watered the plants and one of them is clearly doing better than the others, which feels like a small personal failure.",
+        "keywords": ["plants", "gardening", "indoor", "failure", "comparison", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good day is that you know it will end, and the next one might not be as kind.": {
+        "message": "I think the hardest part of a good day is that you know it will end, and the next one might not be as kind.",
+        "keywords": ["gratitude", "impermanence", "mood", "mindset", "day", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I put on a podcast in the car and forgot to turn it off, so now my house is narrating my life choices.": {
+        "message": "I put on a podcast in the car and forgot to turn it off, so now my house is narrating my life choices.",
+        "keywords": ["podcast", "car", "house", "forgetfulness", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I have been treating rest like a reward I have to earn, when really it is a requirement.": {
+        "message": "I think I have been treating rest like a reward I have to earn, when really it is a requirement.",
+        "keywords": ["rest", "burnout", "self-care", "mindset", "recovery", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The elevator music was a song I used to love and I stood there for a full cycle just to hear it again.": {
+        "message": "The elevator music was a song I used to love and I stood there for a full cycle just to hear it again.",
+        "keywords": ["music", "elevator", "nostalgia", "waiting", "memory", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think the best thing about a Tuesday is that it is not Monday and it is not Friday, so it is just a Tuesday.": {
+        "message": "I think the best thing about a Tuesday is that it is not Monday and it is not Friday, so it is just a Tuesday.",
+        "keywords": ["tuesday", "work week", "routine", "contentment", "time", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I held a conversation with a cashier that lasted four sentences and it was the most I had spoken all day.": {
+        "message": "I held a conversation with a cashier that lasted four sentences and it was the most I had spoken all day.",
+        "keywords": ["conversation", "cashier", "social", "introversion", "store", "personal", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am done with the idea that a 'perfect' morning requires coffee, a shower, and no stress before 8 am.": {
+        "message": "I think I am done with the idea that a 'perfect' morning requires coffee, a shower, and no stress before 8 am.",
+        "keywords": ["morning", "expectations", "realism", "routine", "self-compassion", "personal", "growth"],
+        "logit": 0.0
+    },
+    "The parking lot was full and I walked around three times, which is either cardio or a cry for help.": {
+        "message": "The parking lot was full and I walked around three times, which is either cardio or a cry for help.",
+        "keywords": ["parking", "store", "walking", "inconvenience", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the kindest thing I did today was not send a text I was angry about.": {
+        "message": "I think the kindest thing I did today was not send a text I was angry about.",
+        "keywords": ["texting", "anger", "self-control", "relationships", "patience", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made the same mistake twice in one afternoon and the second time it felt more like a choice than an accident.": {
+        "message": "I made the same mistake twice in one afternoon and the second time it felt more like a choice than an accident.",
+        "keywords": ["mistake", "repetition", "self-awareness", "afternoon", "honesty", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a phone call is the three seconds of silence before someone says 'hello.'": {
+        "message": "I think the best part of a phone call is the three seconds of silence before someone says 'hello.'",
+        "keywords": ["phone call", "silence", "anticipation", "connection", "waiting", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I put my keys in the fridge and I am not going to explain why, and you are not going to get an explanation.": {
+        "message": "I put my keys in the fridge and I am not going to explain why, and you are not going to get an explanation.",
+        "keywords": ["keys", "fridge", "mistake", "mystery", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am slowly realizing that 'I will do it tomorrow' is a sentence I have been using as a lifestyle.": {
+        "message": "I think I am slowly realizing that 'I will do it tomorrow' is a sentence I have been using as a lifestyle.",
+        "keywords": ["procrastination", "tomorrow", "habits", "self-awareness", "responsibility", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "The store had a song playing that I have been humming all day and I still cannot remember the name.": {
+        "message": "The store had a song playing that I have been humming all day and I still cannot remember the name.",
+        "keywords": ["music", "humming", "store", "earworm", "memory", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think the best thing about a quiet night is that you can hear the house settling and it sounds like it is breathing.": {
+        "message": "I think the best thing about a quiet night is that you can hear the house settling and it sounds like it is breathing.",
+        "keywords": ["night", "quiet", "house", "sensory", "calm", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I said 'I am fine' and I meant it, which is rarer than people think.": {
+        "message": "I said 'I am fine' and I meant it, which is rarer than people think.",
+        "keywords": ["honesty", "mood", "self-awareness", "contentment", "emotions", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good friendship is that you do not need to earn it every single day.": {
+        "message": "I think the hardest part of a good friendship is that you do not need to earn it every single day.",
+        "keywords": ["friendship", "trust", "effort", "reciprocity", "relationships", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The bus driver looked at me when I was checking my phone and I felt like a child caught in a library.": {
+        "message": "The bus driver looked at me when I was checking my phone and I felt like a child caught in a library.",
+        "keywords": ["bus", "phone", "social", "guilt", "transit", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need a reason to take a nap, and I am not apologizing for it.": {
+        "message": "I think I am at the point where I do not need a reason to take a nap, and I am not apologizing for it.",
+        "keywords": ["nap", "rest", "afternoon", "self-care", "energy", "personal", "self-acceptance"],
+        "logit": 0.0
+    },
+    "I made a joke and nobody laughed, and I am choosing to call it a preview of a better joke.": {
+        "message": "I made a joke and nobody laughed, and I am choosing to call it a preview of a better joke.",
+        "keywords": ["humor", "joke", "social", "rejection", "resilience", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long afternoon is the moment the light changes and you realize the day is almost done.": {
+        "message": "I think the best part of a long afternoon is the moment the light changes and you realize the day is almost done.",
+        "keywords": ["afternoon", "light", "time", "transition", "evening", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I put on a sweater indoors and I am not cold, I am just emotionally prepared for the rest of the week.": {
+        "message": "I put on a sweater indoors and I am not cold, I am just emotionally prepared for the rest of the week.",
+        "keywords": ["sweater", "comfort", "indoor", "mood", "self-care", "comedic", "personal"],
+        "logit": 0.0
+    },
+    "I think the most underrated feeling is the one you get when a task you dreaded is finally done and you just stand there for a second.": {
+        "message": "I think the most underrated feeling is the one you get when a task you dreaded is finally done and you just stand there for a second.",
+        "keywords": ["relief", "completion", "dread", "accomplishment", "pause", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The microwave beeped and I jumped, and I am a grown person who should not be startled by a kitchen appliance.": {
+        "message": "The microwave beeped and I jumped, and I am a grown person who should not be startled by a kitchen appliance.",
+        "keywords": ["microwave", "kitchen", "startle", "daily life", "self-awareness", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am learning that it is okay to be the person who leaves first, and the room does not collapse.": {
+        "message": "I think I am learning that it is okay to be the person who leaves first, and the room does not collapse.",
+        "keywords": ["social", "leaving", "boundaries", "introversion", "comfort", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I re-read a text I sent an hour ago and I am not sure who that person was or why they sounded so formal.": {
+        "message": "I re-read a text I sent an hour ago and I am not sure who that person was or why they sounded so formal.",
+        "keywords": ["texting", "tone", "self-awareness", "communication", "embarrassment", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a Friday night is that nothing is expected of you until tomorrow, and tomorrow is not for another day.": {
+        "message": "I think the best thing about a Friday night is that nothing is expected of you until tomorrow, and tomorrow is not for another day.",
+        "keywords": ["friday", "weekend", "freedom", "relief", "evening", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I held the umbrella over myself and my phone and got wet anyway, which is a choice I made.": {
+        "message": "I held the umbrella over myself and my phone and got wet anyway, which is a choice I made.",
+        "keywords": ["rain", "umbrella", "phone", "wet", "priorities", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am finally okay with being the person who needs a minute before they can talk, and that minute is not a judgment.": {
+        "message": "I think I am finally okay with being the person who needs a minute before they can talk, and that minute is not a judgment.",
+        "keywords": ["introversion", "processing", "communication", "patience", "self-acceptance", "personal", "growth"],
+        "logit": 0.0
+    },
+    "The dog looked at me like I had personally betrayed them, and I had only been gone for twenty minutes.": {
+        "message": "The dog looked at me like I had personally betrayed them, and I had only been gone for twenty minutes.",
+        "keywords": ["dog", "pets", "guilt", "separation", "loyalty", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a shared silence is that it does not require either person to perform.": {
+        "message": "I think the best thing about a shared silence is that it does not require either person to perform.",
+        "keywords": ["silence", "comfort", "friendship", "presence", "connection", "personal", "insight"],
+        "logit": 0.0
+    },
+    "I put my phone on the charger and it still had 80 percent, which felt like a small personal insult.": {
+        "message": "I put my phone on the charger and it still had 80 percent, which felt like a small personal insult.",
+        "keywords": ["phone", "battery", "charger", "daily life", "self-awareness", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am done pretending that I am 'not tired, just bored,' because those are very different things.": {
+        "message": "I think I am done pretending that I am 'not tired, just bored,' because those are very different things.",
+        "keywords": ["tiredness", "boredom", "honesty", "energy", "self-awareness", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The neighbor's cat is on my fence again and I am now in a relationship with that cat that I did not ask for.": {
+        "message": "The neighbor's cat is on my fence again and I am now in a relationship with that cat that I did not ask for.",
+        "keywords": ["cat", "neighbor", "fence", "pets", "unwanted", "comedic", "relatable"],
+        "logit": 0.0
+    }
+    "I made a cup of coffee and it was too hot, so I blew on it for a full minute like a person in a commercial.": {
+        "message": "I made a cup of coffee and it was too hot, so I blew on it for a full minute like a person in a commercial.",
+        "keywords": ["coffee", "morning", "patience", "routine", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a rainy day is that nobody can blame you for doing absolutely nothing.": {
+        "message": "I think the best part of a rainy day is that nobody can blame you for doing absolutely nothing.",
+        "keywords": ["rain", "rest", "permission", "weather", "day off", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I walked into a room and forgot why I was there, and I am not even embarrassed about it anymore.": {
+        "message": "I walked into a room and forgot why I was there, and I am not even embarrassed about it anymore.",
+        "keywords": ["memory", "doors", "daily life", "forgetfulness", "brain", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of being helpful is knowing when someone actually wants help and when they just want to be heard.": {
+        "message": "I think the hardest part of being helpful is knowing when someone actually wants help and when they just want to be heard.",
+        "keywords": ["helping", "listening", "empathy", "relationships", "communication", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The microwave was beeping and I stood there for a solid ten seconds before I remembered what it was for.": {
+        "message": "The microwave was beeping and I stood there for a solid ten seconds before I remembered what it was for.",
+        "keywords": ["microwave", "kitchen", "confusion", "daily life", "self-awareness", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I would rather be comfortable than impressive, and that is a whole philosophy.": {
+        "message": "I think I am at the point where I would rather be comfortable than impressive, and that is a whole philosophy.",
+        "keywords": ["comfort", "impressing", "values", "self", "mindset", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I made a sandwich and ate it standing up at the counter, which is the most I have cooked and eaten in one sitting all week.": {
+        "message": "I made a sandwich and ate it standing up at the counter, which is the most I have cooked and eaten in one sitting all week.",
+        "keywords": ["sandwich", "lunch", "cooking", "counter", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a long weekend is that you get to be lazy on purpose without a guilt trip.": {
+        "message": "I think the best thing about a long weekend is that you get to be lazy on purpose without a guilt trip.",
+        "keywords": ["weekend", "laziness", "rest", "permission", "guilt", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I put my phone on do not disturb and the world did not end, which is a data point I am choosing to remember.": {
+        "message": "I put my phone on do not disturb and the world did not end, which is a data point I am choosing to remember.",
+        "keywords": ["phone", "do not disturb", "boundaries", "anxiety", "digital", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I think the most underrated feeling is the one you get when you finally sit down after a long day and your body just exhales.": {
+        "message": "I think the most underrated feeling is the one you get when you finally sit down after a long day and your body just exhales.",
+        "keywords": ["rest", "exhale", "tiredness", "relief", "body", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The store was so quiet I could hear the fluorescent lights humming, and it was almost peaceful.": {
+        "message": "The store was so quiet I could hear the fluorescent lights humming, and it was almost peaceful.",
+        "keywords": ["store", "quiet", "sensory", "atmosphere", "calm", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I think I have been treating my to-do list like a judge instead of a suggestion, and that is not working.": {
+        "message": "I think I have been treating my to-do list like a judge instead of a suggestion, and that is not working.",
+        "keywords": ["to-do list", "productivity", "judgment", "self-compassion", "planning", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I said 'I will be there in five minutes' and I meant it, but five minutes felt like an hour.": {
+        "message": "I said 'I will be there in five minutes' and I meant it, but five minutes felt like an hour.",
+        "keywords": ["time", "estimation", "social", "lateness", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a phone call with a friend is the part where you both go quiet and neither person feels the need to fill it.": {
+        "message": "I think the best part of a phone call with a friend is the part where you both go quiet and neither person feels the need to fill it.",
+        "keywords": ["phone call", "friendship", "silence", "comfort", "connection", "personal", "insight"],
+        "logit": 0.0
+    },
+    "I made a pot of soup and it was too salty, so now I am drinking water like a person in a desert.": {
+        "message": "I made a pot of soup and it was too salty, so now I am drinking water like a person in a desert.",
+        "keywords": ["soup", "cooking", "salt", "kitchen", "failure", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am done with the idea that I should have a 'type' of person I like, because I am not a restaurant menu.": {
+        "message": "I think I am done with the idea that I should have a 'type' of person I like, because I am not a restaurant menu.",
+        "keywords": ["dating", "type", "labels", "flexibility", "relationships", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The laundry basket is full again and I am choosing to believe it will fix itself by Thursday.": {
+        "message": "The laundry basket is full again and I am choosing to believe it will fix itself by Thursday.",
+        "keywords": ["laundry", "chores", "basket", "denial", "routine", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a walk is that it does not require you to be good at anything.": {
+        "message": "I think the best thing about a walk is that it does not require you to be good at anything.",
+        "keywords": ["walking", "exercise", "accessibility", "self-acceptance", "outdoors", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I put on a song I used to love and it sounded exactly the same, which is both comforting and a little sad.": {
+        "message": "I put on a song I used to love and it sounded exactly the same, which is both comforting and a little sad.",
+        "keywords": ["music", "nostalgia", "memory", "time", "change", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good day is that you spend the next day waiting for it to happen again.": {
+        "message": "I think the hardest part of a good day is that you spend the next day waiting for it to happen again.",
+        "keywords": ["good day", "anticipation", "contentment", "impermanence", "mood", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The printer did not jam this time, and I am choosing to be suspicious of it.": {
+        "message": "The printer did not jam this time, and I am choosing to be suspicious of it.",
+        "keywords": ["printer", "work", "suspicion", "technology", "office", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need a dramatic reason to take a day off, and that is a freedom.": {
+        "message": "I think I am at the point where I do not need a dramatic reason to take a day off, and that is a freedom.",
+        "keywords": ["day off", "rest", "permission", "self-care", "freedom", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a text and deleted it three times before sending a version that sounded less dramatic.": {
+        "message": "I made a text and deleted it three times before sending a version that sounded less dramatic.",
+        "keywords": ["texting", "editing", "tone", "communication", "self-awareness", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a quiet morning is that it does not owe you a reason to be awake.": {
+        "message": "I think the best thing about a quiet morning is that it does not owe you a reason to be awake.",
+        "keywords": ["morning", "quiet", "awakening", "peace", "time", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The bus was full and I stood next to a stranger for forty minutes and we did not speak, which is a complete social success.": {
+        "message": "The bus was full and I stood next to a stranger for forty minutes and we did not speak, which is a complete social success.",
+        "keywords": ["bus", "stranger", "commute", "silence", "social", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I have been treating my energy like it is a moral failing when it is actually just biology.": {
+        "message": "I think I have been treating my energy like it is a moral failing when it is actually just biology.",
+        "keywords": ["energy", "biology", "self-compassion", "fatigue", "mindset", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I made a joke and my dog did not laugh, which is the most honest audience I have.": {
+        "message": "I made a joke and my dog did not laugh, which is the most honest audience I have.",
+        "keywords": ["dog", "humor", "audience", "honesty", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long drive is the moment the road gets empty and you can finally just breathe.": {
+        "message": "I think the best part of a long drive is the moment the road gets empty and you can finally just breathe.",
+        "keywords": ["driving", "road", "emptiness", "breathe", "freedom", "personal", "calm"],
+        "logit": 0.0
+    },
+    "I put my shoes on the wrong feet again, and I am starting to think this is a personality trait.": {
+        "message": "I put my shoes on the wrong feet again, and I am starting to think this is a personality trait.",
+        "keywords": ["shoes", "morning", "mistake", "rushing", "self-awareness", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the most underrated skill is knowing when to stop explaining yourself.": {
+        "message": "I think the most underrated skill is knowing when to stop explaining yourself.",
+        "keywords": ["explaining", "boundaries", "communication", "self-respect", "social", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The coffee shop was so full I had to stand, and I am choosing to call it a vertical experience.": {
+        "message": "The coffee shop was so full I had to stand, and I am choosing to call it a vertical experience.",
+        "keywords": ["coffee shop", "crowd", "standing", "inconvenience", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I would rather have a small life I understand than a big one I cannot explain.": {
+        "message": "I think I am at the point where I would rather have a small life I understand than a big one I cannot explain.",
+        "keywords": ["simplicity", "understanding", "values", "life", "mindset", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I made a grocery list and forgot it in the car, and now I am in the store with no plan and full confidence.": {
+        "message": "I made a grocery list and forgot it in the car, and now I am in the store with no plan and full confidence.",
+        "keywords": ["groceries", "list", "car", "store", "improvisation", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a friend is that they do not need you to be interesting, just present.": {
+        "message": "I think the best thing about a friend is that they do not need you to be interesting, just present.",
+        "keywords": ["friendship", "presence", "interest", "connection", "relationships", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The water in the glass was exactly the right temperature and I drank it slowly on purpose, which is a small act of self-respect.": {
+        "message": "The water in the glass was exactly the right temperature and I drank it slowly on purpose, which is a small act of self-respect.",
+        "keywords": ["water", "drinking", "slowness", "self-respect", "sensory", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good conversation is that you cannot save it for later.": {
+        "message": "I think the hardest part of a good conversation is that you cannot save it for later.",
+        "keywords": ["conversation", "impermanence", "presence", "time", "connection", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started.": {
+        "message": "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started.",
+        "keywords": ["phone", "notifications", "distraction", "loop", "digital", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am done with the idea that I should be 'grateful' for every bad thing, because sometimes a thing is just bad.": {
+        "message": "I think I am done with the idea that I should be 'grateful' for every bad thing, because sometimes a thing is just bad.",
+        "keywords": ["gratitude", "toxic positivity", "honesty", "emotions", "acceptance", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The store had a sample and I took one, and now I am in a small negotiation with myself about whether I should buy the whole thing.": {
+        "message": "The store had a sample and I took one, and now I am in a small negotiation with myself about whether I should buy the whole thing.",
+        "keywords": ["store", "sample", "decision", "temptation", "shopping", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a Friday is the specific quality of the light, like the day is slightly more generous.": {
+        "message": "I think the best part of a Friday is the specific quality of the light, like the day is slightly more generous.",
+        "keywords": ["friday", "light", "quality", "generosity", "mood", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I made a mistake on a form and filled it out again, and the second version was not better, just different.": {
+        "message": "I made a mistake on a form and filled it out again, and the second version was not better, just different.",
+        "keywords": ["form", "mistake", "repetition", "bureaucracy", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to justify resting, and that is the whole point of being an adult.": {
+        "message": "I think I am at the point where I do not need to justify resting, and that is the whole point of being an adult.",
+        "keywords": ["rest", "justification", "adulthood", "self-care", "autonomy", "personal", "growth"],
+        "logit": 0.0
+    },
+    "The dog followed me into the bathroom and I am choosing to call it quality control.": {
+        "message": "The dog followed me into the bathroom and I am choosing to call it quality control.",
+        "keywords": ["dog", "bathroom", "privacy", "pets", "loyalty", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a shared meal is that nobody is talking and everybody is just eating, and it is enough.": {
+        "message": "I think the best thing about a shared meal is that nobody is talking and everybody is just eating, and it is enough.",
+        "keywords": ["meal", "silence", "together", "comfort", "food", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I put my keys in my coat pocket and forgot about them for a week, which is a small archaeological find.": {
+        "message": "I put my keys in my coat pocket and forgot about them for a week, which is a small archaeological find.",
+        "keywords": ["keys", "coat", "forgetting", "discovery", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good morning is that it makes the rest of the day feel like it should match.": {
+        "message": "I think the hardest part of a good morning is that it makes the rest of the day feel like it should match.",
+        "keywords": ["morning", "expectations", "pressure", "mood", "day", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I made a text that was too long and deleted it, and now I am sitting here with a thought I cannot send.": {
+        "message": "I made a text that was too long and deleted it, and now I am sitting here with a thought I cannot send.",
+        "keywords": ["texting", "length", "deleting", "unsent", "communication", "personal", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a quiet house is that you can hear yourself think, and sometimes that is too much.": {
+        "message": "I think the best thing about a quiet house is that you can hear yourself think, and sometimes that is too much.",
+        "keywords": ["quiet", "house", "thinking", "silence", "mental", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The coffee was good and the cup was warm in my hands and I did not take a photo, which is the correct decision.": {
+        "message": "The coffee was good and the cup was warm in my hands and I did not take a photo, which is the correct decision.",
+        "keywords": ["coffee", "warmth", "presence", "phone", "sensory", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be the funniest person in the room, just the most present.": {
+        "message": "I think I am at the point where I do not need to be the funniest person in the room, just the most present.",
+        "keywords": ["humor", "presence", "social", "self-acceptance", "room", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a sandwich with too many ingredients and it fell apart in my hand, which is a metaphor I am not ready for.": {
+        "message": "I made a sandwich with too many ingredients and it fell apart in my hand, which is a metaphor I am not ready for.",
+        "keywords": ["sandwich", "kitchen", "failure", "metaphor", "food", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long conversation is the part where you both realize you have been talking for two hours and neither of you is tired.": {
+        "message": "I think the best part of a long conversation is the part where you both realize you have been talking for two hours and neither of you is tired.",
+        "keywords": ["conversation", "time", "energy", "connection", "friendship", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The store was out of the bread I wanted and the bread I wanted was the only bread I wanted, which is a specific kind of pain.": {
+        "message": "The store was out of the bread I wanted and the bread I wanted was the only bread I wanted, which is a specific kind of pain.",
+        "keywords": ["store", "bread", "out of stock", "frustration", "shopping", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I have been treating my moods like they are facts, when really they are more like weather.": {
+        "message": "I think I have been treating my moods like they are facts, when really they are more like weather.",
+        "keywords": ["moods", "weather", "self-awareness", "emotions", "perspective", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I put my phone face down on the table and it felt like a small act of rebellion against the algorithm.": {
+        "message": "I put my phone face down on the table and it felt like a small act of rebellion against the algorithm.",
+        "keywords": ["phone", "face down", "rebellion", "algorithm", "attention", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I think the best thing about a walk in the rain is that nobody can blame you for being wet and happy at the same time.": {
+        "message": "I think the best thing about a walk in the rain is that nobody can blame you for being wet and happy at the same time.",
+        "keywords": ["rain", "walking", "happiness", "outdoors", "sensory", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The meeting ended and I sat in my car for a full five minutes before I could move, and I am not apologizing for that.": {
+        "message": "The meeting ended and I sat in my car for a full five minutes before I could move, and I am not apologizing for that.",
+        "keywords": ["meeting", "car", "pause", "transition", "mental health", "personal", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good friendship is that it does not need to be constant to be real.": {
+        "message": "I think the hardest part of a good friendship is that it does not need to be constant to be real.",
+        "keywords": ["friendship", "constancy", "distance", "trust", "relationships", "personal", "insight"],
+        "logit": 0.0
+    },
+    "I made a cup of tea and it went cold before I finished it, and I drank it anyway, which is a character flaw I am not fixing.": {
+        "message": "I made a cup of tea and it went cold before I finished it, and I drank it anyway, which is a character flaw I am not fixing.",
+        "keywords": ["tea", "cold", "drinking", "character", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a quiet evening is that it does not require you to be anywhere other than where you are.": {
+        "message": "I think the best thing about a quiet evening is that it does not require you to be anywhere other than where you are.",
+        "keywords": ["evening", "quiet", "presence", "stillness", "home", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog brought me a shoe I had lost in the yard, and I am choosing to call it a service.": {
+        "message": "The dog brought me a shoe I had lost in the yard, and I am choosing to call it a service.",
+        "keywords": ["dog", "shoe", "yard", "lost", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to perform gratitude, just feel it, and that is enough.": {
+        "message": "I think I am at the point where I do not need to perform gratitude, just feel it, and that is enough.",
+        "keywords": ["gratitude", "authenticity", "performance", "emotions", "self", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I put my phone on the charger and it died anyway, which is a betrayal I did not expect from a device.": {
+        "message": "I put my phone on the charger and it died anyway, which is a betrayal I did not expect from a device.",
+        "keywords": ["phone", "battery", "charger", "betrayal", "technology", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long lunch is the ten minutes where you are not hungry and not full, just in between.": {
+        "message": "I think the best part of a long lunch is the ten minutes where you are not hungry and not full, just in between.",
+        "keywords": ["lunch", "hunger", "fullness", "in-between", "pause", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I made a text that was too honest and sent it, and now I am waiting for the other shoe to drop.": {
+        "message": "I made a text that was too honest and sent it, and now I am waiting for the other shoe to drop.",
+        "keywords": ["texting", "honesty", "vulnerability", "anxiety", "communication", "personal", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good day is that you cannot bottle it and save it for a bad one.": {
+        "message": "I think the hardest part of a good day is that you cannot bottle it and save it for a bad one.",
+        "keywords": ["good day", "bottling", "impermanence", "saving", "mood", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "The store had a line and I counted the people in front of me and there were eleven, which is a small census.": {
+        "message": "The store had a line and I counted the people in front of me and there were eleven, which is a small census.",
+        "keywords": ["store", "line", "waiting", "counting", "boredom", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be productive to feel like I have done enough.": {
+        "message": "I think I am at the point where I do not need to be productive to feel like I have done enough.",
+        "keywords": ["productivity", "enough", "self-worth", "rest", "mindset", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I put on a sweater and it was the wrong size, and I am wearing it anyway because I am not changing.": {
+        "message": "I put on a sweater and it was the wrong size, and I am wearing it anyway because I am not changing.",
+        "keywords": ["sweater", "clothing", "size", "comfort", "decision", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a shared silence is that it is a form of communication that does not require words.": {
+        "message": "I think the best thing about a shared silence is that it is a form of communication that does not require words.",
+        "keywords": ["silence", "communication", "shared", "presence", "connection", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The coffee was good and I drank it in one sitting, which is a small act of commitment.": {
+        "message": "The coffee was good and I drank it in one sitting, which is a small act of commitment.",
+        "keywords": ["coffee", "drinking", "commitment", "morning", "ritual", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I think the hardest part of being honest is that it does not always get the reaction you hoped for.": {
+        "message": "I think the hardest part of being honest is that it does not always get the reaction you hoped for.",
+        "keywords": ["honesty", "reaction", "vulnerability", "communication", "expectations", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I made a grocery run and came home with one item, which is a 100 percent success rate if you ignore the other nine items I needed.": {
+        "message": "I made a grocery run and came home with one item, which is a 100 percent success rate if you ignore the other nine items I needed.",
+        "keywords": ["groceries", "shopping", "success", "math", "store", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long walk is the moment your legs stop complaining and just keep going.": {
+        "message": "I think the best part of a long walk is the moment your legs stop complaining and just keep going.",
+        "keywords": ["walking", "legs", "endurance", "body", "outdoors", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog is sleeping on my laptop and I am not moving it, which is a negotiation I am losing.": {
+        "message": "The dog is sleeping on my laptop and I am not moving it, which is a negotiation I am losing.",
+        "keywords": ["dog", "laptop", "work", "pets", "negotiation", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to explain my boundaries, just hold them.": {
+        "message": "I think I am at the point where I do not need to explain my boundaries, just hold them.",
+        "keywords": ["boundaries", "explanation", "holding", "self-respect", "relationships", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I put my phone in another room and the silence was so loud I could hear my own thoughts, which was uncomfortable.": {
+        "message": "I put my phone in another room and the silence was so loud I could hear my own thoughts, which was uncomfortable.",
+        "keywords": ["phone", "silence", "thoughts", "uncomfortable", "digital", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think the best thing about a good meal is that it does not require you to be anywhere else.": {
+        "message": "I think the best thing about a good meal is that it does not require you to be anywhere else.",
+        "keywords": ["meal", "presence", "food", "enjoyment", "table", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The store was playing a song I used to love and I stood in the aisle for a full minute just listening, which is a small pilgrimage.": {
+        "message": "The store was playing a song I used to love and I stood in the aisle for a full minute just listening, which is a small pilgrimage.",
+        "keywords": ["music", "store", "nostalgia", "aisle", "pilgrimage", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good friendship is that you cannot schedule it, you can only show up.": {
+        "message": "I think the hardest part of a good friendship is that you cannot schedule it, you can only show up.",
+        "keywords": ["friendship", "scheduling", "showing up", "spontaneity", "relationships", "personal", "insight"],
+        "logit": 0.0
+    },
+    "I made a cup of coffee and it was the perfect temperature, which is a small miracle I am choosing to acknowledge.": {
+        "message": "I made a cup of coffee and it was the perfect temperature, which is a small miracle I am choosing to acknowledge.",
+        "keywords": ["coffee", "temperature", "miracle", "acknowledging", "morning", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I put my keys on the counter and they are still there, which is a small victory I am choosing to celebrate.": {
+        "message": "I put my keys on the counter and they are still there, which is a small victory I am choosing to celebrate.",
+        "keywords": ["keys", "counter", "victory", "celebrating", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a quiet night is that it does not require you to be interesting, just awake.": {
+        "message": "I think the best part of a quiet night is that it does not require you to be interesting, just awake.",
+        "keywords": ["night", "quiet", "awake", "interest", "presence", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog looked at me like I had made a personal choice to leave the room, and I had, but it was not personal.": {
+        "message": "The dog looked at me like I had made a personal choice to leave the room, and I had, but it was not personal.",
+        "keywords": ["dog", "room", "leaving", "personal", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be the one who remembers everything, and that is a relief.": {
+        "message": "I think I am at the point where I do not need to be the one who remembers everything, and that is a relief.",
+        "keywords": ["remembering", "relief", "burden", "sharing", "relationships", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a text that was too casual and sent it, and now I am wondering if they thought I was being sarcastic.": {
+        "message": "I made a text that was too casual and sent it, and now I am wondering if they thought I was being sarcastic.",
+        "keywords": ["texting", "casual", "sarcastic", "misunderstanding", "communication", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a good book is that it does not require you to be social, just curious.": {
+        "message": "I think the best thing about a good book is that it does not require you to be social, just curious.",
+        "keywords": ["book", "reading", "curiosity", "social", "solitude", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The store was out of the coffee I wanted and I am now in a small existential crisis about my morning.": {
+        "message": "The store was out of the coffee I wanted and I am now in a small existential crisis about my morning.",
+        "keywords": ["store", "coffee", "out of stock", "morning", "crisis", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours.": {
+        "message": "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours.",
+        "keywords": ["good day", "telling", "privacy", "ownership", "mood", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I put my phone on the charger and it is at 100 percent, which is a small act of faith.": {
+        "message": "I put my phone on the charger and it is at 100 percent, which is a small act of faith.",
+        "keywords": ["phone", "charger", "100 percent", "faith", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long conversation is the part where you both go quiet and neither person feels the need to fill it.": {
+        "message": "I think the best part of a long conversation is the part where you both go quiet and neither person feels the need to fill it.",
+        "keywords": ["conversation", "quiet", "filling", "comfort", "connection", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The dog is sleeping in a spot that is not a bed, and I am choosing to call it a decision.": {
+        "message": "The dog is sleeping in a spot that is not a bed, and I am choosing to call it a decision.",
+        "keywords": ["dog", "sleeping", "bed", "decision", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be the one who makes things better, just the one who is there.": {
+        "message": "I think I am at the point where I do not need to be the one who makes things better, just the one who is there.",
+        "keywords": ["fixing", "presence", "being there", "relationships", "support", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a cup of tea and it was the perfect temperature, which is a small act of kindness to myself.": {
+        "message": "I made a cup of tea and it was the perfect temperature, which is a small act of kindness to myself.",
+        "keywords": ["tea", "temperature", "kindness", "self-care", "evening", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "I think the best thing about a quiet morning is that it does not require you to be anywhere other than where you are.": {
+        "message": "I think the best thing about a quiet morning is that it does not require you to be anywhere other than where you are.",
+        "keywords": ["morning", "quiet", "presence", "stillness", "home", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The store was playing a song I used to love and I stood in the aisle for a full minute just listening, which is a small act of devotion.": {
+        "message": "The store was playing a song I used to love and I stood in the aisle for a full minute just listening, which is a small act of devotion.",
+        "keywords": ["music", "store", "nostalgia", "devotion", "aisle", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good friendship is that it does not need to be perfect to be real.": {
+        "message": "I think the hardest part of a good friendship is that it does not need to be perfect to be real.",
+        "keywords": ["friendship", "perfection", "real", "relationships", "acceptance", "personal", "insight"],
+        "logit": 0.0
+    },
+    "I made a sandwich and it was good, which is a small victory I am choosing to acknowledge.": {
+        "message": "I made a sandwich and it was good, which is a small victory I am choosing to acknowledge.",
+        "keywords": ["sandwich", "cooking", "victory", "acknowledging", "lunch", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started.": {
+        "message": "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started.",
+        "keywords": ["phone", "buzzing", "checking", "loop", "digital", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long walk is the moment you realize you have been walking for an hour and you are not tired.": {
+        "message": "I think the best part of a long walk is the moment you realize you have been walking for an hour and you are not tired.",
+        "keywords": ["walking", "hour", "not tired", "endurance", "outdoors", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog is sleeping on my feet and I am not moving them, which is a small act of surrender.": {
+        "message": "The dog is sleeping on my feet and I am not moving them, which is a small act of surrender.",
+        "keywords": ["dog", "feet", "sleeping", "surrender", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be the one who remembers the details, just the one who cares.": {
+        "message": "I think I am at the point where I do not need to be the one who remembers the details, just the one who cares.",
+        "keywords": ["details", "caring", "remembering", "relationships", "effort", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a text that was too long and sent it anyway, and now I am waiting for the other shoe to drop.": {
+        "message": "I made a text that was too long and sent it anyway, and now I am waiting for the other shoe to drop.",
+        "keywords": ["texting", "long", "sending", "anxiety", "communication", "personal", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a good meal is that it does not require you to be anywhere else, just at the table.": {
+        "message": "I think the best thing about a good meal is that it does not require you to be anywhere else, just at the table.",
+        "keywords": ["meal", "table", "presence", "food", "enjoyment", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The store was out of the bread I wanted and I am now in a small negotiation with myself about whether to go back.": {
+        "message": "The store was out of the bread I wanted and I am now in a small negotiation with myself about whether to go back.",
+        "keywords": ["store", "bread", "negotiation", "going back", "shopping", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours.": {
+        "message": "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours.",
+        "keywords": ["good day", "telling", "privacy", "ownership", "mood", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I put my phone on the charger and it is at 100 percent, which is a small act of faith in the future.": {
+        "message": "I put my phone on the charger and it is at 100 percent, which is a small act of faith in the future.",
+        "keywords": ["phone", "charger", "100 percent", "faith", "future", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a quiet evening is that it does not require you to be interesting, just present.": {
+        "message": "I think the best part of a quiet evening is that it does not require you to be interesting, just present.",
+        "keywords": ["evening", "quiet", "present", "interest", "stillness", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog is sleeping in a spot that is not a bed, and I am choosing to call it a philosophy.": {
+        "message": "The dog is sleeping in a spot that is not a bed, and I am choosing to call it a philosophy.",
+        "keywords": ["dog", "sleeping", "philosophy", "bed", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be the one who makes things happen, just the one who shows up.": {
+        "message": "I think I am at the point where I do not need to be the one who makes things happen, just the one who shows up.",
+        "keywords": ["making happen", "showing up", "presence", "relationships", "effort", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a cup of coffee and it was the perfect temperature, which is a small act of grace.": {
+        "message": "I made a cup of coffee and it was the perfect temperature, which is a small act of grace.",
+        "keywords": ["coffee", "temperature", "grace", "morning", "ritual", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I think the best thing about a good conversation is that it does not require you to be the funniest person in the room.": {
+        "message": "I think the best thing about a good conversation is that it does not require you to be the funniest person in the room.",
+        "keywords": ["conversation", "funny", "room", "presence", "social", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The store was playing a song I used to love and I stood in the aisle for a full minute just listening, which is a small act of memory.": {
+        "message": "The store was playing a song I used to love and I stood in the aisle for a full minute just listening, which is a small act of memory.",
+        "keywords": ["music", "store", "memory", "nostalgia", "aisle", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good friendship is that it does not need to be constant to be real, just present when it matters.": {
+        "message": "I think the hardest part of a good friendship is that it does not need to be constant to be real, just present when it matters.",
+        "keywords": ["friendship", "constant", "present", "matters", "relationships", "personal", "insight"],
+        "logit": 0.0
+    },
+    "I made a sandwich and it was good, which is a small act of self-respect.": {
+        "message": "I made a sandwich and it was good, which is a small act of self-respect.",
+        "keywords": ["sandwich", "self-respect", "cooking", "lunch", "daily life", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started, which is a small act of surrender.": {
+        "message": "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started, which is a small act of surrender.",
+        "keywords": ["phone", "buzzing", "surrender", "loop", "digital", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long walk is the moment you realize you have been walking for an hour and you are not tired, which is a small act of faith in your body.": {
+        "message": "I think the best part of a long walk is the moment you realize you have been walking for an hour and you are not tired, which is a small act of faith in your body.",
+        "keywords": ["walking", "body", "faith", "endurance", "outdoors", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog is sleeping on my feet and I am not moving them, which is a small act of trust.": {
+        "message": "The dog is sleeping on my feet and I am not moving them, which is a small act of trust.",
+        "keywords": ["dog", "feet", "trust", "sleeping", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be the one who remembers the details, just the one who shows up.": {
+        "message": "I think I am at the point where I do not need to be the one who remembers the details, just the one who shows up.",
+        "keywords": ["details", "showing up", "presence", "relationships", "effort", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a text that was too long and sent it anyway, and now I am waiting for the other shoe to drop, which is a small act of faith.": {
+        "message": "I made a text that was too long and sent it anyway, and now I am waiting for the other shoe to drop, which is a small act of faith.",
+        "keywords": ["texting", "faith", "anxiety", "sending", "communication", "personal", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a good meal is that it does not require you to be anywhere else, just at the table, which is a small act of presence.": {
+        "message": "I think the best thing about a good meal is that it does not require you to be anywhere else, just at the table, which is a small act of presence.",
+        "keywords": ["meal", "table", "presence", "food", "enjoyment", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The store was out of the bread I wanted and I am now in a small negotiation with myself about whether to go back, which is a small act of will.": {
+        "message": "The store was out of the bread I wanted and I am now in a small negotiation with myself about whether to go back, which is a small act of will.",
+        "keywords": ["store", "bread", "will", "negotiation", "shopping", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours, which is a small act of privacy.": {
+        "message": "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours, which is a small act of privacy.",
+        "keywords": ["good day", "privacy", "telling", "ownership", "mood", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I put my phone on the charger and it is at 100 percent, which is a small act of faith in the morning.": {
+        "message": "I put my phone on the charger and it is at 100 percent, which is a small act of faith in the morning.",
+        "keywords": ["phone", "charger", "faith", "morning", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a quiet evening is that it does not require you to be interesting, just present, which is a small act of peace.": {
+        "message": "I think the best part of a quiet evening is that it does not require you to be interesting, just present, which is a small act of peace.",
+        "keywords": ["evening", "quiet", "peace", "present", "stillness", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog is sleeping in a spot that is not a bed, and I am choosing to call it a small act of rebellion.": {
+        "message": "The dog is sleeping in a spot that is not a bed, and I am choosing to call it a small act of rebellion.",
+        "keywords": ["dog", "rebellion", "sleeping", "bed", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be the one who makes things happen, just the one who shows up, which is a small act of trust.": {
+        "message": "I think I am at the point where I do not need to be the one who makes things happen, just the one who shows up, which is a small act of trust.",
+        "keywords": ["showing up", "trust", "presence", "relationships", "effort", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a cup of coffee and it was the perfect temperature, which is a small act of grace in the morning.": {
+        "message": "I made a cup of coffee and it was the perfect temperature, which is a small act of grace in the morning.",
+        "keywords": ["coffee", "grace", "morning", "temperature", "ritual", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I think the best thing about a good conversation is that it does not require you to be the funniest person in the room, just the most present.": {
+        "message": "I think the best thing about a good conversation is that it does not require you to be the funniest person in the room, just the most present.",
+        "keywords": ["conversation", "presence", "funny", "room", "social", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The store was playing a song I used to love and I stood in the aisle for a full minute just listening, which is a small act of devotion to memory.": {
+        "message": "The store was playing a song I used to love and I stood in the aisle for a full minute just listening, which is a small act of devotion to memory.",
+        "keywords": ["music", "devotion", "memory", "nostalgia", "store", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good friendship is that it does not need to be constant to be real, just present when it matters, which is a small act of faith.": {
+        "message": "I think the hardest part of a good friendship is that it does not need to be constant to be real, just present when it matters, which is a small act of faith.",
+        "keywords": ["friendship", "faith", "present", "matters", "relationships", "personal", "insight"],
+        "logit": 0.0
+    },
+    "I made a sandwich and it was good, which is a small act of self-respect in a long week.": {
+        "message": "I made a sandwich and it was good, which is a small act of self-respect in a long week.",
+        "keywords": ["sandwich", "self-respect", "week", "cooking", "lunch", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started, which is a small act of surrender to the digital age.": {
+        "message": "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started, which is a small act of surrender to the digital age.",
+        "keywords": ["phone", "digital age", "surrender", "buzzing", "loop", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long walk is the moment you realize you have been walking for an hour and you are not tired, which is a small act of faith in your own body.": {
+        "message": "I think the best part of a long walk is the moment you realize you have been walking for an hour and you are not tired, which is a small act of faith in your own body.",
+        "keywords": ["walking", "body", "faith", "hour", "outdoors", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog is sleeping on my feet and I am not moving them, which is a small act of trust between species.": {
+        "message": "The dog is sleeping on my feet and I am not moving them, which is a small act of trust between species.",
+        "keywords": ["dog", "trust", "species", "feet", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be the one who remembers the details, just the one who shows up, which is a small act of grace.": {
+        "message": "I think I am at the point where I do not need to be the one who remembers the details, just the one who shows up, which is a small act of grace.",
+        "keywords": ["showing up", "grace", "details", "presence", "relationships", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a text that was too long and sent it anyway, and now I am waiting for the other shoe to drop, which is a small act of faith in the other person.": {
+        "message": "I made a text that was too long and sent it anyway, and now I am waiting for the other shoe to drop, which is a small act of faith in the other person.",
+        "keywords": ["texting", "faith", "other person", "anxiety", "communication", "personal", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a good meal is that it does not require you to be anywhere else, just at the table, which is a small act of presence in a distracted world.": {
+        "message": "I think the best thing about a good meal is that it does not require you to be anywhere else, just at the table, which is a small act of presence in a distracted world.",
+        "keywords": ["meal", "presence", "distracted", "table", "food", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The store was out of the bread I wanted and I am now in a small negotiation with myself about whether to go back, which is a small act of will against convenience.": {
+        "message": "The store was out of the bread I wanted and I am now in a small negotiation with myself about whether to go back, which is a small act of will against convenience.",
+        "keywords": ["store", "bread", "will", "convenience", "shopping", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours, which is a small act of privacy in a connected world.": {
+        "message": "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours, which is a small act of privacy in a connected world.",
+        "keywords": ["good day", "privacy", "connected", "telling", "ownership", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I put my phone on the charger and it is at 100 percent, which is a small act of faith in the morning ahead.": {
+        "message": "I put my phone on the charger and it is at 100 percent, which is a small act of faith in the morning ahead.",
+        "keywords": ["phone", "faith", "morning", "charger", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a quiet evening is that it does not require you to be interesting, just present, which is a small act of peace in a loud world.": {
+        "message": "I think the best part of a quiet evening is that it does not require you to be interesting, just present, which is a small act of peace in a loud world.",
+        "keywords": ["evening", "peace", "loud world", "present", "quiet", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog is sleeping in a spot that is not a bed, and I am choosing to call it a small act of rebellion against order.": {
+        "message": "The dog is sleeping in a spot that is not a bed, and I am choosing to call it a small act of rebellion against order.",
+        "keywords": ["dog", "rebellion", "order", "sleeping", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be the one who makes things happen, just the one who shows up, which is a small act of trust in the process.": {
+        "message": "I think I am at the point where I do not need to be the one who makes things happen, just the one who shows up, which is a small act of trust in the process.",
+        "keywords": ["showing up", "trust", "process", "presence", "relationships", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a cup of coffee and it was the perfect temperature, which is a small act of grace in a morning that did not ask for it.": {
+        "message": "I made a cup of coffee and it was the perfect temperature, which is a small act of grace in a morning that did not ask for it.",
+        "keywords": ["coffee", "grace", "morning", "temperature", "ritual", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I think the best thing about a good conversation is that it does not require you to be the funniest person in the room, just the most present, which is a small act of courage.": {
+        "message": "I think the best thing about a good conversation is that it does not require you to be the funniest person in the room, just the most present, which is a small act of courage.",
+        "keywords": ["conversation", "courage", "presence", "funny", "room", "personal", "insight"],
+        "logit": 0.0
+    },
+    "The store was playing a song I used to love and I stood in the aisle for a full minute just listening, which is a small act of devotion to a version of myself that no longer exists.": {
+        "message": "The store was playing a song I used to love and I stood in the aisle for a full minute just listening, which is a small act of devotion to a version of myself that no longer exists.",
+        "keywords": ["music", "devotion", "version", "nostalgia", "store", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good friendship is that it does not need to be constant to be real, just present when it matters, which is a small act of faith in the other person.": {
+        "message": "I think the hardest part of a good friendship is that it does not need to be constant to be real, just present when it matters, which is a small act of faith in the other person.",
+        "keywords": ["friendship", "faith", "other person", "present", "relationships", "personal", "insight"],
+        "logit": 0.0
+    },
+    "I made a sandwich and it was good, which is a small act of self-respect in a week that did not ask for it.": {
+        "message": "I made a sandwich and it was good, which is a small act of self-respect in a week that did not ask for it.",
+        "keywords": ["sandwich", "self-respect", "week", "cooking", "lunch", "personal", "gratitude"],
+        "logit": 0.0
+    },
+    "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started, which is a small act of surrender to the digital age that I did not ask for.": {
+        "message": "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started, which is a small act of surrender to the digital age that I did not ask for.",
+        "keywords": ["phone", "digital age", "surrender", "buzzing", "loop", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a long walk is the moment you realize you have been walking for an hour and you are not tired, which is a small act of faith in your own body that you did not earn.": {
+        "message": "I think the best part of a long walk is the moment you realize you have been walking for an hour and you are not tired, which is a small act of faith in your own body that you did not earn.",
+        "keywords": ["walking", "body", "faith", "hour", "outdoors", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog is sleeping on my feet and I am not moving them, which is a small act of trust between species that did not need a contract.": {
+        "message": "The dog is sleeping on my feet and I am not moving them, which is a small act of trust between species that did not need a contract.",
+        "keywords": ["dog", "trust", "species", "contract", "pets", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think I am at the point where I do not need to be the one who remembers the details, just the one who shows up, which is a small act of grace that I am choosing to accept.": {
+        "message": "I think I am at the point where I do not need to be the one who remembers the details, just the one who shows up, which is a small act of grace that I am choosing to accept.",
+        "keywords": ["showing up", "grace", "accepting", "details", "relationships", "personal", "growth"],
+        "logit": 0.0
+    },
+    "I made a text that was too long and sent it anyway, and now I am waiting for the other shoe to drop, which is a small act of faith in the other person that I am not sure I deserve.": {
+        "message": "I made a text that was too long and sent it anyway, and now I am waiting for the other shoe to drop, which is a small act of faith in the other person that I am not sure I deserve.",
+        "keywords": ["texting", "faith", "deserve", "anxiety", "communication", "personal", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best thing about a good meal is that it does not require you to be anywhere else, just at the table, which is a small act of presence in a distracted world that did not ask for it.": {
+        "message": "I think the best thing about a good meal is that it does not require you to be anywhere else, just at the table, which is a small act of presence in a distracted world that did not ask for it.",
+        "keywords": ["meal", "presence", "distracted", "table", "food", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The store was out of the bread I wanted and I am now in a small negotiation with myself about whether to go back, which is a small act of will against convenience that I did not earn.": {
+        "message": "The store was out of the bread I wanted and I am now in a small negotiation with myself about whether to go back, which is a small act of will against convenience that I did not earn.",
+        "keywords": ["store", "bread", "will", "convenience", "shopping", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours, which is a small act of privacy in a connected world that did not ask for it.": {
+        "message": "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours, which is a small act of privacy in a connected world that did not ask for it.",
+        "keywords": ["good day", "privacy", "connected", "telling", "ownership", "personal", "reflection"],
+        "logit": 0.0
+    },
+    "I put my phone on the charger and it is at 100 percent, which is a small act of faith in the morning ahead that did not ask for it.": {
+        "message": "I put my phone on the charger and it is at 100 percent, which is a small act of faith in the morning ahead that did not ask for it.",
+        "keywords": ["phone", "faith", "morning", "charger", "daily life", "comedic", "relatable"],
+        "logit": 0.0
+    },
+    "I think the best part of a quiet evening is that it does not require you to be interesting, just present, which is a small act of peace in a loud world that did not ask for it.": {
+        "message": "I think the best part of a quiet evening is that it does not require you to be interesting, just present, which is a small act of peace in a loud world that did not ask for it.",
+        "keywords": ["evening", "peace", "loud world", "present", "quiet", "personal", "appreciation"],
+        "logit": 0.0
+    },
+    "The dog is sleeping in a spot that is not a bed, and I am choosing to call it a small act of rebellion against order that did not ask for it.": {
+        "message": "The dog is sleeping in a spot that is not a bed, and I am choosing to call it a small act of rebellion against order that did not ask for it.",
+        "keywords": ["dog", "rebellion", "order", "sleeping", "pets", "comedic", "relatable"],
+        "logit": 0.0
     }
 }
