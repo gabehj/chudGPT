@@ -14065,7 +14065,7 @@
         "message": "The neighbor's cat is on my fence again and I am now in a relationship with that cat that I did not ask for.",
         "keywords": ["cat", "neighbor", "fence", "pets", "unwanted", "comedic", "relatable"],
         "logit": 0.0
-    }
+    },
     "I made a cup of coffee and it was too hot, so I blew on it for a full minute like a person in a commercial.": {
         "message": "I made a cup of coffee and it was too hot, so I blew on it for a full minute like a person in a commercial.",
         "keywords": ["coffee", "morning", "patience", "routine", "daily life", "comedic", "relatable"],
@@ -14506,11 +14506,6 @@
         "keywords": ["store", "coffee", "out of stock", "morning", "crisis", "comedic", "relatable"],
         "logit": 0.0
     },
-    "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours.": {
-        "message": "I think the hardest part of a good day is that you cannot tell someone about it and still have it be yours.",
-        "keywords": ["good day", "telling", "privacy", "ownership", "mood", "personal", "reflection"],
-        "logit": 0.0
-    },
     "I put my phone on the charger and it is at 100 percent, which is a small act of faith.": {
         "message": "I put my phone on the charger and it is at 100 percent, which is a small act of faith.",
         "keywords": ["phone", "charger", "100 percent", "faith", "daily life", "comedic", "relatable"],
@@ -14554,11 +14549,6 @@
     "I made a sandwich and it was good, which is a small victory I am choosing to acknowledge.": {
         "message": "I made a sandwich and it was good, which is a small victory I am choosing to acknowledge.",
         "keywords": ["sandwich", "cooking", "victory", "acknowledging", "lunch", "personal", "gratitude"],
-        "logit": 0.0
-    },
-    "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started.": {
-        "message": "I put my phone in my pocket and it buzzed so many times that I had to check it, and now I am back where I started.",
-        "keywords": ["phone", "buzzing", "checking", "loop", "digital", "comedic", "relatable"],
         "logit": 0.0
     },
     "I think the best part of a long walk is the moment you realize you have been walking for an hour and you are not tired.": {
