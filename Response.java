@@ -41,6 +41,7 @@ public class Response {
         // Iterate through each keyword in the botmessages and add to isMasterKeyword
         for (MessageNode node : theMasterList.values()) {
             for (String keyword : node.getThemes()) {
+                //System.out.println(keyword); // Display all keywords
                 isMasterKeyword.put(keyword, true);
             }
         }
@@ -59,6 +60,8 @@ public class Response {
         String word = "";
         message = message + " ";
         
+        //System.out.println(isMasterKeyword.get("stem")!=null);
+
         while (i < message.length()) {
             /*
             if (!isAlphanumeric(letter)) {
@@ -66,10 +69,12 @@ public class Response {
             }*/
             if (!Character.isLetterOrDigit(message.charAt(i))) {
                 word = word.toLowerCase();
-                
+                System.out.print(word);
                 if (isMasterKeyword.get(word) != null) {
+                    System.out.print("Success"+word);
                     isUserKeyword.put(word, true);
                 }
+                //System.out.print(word);
                 word = "";
             }
             else {
