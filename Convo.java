@@ -34,8 +34,4 @@ public class Convo {
         int score = user.postSurvey();
         botMessages.learn(conversationHistory, score);
     }
-
-    public HashMap<String, MessageNode> getResponseFinalList() {
-        return botMessages.getMasterList();
-    }
 }
