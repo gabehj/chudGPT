@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 /**
  * Response class takes the user profile and message bank. 
  * Then, it can decide which message to respond with for any given user message.
@@ -92,8 +93,10 @@ public class Response {
      * @return double
      */
     private static Double getGumble() {
-        // Not yet real Gumble, just a substitute random distro.
-        return 0.5 * Math.random();
+        // Adding from Gumble distro is same as each logit as e^logit / sum(e^logits)
+        double u = ThreadLocalRandom.current().nextDouble();
+        u = Math.max(1e-15, Math.min(1.0 - 1e-15, u));
+        return -Math.log(-Math.log(u));
     }
 
     /**
