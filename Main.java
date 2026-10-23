@@ -50,20 +50,14 @@ public class Main {
         
         Convo convo = new Convo(user, response);
         
-        String haveConvo = "";
-
-        while (!(haveConvo.equals("yes")) && !(haveConvo.equals("no"))) {
-            System.out.println("Would you like to chat (yes/no)? ");
-            haveConvo = input.nextLine().toLowerCase();
-
-            if (haveConvo.equals("yes")) {
-                convo.startConversation();
-            }
-            else if (haveConvo.equals("no")) {
-                System.out.println("Have a nice day!");
-                break;
-            }
-        }     
+        
+        DataVal startConvo = new DataVal();
+        String haveConvo = startConvo.selectFromOptions("Would you like to chat?", new String[] {"yes", "no"});
+        if (haveConvo.equals("yes")) {
+            convo.startConversation();
+        }else if (haveConvo.equals("no")) {
+            System.out.println("Have a nice day!");
+        }   
 
 
         // Write .json
