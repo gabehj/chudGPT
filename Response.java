@@ -87,7 +87,7 @@ public class Response {
      */
     private static Double getGumble() {
         // Not yet real Gumble, just a substitute random distro.
-        return 5 * Math.random();
+        return 0.5 * Math.random();
     }
 
     /**
@@ -118,8 +118,12 @@ public class Response {
             // IMPORTANT: Iterate through each keyword in a botmessage and increment
             //  its logit for every match in the user message and user profile
             for (String keyword : node.getThemes()) {
-                if (isUserKeyword.get(keyword) != null) logit ++; // Scan message to increase probability
-                if (isUserProfileKeyword.get(keyword) != null) logit ++; // Scan Profile to increase prob
+                if (isUserKeyword.get(keyword) != null) {
+                    logit ++; // Scan message to increase probability
+                }
+                if (isUserProfileKeyword.get(keyword) != null) {
+                    logit ++; // Scan Profile to increase probz
+                }
             }
 
             logit += getGumble(); // Add randomness to logits to sample as a softmax
@@ -130,6 +134,17 @@ public class Response {
             }
         }
 
+        // Display Stats
+        System.out.println("Max logit: " + max_logit);
+        for (String keyword : theMasterList.get(max_message).getThemes()) {
+            if (isUserKeyword.get(keyword) != null) {
+                System.out.println("Message Trigger" + keyword);
+            }
+            if (isUserProfileKeyword.get(keyword) != null) {
+                System.out.println("Profile Trigger" + keyword);
+            }
+        }
+        
         return max_message;
     }
 
