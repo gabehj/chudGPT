@@ -11,6 +11,15 @@ public class MessageNode {
         this.logit = logit;
     }
 
+    public MessageNode(String message, String[] themes, double logit) {
+        this.message = message;
+        this.logit = logit;
+        this.themes = new ArrayList<>();
+        for (String theme: themes) {
+            this.themes.add(theme);
+        }
+    }
+
     public String getMessage() {
         return this.message;
     }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  */
 public class Response {
     
-    User user = null;
+    User user;
 
     // Stores the words of the user profile
     HashMap<String, Boolean> isUserProfileKeyword = new HashMap<>();
@@ -24,6 +24,7 @@ public class Response {
     /**
      *    RESPONSE CONSTRUCTOR
      * @param user user object that bot is conversing with
+     * @param theMasterList HashMap containing all of the bot messages and their metadata
      */
     public Response(User user, HashMap<String, MessageNode> theMasterList) {
 
