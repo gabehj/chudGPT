@@ -9,7 +9,7 @@ How to compile:
     -fourth input should be if you want to chat with the bot
     -any input after that is the input you want to talk to the bot with
         -if you want to stop input stop
-    -After stopping enter the rating for the bot responses.
+    -After entering stop, enter the rating for the bot responses.
 
 
   
