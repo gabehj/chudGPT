@@ -56,8 +56,15 @@ public class Main {
         } else if (haveConvo.equals("no")) {
             System.out.println("Have a nice day!");
         } 
-
-        mapper.writerWithDefaultPrettyPrinter().writeValue(new File("message_bank.json"), rawData);
+        java.util.LinkedHashMap<String, Object> out = new java.util.LinkedHashMap<>();
+        for (MessageNode node : messageBank.values()) {
+            java.util.LinkedHashMap<String, Object> entry = new java.util.LinkedHashMap<>();
+            entry.put("message", node.getMessage());
+            entry.put("keywords", node.getKeywords());
+            entry.put("logit", node.getLogit());
+            out.put(node.getMessage(), entry);
+        }
+        mapper.writerWithDefaultPrettyPrinter().writeValue(new File("message_bank.json"), out);
         // Write .json
     }
 }

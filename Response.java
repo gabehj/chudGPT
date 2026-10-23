@@ -291,6 +291,13 @@ public class Response {
         // Not necessary until we handle big data
         return;
     }
+    /**
+     *  Returns masterlist from inside class to be written to json file.
+     * @return masterList so it can be written to file
+     */
+    public HashMap<String, MessageNode> getMasterList() {
+        return theMasterList;
+    }
 }
 /* 
     boolean isAlphanumeric(final int codePoint) {
