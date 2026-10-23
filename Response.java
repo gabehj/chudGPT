@@ -57,7 +57,8 @@ public class Response {
         
         int i = 0;
         String word = "";
-
+        message = message + " ";
+        
         while (i < message.length()) {
             /*
             if (!isAlphanumeric(letter)) {
