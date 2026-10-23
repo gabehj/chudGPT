@@ -28,7 +28,8 @@ public class Convo {
 
             input.nextLine();
         }
-        input.close();
+        //this line below causes all input streams to close forever VVV
+        //input.close();
 
         int score = user.postSurvey();
         botMessages.learn(conversationHistory, score);
