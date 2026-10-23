@@ -48,20 +48,24 @@ Gabe
 - Fixed the Dang Linked Chain Methods
 - Learned about RL :)
 - Used AI for bragging, and for venting when things weren't working.
+- Debug and test 
 
 Luke
 
 - Wrote User, DataVal, MessageNode, and part of convo and main classes.
 - Helped integrate classes together to make the function.
 - Reviewed other classes to make sure code is up to par.
+- Debug and test 
 
 Blake
 
 - Reviewed specs doc, wrote the JUnit test cases class
 - Went over code from main and LinkedChain classes
+- Debug and test 
 
 Hooriah
 
 - Reviewed scope, spec, and code within DataVal, Response, and User
 - Helped monitor and document deviations from the spec
 - Contributed to the readme file
+- Debug and test 
