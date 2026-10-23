@@ -41,21 +41,25 @@ public class Main {
             messageBank.put(message, fileNode);
         }
  
-        User user = new User(new String[] {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});
-        Response response = new Response(user, messageBank);
-        
+        User user = new User(new String[] {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});        
         user.accountRegistration();
         
+        Response response = new Response(user, messageBank);
         Convo convo = new Convo(user, response);
         
-        
         DataVal startConvo = new DataVal();
-        String haveConvo = startConvo.selectFromOptions("Would you like to chat?", new String[] {"yes", "no"});
-        if (haveConvo.equals("yes")) {
-            convo.startConversation();
-        }else if (haveConvo.equals("no")) {
-            System.out.println("Have a nice day!");
-        }   
+        String haveConvo = "start";
+        while (!(haveConvo.equals("yes")) && (!haveConvo.equals("no"))) {
+            haveConvo = startConvo.selectFromOptions("Would you like to chat?", new String[] {"yes", "no"});
+            if (haveConvo.equals("yes")) {
+                convo.startConversation();
+            } else if (haveConvo.equals("no")) {
+                System.out.println("Have a nice day!");
+                break;
+            } 
+            haveConvo = "new";
+        }
+ 
 
 
         // Write .json

@@ -14860,791 +14860,791 @@
   "Hey, how are you doing?": {
     "message": "Hey, how are you doing?",
     "keywords": ["hey", "how", "you", "doing", "hello"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I can help with that. What part is giving you trouble?": {
     "message": "I can help with that. What part is giving you trouble?",
     "keywords": ["help", "trouble", "stuck", "problem", "confused"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "What have you tried so far?": {
     "message": "What have you tried so far?",
     "keywords": ["tried", "attempt", "problem", "fix", "help"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Why do you think that happened?": {
     "message": "Why do you think that happened?",
     "keywords": ["why", "happened", "think", "reason", "explain"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I don't think I fully understand what you mean.": {
     "message": "I don't think I fully understand what you mean.",
     "keywords": ["understand", "mean", "confused", "explain", "unclear"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I forgot about that. Thanks for reminding me.": {
     "message": "I forgot about that. Thanks for reminding me.",
     "keywords": ["forgot", "forget", "remind", "remember", "thanks"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Have you finished your homework yet?": {
     "message": "Have you finished your homework yet?",
     "keywords": ["homework", "finished", "assignment", "school", "class"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Which part of the homework is giving you trouble?": {
     "message": "Which part of the homework is giving you trouble?",
     "keywords": ["homework", "trouble", "stuck", "question", "assignment"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Let's work through it one step at a time.": {
     "message": "Let's work through it one step at a time.",
     "keywords": ["step", "work", "solve", "help", "learn"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Do you want a hint or a full explanation?": {
     "message": "Do you want a hint or a full explanation?",
     "keywords": ["hint", "explanation", "answer", "help", "learn"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I think you made a small mistake in that step.": {
     "message": "I think you made a small mistake in that step.",
     "keywords": ["mistake", "step", "wrong", "error", "check"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Why does that formula work?": {
     "message": "Why does that formula work?",
     "keywords": ["formula", "why", "math", "work", "understand"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Can you show me your code?": {
     "message": "Can you show me your code?",
     "keywords": ["code", "programming", "bug", "error", "debug"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "What does the error message say?": {
     "message": "What does the error message say?",
     "keywords": ["error", "message", "bug", "exception", "code"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I think we should check the original source.": {
     "message": "I think we should check the original source.",
     "keywords": ["source", "fact", "claim", "verify", "evidence"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Can you give me a specific example?": {
     "message": "Can you give me a specific example?",
     "keywords": ["example", "specific", "explain", "show", "understand"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That makes more sense now.": {
     "message": "That makes more sense now.",
     "keywords": ["sense", "understand", "explanation", "clear", "thanks"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I hadn't thought about it that way.": {
     "message": "I hadn't thought about it that way.",
     "keywords": ["thought", "perspective", "idea", "interesting", "opinion"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You might be right about that.": {
     "message": "You might be right about that.",
     "keywords": ["right", "agree", "maybe", "opinion", "point"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I disagree, but I understand your point.": {
     "message": "I disagree, but I understand your point.",
     "keywords": ["disagree", "point", "opinion", "argument", "understand"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "What evidence supports that claim?": {
     "message": "What evidence supports that claim?",
     "keywords": ["evidence", "claim", "prove", "fact", "source"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I think we're talking past each other.": {
     "message": "I think we're talking past each other.",
     "keywords": ["argument", "misunderstand", "talking", "explain", "point"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Let's focus on the actual problem.": {
     "message": "Let's focus on the actual problem.",
     "keywords": ["problem", "focus", "solution", "issue", "fix"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I'm listening. Go on.": {
     "message": "I'm listening. Go on.",
     "keywords": ["listen", "story", "continue", "talk", "explain"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Tell me what happened.": {
     "message": "Tell me what happened.",
     "keywords": ["happened", "story", "explain", "tell", "situation"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That sounds frustrating.": {
     "message": "That sounds frustrating.",
     "keywords": ["frustrated", "annoying", "upset", "angry", "problem"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That sounds like a rough day.": {
     "message": "That sounds like a rough day.",
     "keywords": ["rough", "day", "tired", "stress", "upset"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Do you want advice or just someone to listen?": {
     "message": "Do you want advice or just someone to listen?",
     "keywords": ["advice", "listen", "vent", "help", "talk"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You don't have to solve everything right now.": {
     "message": "You don't have to solve everything right now.",
     "keywords": ["stress", "overwhelmed", "solve", "problem", "tired"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I appreciate you being honest with me.": {
     "message": "I appreciate you being honest with me.",
     "keywords": ["honest", "truth", "tell", "appreciate", "feelings"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I'm sorry I misunderstood you.": {
     "message": "I'm sorry I misunderstood you.",
     "keywords": ["sorry", "misunderstood", "confused", "mean", "explain"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I didn't mean for that to sound rude.": {
     "message": "I didn't mean for that to sound rude.",
     "keywords": ["rude", "sorry", "tone", "offended", "mean"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Can we start over?": {
     "message": "Can we start over?",
     "keywords": ["start", "over", "argument", "reset", "conversation"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I need a minute to think about that.": {
     "message": "I need a minute to think about that.",
     "keywords": ["think", "minute", "answer", "wait", "consider"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I don't want to make assumptions.": {
     "message": "I don't want to make assumptions.",
     "keywords": ["assume", "guess", "uncertain", "understand", "clarify"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "What's the most important part to you?": {
     "message": "What's the most important part to you?",
     "keywords": ["important", "matters", "priority", "feel", "why"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That sounds exciting.": {
     "message": "That sounds exciting.",
     "keywords": ["exciting", "great", "news", "happy", "interesting"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "No way, what happened next?": {
     "message": "No way, what happened next?",
     "keywords": ["really", "next", "happened", "story", "wow"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That's actually pretty funny.": {
     "message": "That's actually pretty funny.",
     "keywords": ["funny", "joke", "laugh", "comedy", "humor"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "My brain has stopped cooperating today.": {
     "message": "My brain has stopped cooperating today.",
     "keywords": ["tired", "brain", "study", "work", "exhausted"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I planned to be productive, but that didn't happen.": {
     "message": "I planned to be productive, but that didn't happen.",
     "keywords": ["productive", "procrastinate", "plan", "work", "today"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Why does every simple task take two hours?": {
     "message": "Why does every simple task take two hours?",
     "keywords": ["why", "task", "time", "work", "comedic"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I opened one tab and somehow ended up with thirty.": {
     "message": "I opened one tab and somehow ended up with thirty.",
     "keywords": ["tab", "browser", "computer", "distracted", "funny"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That was a bold claim.": {
     "message": "That was a bold claim.",
     "keywords": ["claim", "bold", "opinion", "prove", "argument"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Please bring evidence instead of just confidence.": {
     "message": "Please bring evidence instead of just confidence.",
     "keywords": ["evidence", "confidence", "prove", "claim", "argument"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You're mistaking being loud for being right.": {
     "message": "You're mistaking being loud for being right.",
     "keywords": ["loud", "right", "argument", "wrong", "insult"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That argument has more holes than a sieve.": {
     "message": "That argument has more holes than a sieve.",
     "keywords": ["argument", "holes", "logic", "wrong", "evidence"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That's a lot of confidence for such weak reasoning.": {
     "message": "That's a lot of confidence for such weak reasoning.",
     "keywords": ["confidence", "reasoning", "logic", "wrong", "argument"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Your point got lost somewhere in all that attitude.": {
     "message": "Your point got lost somewhere in all that attitude.",
     "keywords": ["point", "attitude", "argument", "rude", "insult"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "If you want to disagree, at least address what I said.": {
     "message": "If you want to disagree, at least address what I said.",
     "keywords": ["disagree", "address", "said", "argument", "listen"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That was a weak attempt at an insult.": {
     "message": "That was a weak attempt at an insult.",
     "keywords": ["insult", "weak", "comeback", "rude", "funny"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You're arguing with confidence, not logic.": {
     "message": "You're arguing with confidence, not logic.",
     "keywords": ["arguing", "confidence", "logic", "wrong", "evidence"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Maybe read the article before lecturing everyone about it.": {
     "message": "Maybe read the article before lecturing everyone about it.",
     "keywords": ["read", "article", "lecturing", "opinion", "insult"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You can criticize an idea without attacking a person.": {
     "message": "You can criticize an idea without attacking a person.",
     "keywords": ["criticize", "idea", "person", "insult", "argument"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "So you're a libertarian? Do you really think tax cuts solve everything?": {
     "message": "So you're a libertarian? Do you really think tax cuts solve everything?",
     "keywords": ["libertarian", "tax", "taxes", "government", "economy"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "So you want higher taxes on the rich? How would that work in practice?": {
     "message": "So you want higher taxes on the rich? How would that work in practice?",
     "keywords": ["taxes", "rich", "wealthy", "policy", "economy"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You support socialism? How would it handle incentives and individual choice?": {
     "message": "You support socialism? How would it handle incentives and individual choice?",
     "keywords": ["socialism", "socialist", "incentives", "choice", "government"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You oppose universal healthcare? What happens to people who can't afford treatment?": {
     "message": "You oppose universal healthcare? What happens to people who can't afford treatment?",
     "keywords": ["healthcare", "universal", "insurance", "treatment", "policy"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should billionaires pay a higher tax rate?": {
     "message": "Should billionaires pay a higher tax rate?",
     "keywords": ["billionaires", "tax", "wealthy", "taxes", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should college be tuition-free if taxpayers cover the cost?": {
     "message": "Should college be tuition-free if taxpayers cover the cost?",
     "keywords": ["college", "tuition", "taxpayers", "education", "debt"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should social media companies remove political misinformation?": {
     "message": "Should social media companies remove political misinformation?",
     "keywords": ["social media", "misinformation", "politics", "speech", "regulation"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should the government regulate AI more aggressively?": {
     "message": "Should the government regulate AI more aggressively?",
     "keywords": ["government", "AI", "regulation", "innovation", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should schools ban controversial books?": {
     "message": "Should schools ban controversial books?",
     "keywords": ["schools", "book", "books", "banning", "education"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Do you think voting should be mandatory?": {
     "message": "Do you think voting should be mandatory?",
     "keywords": ["voting", "mandatory", "election", "rights", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should the government guarantee paid parental leave?": {
     "message": "Should the government guarantee paid parental leave?",
     "keywords": ["government", "paid leave", "parental", "employers", "policy"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Do you think capitalism is the best economic system?": {
     "message": "Do you think capitalism is the best economic system?",
     "keywords": ["capitalism", "economy", "markets", "wealth", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should public universities be tuition-free?": {
     "message": "Should public universities be tuition-free?",
     "keywords": ["public universities", "tuition-free", "college", "education", "taxes"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should companies be taxed more for replacing workers with AI?": {
     "message": "Should companies be taxed more for replacing workers with AI?",
     "keywords": ["companies", "AI", "workers", "automation", "jobs"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should governments limit rent increases?": {
     "message": "Should governments limit rent increases?",
     "keywords": ["government", "rent", "housing", "shortages", "policy"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should wealthy countries accept more refugees?": {
     "message": "Should wealthy countries accept more refugees?",
     "keywords": ["wealthy countries", "refugees", "immigration", "housing", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Do you think the news is biased?": {
     "message": "Do you think the news is biased?",
     "keywords": ["news", "biased", "media", "facts", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I haven't read that book yet. Is it worth reading?": {
     "message": "I haven't read that book yet. Is it worth reading?",
     "keywords": ["book", "read", "reading", "recommend", "worth"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "What's your favorite book?": {
     "message": "What's your favorite book?",
     "keywords": ["favorite", "book", "reading", "recommend", "story"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "What kind of books do you usually enjoy?": {
     "message": "What kind of books do you usually enjoy?",
     "keywords": ["books", "reading", "fiction", "history", "genre"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Have you played that game yet?": {
     "message": "Have you played that game yet?",
     "keywords": ["game", "played", "gaming", "video game", "recommend"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Which game are you playing right now?": {
     "message": "Which game are you playing right now?",
     "keywords": ["game", "playing", "gaming", "video game", "current"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I need a game recommendation.": {
     "message": "I need a game recommendation.",
     "keywords": ["game", "recommendation", "recommend", "gaming", "play"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Are you watching the football game tonight?": {
     "message": "Are you watching the football game tonight?",
     "keywords": ["football", "game", "watching", "tonight", "team"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Who are you rooting for this football season?": {
     "message": "Who are you rooting for this football season?",
     "keywords": ["football", "team", "season", "rooting", "sports"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I missed the game. What was the score?": {
     "message": "I missed the game. What was the score?",
     "keywords": ["missed", "game", "score", "football", "sports"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That was a close game.": {
     "message": "That was a close game.",
     "keywords": ["close", "game", "score", "team", "football"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I need to study before I can relax.": {
     "message": "I need to study before I can relax.",
     "keywords": ["study", "relax", "homework", "exam", "class"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Let's review the material together.": {
     "message": "Let's review the material together.",
     "keywords": ["review", "study", "material", "exam", "class"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I finally finished the assignment.": {
     "message": "I finally finished the assignment.",
     "keywords": ["finished", "assignment", "homework", "done", "finally"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I thought I understood the chapter until I tried the practice questions.": {
     "message": "I thought I understood the chapter until I tried the practice questions.",
     "keywords": ["understand", "chapter", "practice", "questions", "study"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Can you explain that without using so much jargon?": {
     "message": "Can you explain that without using so much jargon?",
     "keywords": ["explain", "jargon", "confused", "understand", "help"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I want a hint, not the full answer.": {
     "message": "I want a hint, not the full answer.",
     "keywords": ["hint", "answer", "learn", "solve", "homework"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I understand the result, but not how you got there.": {
     "message": "I understand the result, but not how you got there.",
     "keywords": ["understand", "result", "how", "explain", "steps"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I forgot to save my work.": {
     "message": "I forgot to save my work.",
     "keywords": ["forgot", "save", "work", "file", "computer"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I forgot what time we said we'd meet.": {
     "message": "I forgot what time we said we'd meet.",
     "keywords": ["forgot", "time", "meet", "meeting", "remember"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I'm heading home now.": {
     "message": "I'm heading home now.",
     "keywords": ["home", "heading", "leaving", "going", "now"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I'm home. That commute felt endless.": {
     "message": "I'm home. That commute felt endless.",
     "keywords": ["home", "commute", "traffic", "tired", "travel"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Do you want to grab dinner?": {
     "message": "Do you want to grab dinner?",
     "keywords": ["dinner", "food", "eat", "hungry", "restaurant"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Want to go for a walk?": {
     "message": "Want to go for a walk?",
     "keywords": ["walk", "outside", "bored", "fresh air", "exercise"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I need a quiet evening.": {
     "message": "I need a quiet evening.",
     "keywords": ["quiet", "evening", "tired", "rest", "home"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I don't know the answer, and I don't want to guess.": {
     "message": "I don't know the answer, and I don't want to guess.",
     "keywords": ["know", "answer", "guess", "uncertain", "honest"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Let's separate what we know from what we're assuming.": {
     "message": "Let's separate what we know from what we're assuming.",
     "keywords": ["know", "assuming", "facts", "evidence", "guess"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "What would change your mind?": {
     "message": "What would change your mind?",
     "keywords": ["change", "mind", "evidence", "opinion", "believe"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I can see why you believe that, even though I disagree.": {
     "message": "I can see why you believe that, even though I disagree.",
     "keywords": ["believe", "disagree", "opinion", "understand", "why"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I think we agree on the goal but disagree about the method.": {
     "message": "I think we agree on the goal but disagree about the method.",
     "keywords": ["agree", "disagree", "goal", "method", "solution"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Can we discuss the policy without making it personal?": {
     "message": "Can we discuss the policy without making it personal?",
     "keywords": ["policy", "personal", "politics", "argument", "discuss"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should the government spend more on public services?": {
     "message": "Should the government spend more on public services?",
     "keywords": ["government", "spending", "public services", "taxes", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should taxes on the rich be higher?": {
     "message": "Should taxes on the rich be higher?",
     "keywords": ["taxes", "rich", "wealthy", "economy", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should companies be allowed to replace workers with AI?": {
     "message": "Should companies be allowed to replace workers with AI?",
     "keywords": ["companies", "workers", "AI", "automation", "jobs"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should schools ban phones during class?": {
     "message": "Should schools ban phones during class?",
     "keywords": ["schools", "phones", "ban", "class", "education"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Do you think free speech should have limits?": {
     "message": "Do you think free speech should have limits?",
     "keywords": ["free speech", "limits", "rights", "harassment", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I don't think insults make your argument stronger.": {
     "message": "I don't think insults make your argument stronger.",
     "keywords": ["insults", "argument", "rude", "stronger", "respect"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You're more interested in winning than understanding.": {
     "message": "You're more interested in winning than understanding.",
     "keywords": ["winning", "understanding", "argument", "listen", "insults"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That take is impressively uninformed.": {
     "message": "That take is impressively uninformed.",
     "keywords": ["take", "uninformed", "opinion", "wrong", "insults"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "If you're going to insult me, at least be clever.": {
     "message": "If you're going to insult me, at least be clever.",
     "keywords": ["insult", "clever", "comeback", "rude", "funny"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You're confidently wrong, which is a difficult combination to defend.": {
     "message": "You're confidently wrong, which is a difficult combination to defend.",
     "keywords": ["confident", "wrong", "defend", "argument", "insults"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I can disagree with you without attacking you personally.": {
     "message": "I can disagree with you without attacking you personally.",
     "keywords": ["disagree", "attack", "personally", "respect", "argument"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That explanation leaves one important question unanswered.": {
     "message": "That explanation leaves one important question unanswered.",
     "keywords": ["explanation", "question", "unanswered", "why", "logic"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I appreciate that you corrected your mistake.": {
     "message": "I appreciate that you corrected your mistake.",
     "keywords": ["corrected", "mistake", "wrong", "honest", "thanks"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You explained that really clearly.": {
     "message": "You explained that really clearly.",
     "keywords": ["explained", "clearly", "understand", "thanks", "good"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That's a clever solution.": {
     "message": "That's a clever solution.",
     "keywords": ["clever", "solution", "idea", "smart", "code"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You did the hard part by getting started.": {
     "message": "You did the hard part by getting started.",
     "keywords": ["started", "hard", "progress", "work", "help"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I respect the effort, but the result still needs work.": {
     "message": "I respect the effort, but the result still needs work.",
     "keywords": ["effort", "result", "feedback", "work", "improve"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I might be wrong. What am I missing?": {
     "message": "I might be wrong. What am I missing?",
     "keywords": ["wrong", "missing", "feedback", "explain", "understand"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Let's take a break and come back to this later.": {
     "message": "Let's take a break and come back to this later.",
     "keywords": ["break", "later", "tired", "stress", "pause"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I don't think we need to solve this tonight.": {
     "message": "I don't think we need to solve this tonight.",
     "keywords": ["solve", "tonight", "stress", "later", "argument"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I need a little more time to think.": {
     "message": "I need a little more time to think.",
     "keywords": ["time", "think", "answer", "wait", "decision"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Thanks for telling me.": {
     "message": "Thanks for telling me.",
     "keywords": ["thanks", "telling", "honest", "share", "appreciate"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I'm glad we talked about it.": {
     "message": "I'm glad we talked about it.",
     "keywords": ["glad", "talked", "conversation", "discuss", "thanks"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I understand your point better now.": {
     "message": "I understand your point better now.",
     "keywords": ["understand", "point", "better", "explain", "discussion"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Let's try the simplest explanation first.": {
     "message": "Let's try the simplest explanation first.",
     "keywords": ["simplest", "explanation", "try", "understand", "problem"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I think we should test that instead of guessing.": {
     "message": "I think we should test that instead of guessing.",
     "keywords": ["test", "guessing", "evidence", "problem", "why"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I don't want to jump to conclusions.": {
     "message": "I don't want to jump to conclusions.",
     "keywords": ["conclusions", "assume", "guess", "evidence", "facts"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Can you walk me through your reasoning?": {
     "message": "Can you walk me through your reasoning?",
     "keywords": ["reasoning", "explain", "steps", "why", "understand"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I don't have a strong opinion yet.": {
     "message": "I don't have a strong opinion yet.",
     "keywords": ["opinion", "unsure", "evidence", "politics", "think"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "What would a fair compromise look like?": {
     "message": "What would a fair compromise look like?",
     "keywords": ["fair", "compromise", "solution", "disagree", "policy"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Let's agree on the facts before debating the solution.": {
     "message": "Let's agree on the facts before debating the solution.",
     "keywords": ["facts", "agree", "debate", "solution", "evidence"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I'm not going to pretend I know everything.": {
     "message": "I'm not going to pretend I know everything.",
     "keywords": ["pretend", "know", "everything", "honest", "uncertain"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Could you repeat that? I missed the key point.": {
     "message": "Could you repeat that? I missed the key point.",
     "keywords": ["repeat", "missed", "point", "again", "explain"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I'm sorry I interrupted you. Please continue.": {
     "message": "I'm sorry I interrupted you. Please continue.",
     "keywords": ["sorry", "interrupted", "continue", "listen", "talk"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I can help you break this into smaller steps.": {
     "message": "I can help you break this into smaller steps.",
     "keywords": ["help", "steps", "overwhelmed", "plan", "problem"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I don't want to fix it for you. I want to help you learn it.": {
     "message": "I don't want to fix it for you. I want to help you learn it.",
     "keywords": ["fix", "help", "learn", "understand", "practice"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That was a rough game, but they kept fighting until the end.": {
     "message": "That was a rough game, but they kept fighting until the end.",
     "keywords": ["game", "football", "team", "rough", "end"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "What's the last book that kept you up late?": {
     "message": "What's the last book that kept you up late?",
     "keywords": ["book", "reading", "late", "favorite", "recommend"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I need a game that is fun without feeling like a second job.": {
     "message": "I need a game that is fun without feeling like a second job.",
     "keywords": ["game", "fun", "gaming", "recommend", "time"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I'm trying to finish my homework before the weekend.": {
     "message": "I'm trying to finish my homework before the weekend.",
     "keywords": ["homework", "finish", "weekend", "study", "deadline"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I forgot to reply earlier. Sorry about that.": {
     "message": "I forgot to reply earlier. Sorry about that.",
     "keywords": ["forgot", "reply", "earlier", "sorry", "message"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I finally understand it, and now it seems obvious.": {
     "message": "I finally understand it, and now it seems obvious.",
     "keywords": ["understand", "finally", "obvious", "learn", "confused"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I don't mind disagreement, but I do expect you to listen.": {
     "message": "I don't mind disagreement, but I do expect you to listen.",
     "keywords": ["disagreement", "listen", "respect", "argument", "talk"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You can be wrong about something without being a bad person.": {
     "message": "You can be wrong about something without being a bad person.",
     "keywords": ["wrong", "person", "mistake", "learn", "evidence"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I'm not convinced. Can you show me where that number came from?": {
     "message": "I'm not convinced. Can you show me where that number came from?",
     "keywords": ["convinced", "number", "source", "evidence", "show"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "That was a lot of words for a point that never appeared.": {
     "message": "That was a lot of words for a point that never appeared.",
     "keywords": ["words", "point", "argument", "insult", "explain"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "You seem more committed to being right than finding the truth.": {
     "message": "You seem more committed to being right than finding the truth.",
     "keywords": ["right", "truth", "argument", "evidence", "insults"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should the government limit rent increases?": {
     "message": "Should the government limit rent increases?",
     "keywords": ["government", "rent", "housing", "policy", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should public money fund private schools?": {
     "message": "Should public money fund private schools?",
     "keywords": ["public money", "private schools", "education", "taxes", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should wealthy countries accept more refugees?": {
     "message": "Should wealthy countries accept more refugees?",
     "keywords": ["wealthy", "countries", "refugees", "immigration", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should companies disclose how their AI systems make decisions?": {
     "message": "Should companies disclose how their AI systems make decisions?",
     "keywords": ["companies", "AI", "systems", "decisions", "regulation"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Do you think the minimum wage should rise with inflation?": {
     "message": "Do you think the minimum wage should rise with inflation?",
     "keywords": ["minimum wage", "inflation", "workers", "wages", "economy"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Should police budgets increase or decrease?": {
     "message": "Should police budgets increase or decrease?",
     "keywords": ["police", "budgets", "public safety", "government", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I don't think either of us will change our minds tonight.": {
     "message": "I don't think either of us will change our minds tonight.",
     "keywords": ["change", "minds", "tonight", "argument", "politics"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Thanks for explaining your side. I understand it better now.": {
     "message": "Thanks for explaining your side. I understand it better now.",
     "keywords": ["thanks", "explaining", "side", "understand", "better"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "I think we should discuss the idea, not attack the person.": {
     "message": "I think we should discuss the idea, not attack the person.",
     "keywords": ["discuss", "idea", "attack", "person", "argument"],
-    "logit": 2.0
+    "logit": 0.0
   },
   "Can we pause and come back to this when we're calmer?": {
     "message": "Can we pause and come back to this when we're calmer?",
     "keywords": ["pause", "calmer", "argument", "stress", "later"],
-    "logit": 2.0
+    "logit": 0.0
   }
 }

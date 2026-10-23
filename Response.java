@@ -36,6 +36,7 @@ public class Response {
         for (Object rawProfileKeyword: user.getInterests().toArray()) {
             profileKeyword = (String) rawProfileKeyword;
             isUserProfileKeyword.put(profileKeyword, true);
+            //System.out.println("Keys:"+isUserProfileKeyword.keys());
         }
 
         // Iterate through each keyword in the botmessages and add to isMasterKeyword
@@ -127,7 +128,7 @@ public class Response {
                     logit ++; // Scan message to increase probability
                 }
                 if (isUserProfileKeyword.get(keyword) != null) {
-                    logit ++; // Scan Profile to increase probz
+                    logit ++; // Scan Profile to increase prob
                 }
             }
 

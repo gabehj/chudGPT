@@ -37,10 +37,10 @@ public class User {
         int i = 0;
         while (i < count) {
             String choice = input.selectFromOptions("Pick interest #" + (i + 1) + ":", interestList);
-            if (interests.contains(choice)) {
+            if (this.interests.contains(choice)) {
                 System.out.println("You already listed that one.");
             } else {
-                interests.addToEnd(choice);
+                this.interests.addToEnd(choice);
                 i++;
             }
         }
