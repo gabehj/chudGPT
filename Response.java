@@ -248,6 +248,9 @@ public class Response {
             TD_Count ++; // Increment total conversation count for future expected engagement calculations
 
             System.out.println("New logit: "+(int)(logit*100)/100.0);
+
+            MessageNode newNode = new MessageNode(message,node.getKeywords(),logit); // Write new message node
+            theMasterList.put(message, newNode); // Put updated probability back in the masterList
         }
         
         System.out.println("\n==============");
