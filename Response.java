@@ -32,7 +32,9 @@ public class Response {
         this.theMasterList = theMasterList;
 
         // Iterate through user interests and add each keyword to isUserProfileKeyword
-        for (String profileKeyword: user.getInterests().toArray()) {
+        String profileKeyword;
+        for (Object rawProfileKeyword: user.getInterests().toArray()) {
+            profileKeyword = (String) rawProfileKeyword;
             isUserProfileKeyword.put(profileKeyword, true);
         }
 

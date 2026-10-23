@@ -15,6 +15,15 @@ public class HashMap<K, V> {
 	 */
 	double  loadfactor= 0.75;  
 	
+	@SuppressWarnings("unchecked")
+	private ArrayList<Entry<K,V>> typedArray(LinkedChain<Entry<K,V>> entries) {
+		ArrayList<Entry<K,V>> iterableEntries= new ArrayList<>();
+		for (Object rawEntry: entries.toArray()) {
+			iterableEntries.add((Entry<K,V>) rawEntry);
+		}
+		return iterableEntries;
+	}
+
 	/**
 	 * Constructor that takes a hash size
 	 * @param hashtable size: the number of buckets to initialize 
@@ -80,7 +89,7 @@ public class HashMap<K, V> {
 		 */
 		int index = hashValue(key); // Hash key to get table index
 		
-		for (Entry<K, V> entry: table[index].toArray()) { // Iterate through list at table index
+		for (Entry<K, V> entry: typedArray(table[index])) { // Iterate through list at table index
 			if (entry.getKey().equals(key)) { // See if any entries with matching indices have matching keys
 				return entry.getValue(); // Return value for entry with inputed key
 			}
@@ -102,7 +111,7 @@ public class HashMap<K, V> {
 		int index = hashValue(key); // Hash key to get table index
 		
 		// Case 1: Key is already in table
-		for (Entry<K, V> entry: table[index].toArray()) {// Iterate through each node in list for table index // O(n)
+		for (Entry<K, V> entry: typedArray(table[index])) {// Iterate through each node in list for table index // O(n)
 			
 			if (entry.getKey().equals(key)) { // Check if entry key equals inputed key for each node of matching index
 				V old = entry.getValue(); // Store old entry value to get replaced
@@ -137,7 +146,7 @@ public class HashMap<K, V> {
 		size = 0; // Reset size to 0
 		
 		for (LinkedChain<Entry<K,V>> list: oldTable) { // Iterate through each list in old table
-			for (Entry<K,V> entry: list.toArray()) { // iterate through each entry in old list // O(n)
+			for (Entry<K,V> entry: typedArray(list)) { // iterate through each entry in old list // O(n)
 				put(entry.getKey(),entry.getValue()); // Add entry to new, larger table // O(n)
 			}
 		}
@@ -156,7 +165,7 @@ public class HashMap<K, V> {
 			 */
 		int index = hashValue(key); // Hash key to get table index
 		
-		for (Entry<K, V> entry: table[index].toArray()) { // Iterate through each node in list for table index
+		for (Entry<K, V> entry: typedArray(table[index])) { // Iterate through each node in list for table index
 			
 			if (entry.getKey().equals(key)) { // Determine if key matches inputed key
 				V old = entry.getValue(); // Store old entry vale to variable
@@ -168,6 +177,8 @@ public class HashMap<K, V> {
 		}
 		return null; // Nothing to remove
 	}
+
+
 
 	public Iterable<V> values() {
 		ArrayList<V> buffer = new ArrayList<>(); // Create empty new arraylist
@@ -186,7 +197,7 @@ public class HashMap<K, V> {
         }
         return buffer;*/
 		for (int i=0; i<table.length; i++) { // Iterate through every list in table
-			for (Entry<K, V> node : table[i].toArray()) { // Iterate through every entry in list
+			for (Entry<K, V> node : typedArray(table[i])) { // Iterate through every entry in list
 				buffer.addLast(node.getValue()); // Add each entry to arraylist
 			}
 		}
@@ -197,7 +208,7 @@ public class HashMap<K, V> {
 		ArrayList<K> buffer = new ArrayList<>(); // Create empty new arraylist
 
 		for (int i=0; i<table.length; i++) { // Iterate through every list in table
-			for (Entry<K, V> node : table[i].toArray()) { // Iterate through every entry in list
+			for (Entry<K, V> node : typedArray(table[i])) { // Iterate through every entry in list
 				buffer.addLast(node.getKey()); // Add each entry to arraylist
 			}
 		}

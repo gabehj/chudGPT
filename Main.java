@@ -42,9 +42,6 @@ public class Main {
             fileNode = new MessageNode(message, (ArrayList<String>) rawValues.get("keywords"), (double) rawValues.get("logit"));
             messageBank.put(message, fileNode);
         }
-
-        System.out.println(messageBank.keys());
-
  
         User user = new User(new String[] {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});
         Response response = new Response(user, messageBank);

@@ -242,15 +242,7 @@ public class LinkedChain<T>
         return numberOfEntries == 0;
     }
 
-    /**
-     * Copies every entry in this chain into the given array, first entry
-     * first.
-     *
-     * @param values an array of the correct type to fill; it must have
-     * length at least size()
-     * @return the array containing all entries in the chain
-     * @throws IllegalArgumentException if values is null or too small
-     */
+    
     public T[] toArray()
     {
         // Fixed Implementation bc the original one SUCKED. Needed a param
