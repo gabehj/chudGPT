@@ -1,13 +1,12 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
-import java.util.HashMap;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class Main {
     
     private static final Scanner input = new Scanner(System.in);
     private static final ObjectMapper mapper = new ObjectMapper();
-    
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         /**
         System.out.println("Please enter your first input. ");
         String user = input.nextLine();
@@ -22,30 +21,36 @@ public class Main {
         
 
 
-        HashMap<String,MessageNode> messageBank = new HashMap<>();//new HashMap<>();
+        HashMap<String,MessageNode> messageBank = new HashMap<>();
 
         // Read .json
-        HashMap<String, Object> rawData = mapper.readValue(new File("message_bank.json"), HashMap.class);
-        
-        System.out.println("Raw data: " + rawData.keySet());
+        java.util.HashMap<String, Object> rawData = new java.util.HashMap<>();
+        try {
+            rawData = mapper.readValue(new File("message_bank.json"), new com.fasterxml.jackson.core.type.TypeReference<java.util.HashMap<String, Object>>() {});
+        }
+        catch (Exception e) {
+            System.out.println("READING ERROR!!!!: " + e.getMessage());
+        }
+
+        //System.out.println("Raw data: " + rawData.keys());
 
         MessageNode fileNode;
         for (String message: rawData.keySet()) {
 
-            fileNode = new MessageNode(message, 
-                ((HashMap<String,String[]>)rawData.get(message)).get("themes"),
-                ((HashMap<String,Double>)rawData.get(message)).get("logit"));
-            
-                messageBank.put(message, fileNode);
+            java.util.HashMap<String,Object> rawValues = (java.util.HashMap<String,Object>) rawData.get(message);
+
+            fileNode = new MessageNode(message, (ArrayList<String>) rawValues.get("keywords"), (double) rawValues.get("logit"));
+            messageBank.put(message, fileNode);
         }
 
-        System.out.println(messageBank.keySet());
+        System.out.println(messageBank.keys());
 
-        
+ 
         User user = new User(new String[] {"insults", "stem", "sycophantic", "comedic", "polarizing", "romantic", "professional"});
+        Response response = new Response(user, messageBank);
+        
         user.accountRegistration();
         
-        Response response = new Response(user, messageBank);
         Convo convo = new Convo(user, response);
         
         String haveConvo = "";
