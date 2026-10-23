@@ -68,7 +68,7 @@ public class Response {
             if (letter.equals(" ")) {
                 word = word.toLowerCase();
                 
-                if (isMasterKeyword.get(word) == true) {
+                if (isMasterKeyword.get(word) != null) {
                     isUserKeyword.put(word, true);
                 }
                 word = "";
