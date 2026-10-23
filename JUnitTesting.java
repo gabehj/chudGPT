@@ -401,7 +401,7 @@ public class JUnitTesting {
             new MessageNode("Hello there", themes, 2.5);
 
         assertEquals("Hello there", node.getMessage());
-        assertEquals(themes, node.getThemes());
+        assertEquals(themes, node.getKeywords());
         assertEquals(2.5, node.getLogit(), 0.0001);
     }
 
@@ -410,9 +410,9 @@ public class JUnitTesting {
         MessageNode node =
             new MessageNode("Hello", new String[] {"comedic", "stem"}, 1.0);
 
-        assertEquals(2, node.getThemes().size());
-        assertEquals("comedic", node.getThemes().get(0));
-        assertEquals("stem", node.getThemes().get(1));
+        assertEquals(2, node.getKeywords().size());
+        assertEquals("comedic", node.getKeywords().get(0));
+        assertEquals("stem", node.getKeywords().get(1));
     }
 
     @Test
@@ -426,14 +426,14 @@ public class JUnitTesting {
     }
 
     @Test
-    public void testMessageNodeAddTheme() {
+    public void testMessageNodeAddKeywords() {
         MessageNode node =
             new MessageNode("Hello", new ArrayList<>(), 0.0);
 
-        node.addTheme("romantic");
+        node.addKeywords("romantic");
 
-        assertEquals(1, node.getThemes().size());
-        assertEquals("romantic", node.getThemes().get(0));
+        assertEquals(1, node.getKeywords().size());
+        assertEquals("romantic", node.getKeywords().get(0));
     }
 
     // ---------- DataVal tests ----------
@@ -550,7 +550,7 @@ public class JUnitTesting {
 
         response.newVocab("Hello");
 
-        assertTrue(response.theMasterList.get("Hello").getThemes().contains("stem"));
+        assertTrue(response.theMasterList.get("Hello").getKeywords().contains("stem"));
     }
 
     @Test
@@ -561,7 +561,7 @@ public class JUnitTesting {
         // "comedic" ends in a space, so it gets checked against the master keywords.
         response.newVocab("comedic stuff");
 
-        assertTrue(response.theMasterList.get("comedic stuff").getThemes().contains("comedic"));
+        assertTrue(response.theMasterList.get("comedic stuff").getKeywords().contains("comedic"));
     }
 
     @Test

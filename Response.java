@@ -41,7 +41,7 @@ public class Response {
 
         // Iterate through each keyword in the botmessages and add to isMasterKeyword
         for (MessageNode node : theMasterList.values()) {
-            for (String keyword : node.getThemes()) {
+            for (String keyword : node.getKeywords()) {
                 //System.out.println(keyword); // Display all keywords
                 isMasterKeyword.put(keyword, true);
             }
@@ -123,7 +123,7 @@ public class Response {
             
             // IMPORTANT: Iterate through each keyword in a botmessage and increment
             //  its logit for every match in the user message and user profile
-            for (String keyword : node.getThemes()) {
+            for (String keyword : node.getKeywords()) {
                 if (isUserKeyword.get(keyword) != null) {
                     logit ++; // Scan message to increase probability
                 }
@@ -142,7 +142,7 @@ public class Response {
 
         // Display Stats
         System.out.println("Max logit: " + (int)(max_logit*100)/100.0);
-        for (String keyword : theMasterList.get(max_message).getThemes()) {
+        for (String keyword : theMasterList.get(max_message).getKeywords()) {
             if (isUserKeyword.get(keyword) != null) {
                 System.out.println("Message Trigger: " + keyword);
             }

@@ -2,21 +2,21 @@ import java.util.ArrayList;
 
 public class MessageNode {
     private String message;
-    private ArrayList<String> themes;
+    private ArrayList<String> keywords;
     private double logit;
     
-    public MessageNode(String message, ArrayList<String> themes, double logit) {
+    public MessageNode(String message, ArrayList<String> keywords, double logit) {
         this.message = message;
-        this.themes = themes;
+        this.keywords = keywords;
         this.logit = logit;
     }
 
-    public MessageNode(String message, String[] themes, double logit) {
+    public MessageNode(String message, String[] keywords, double logit) {
         this.message = message;
         this.logit = logit;
-        this.themes = new ArrayList<>();
-        for (String theme: themes) {
-            this.themes.add(theme);
+        this.keywords = new ArrayList<>();
+        for (String theme: keywords) {
+            this.keywords.add(theme);
         }
     }
 
@@ -24,8 +24,8 @@ public class MessageNode {
         return this.message;
     }
 
-    public ArrayList<String> getThemes() {
-        return this.themes;
+    public ArrayList<String> getKeywords() {
+        return this.keywords;
     }
 
     public double getLogit() {
@@ -36,7 +36,7 @@ public class MessageNode {
         this.logit = logit;
     }
 
-    public void addTheme(String theme) {
-        this.themes.add(theme);
+    public void addKeywords(String keyword) {
+        this.keywords.add(keyword);
     }
 }

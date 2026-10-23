@@ -30,7 +30,7 @@ public class Main {
             System.out.println("READING ERROR!!!!: " + e.getMessage());
         }
 
-        //System.out.println("Raw data: " + rawData.keys());
+        //System.out.println("Raw data: " + rawData.keySet());
 
         MessageNode fileNode;
         for (String message: rawData.keySet()) {
@@ -56,10 +56,8 @@ public class Main {
         } else if (haveConvo.equals("no")) {
             System.out.println("Have a nice day!");
         } 
-            
- 
 
-
+        mapper.writerWithDefaultPrettyPrinter().writeValue(new File("message_bank.json"), rawData);
         // Write .json
     }
 }
