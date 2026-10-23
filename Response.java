@@ -117,6 +117,8 @@ public class Response {
     public String sampleBotMessage(String message) {        
         HashMap<String, Boolean> isUserKeyword = readUserMessage(message);
         
+        double TEMPERATURE = 20;
+
         double max_logit = Integer.MIN_VALUE;
         String max_message = "ERROR: Message not sampled";
 
@@ -135,7 +137,7 @@ public class Response {
                 }
             }
 
-            logit += getGumble(); // Add randomness to logits to sample as a softmax
+            logit += getGumble() / TEMPERATURE; // Add randomness to logits to sample as a softmax
 
             if (logit > max_logit) {
                 max_logit = logit;
