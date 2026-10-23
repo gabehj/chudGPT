@@ -2,13 +2,14 @@
 How to compile:
 Download all the files together as a zip
 Run the main class as a java file in a JDK. 
-  -When program is running, first input should be your name.
-  -second input should benumber of interests you want to add.
-  -third input should be the interests from the list you want to talk about.
-  -fourth input should be if you want to chat with the bot
-  -any input after that is the input you want to talk to the bot with
-      -if you want to stop input stop
-  -After stopping enter the rating for the bot responses.
+    
+    -When program is running, first input should be your name.
+    -second input should benumber of interests you want to add.
+    -third input should be the interests from the list you want to talk about.
+    -fourth input should be if you want to chat with the bot
+    -any input after that is the input you want to talk to the bot with
+        -if you want to stop input stop
+    -After stopping enter the rating for the bot responses.
 
 
   
